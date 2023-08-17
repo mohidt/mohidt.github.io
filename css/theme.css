@@ -254,6 +254,17 @@ hr {
 	padding: 1rem;
 }
 
+@media (max-width: 1450px) { /* Adjust the breakpoint as needed */
+    .hover-content {
+        font-size: 9.5px; /* Decrease the font size for smaller screens */
+    }
+}
+
+@media (max-width: 1040px) { /* Adjust the breakpoint as needed */
+    .hover-content {
+        font-size: 18px; /* Decrease the font size for smaller screens */
+    }
+}
 
 /* Serivces */
 
