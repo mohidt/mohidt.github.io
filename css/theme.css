@@ -262,7 +262,7 @@ hr {
 
 @media (max-width: 1040px) { /* Adjust the breakpoint as needed */
     .hover-content {
-        font-size: 10.75px; /* Decrease the font size for smaller screens */
+        font-size: 10px; /* Decrease the font size for smaller screens */
     }
 }
 
