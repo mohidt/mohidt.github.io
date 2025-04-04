@@ -543,7 +543,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%; /* Reduce size to 50% */
+    width: 40%; /* Keep size smaller on desktop */
     margin: 20px auto; /* Center horizontally */
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -607,6 +607,31 @@ body {
     font-size: 14px;
     margin-top: 10px;
 }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .certificate-container .hover-outer-box {
+        width: 90%; /* Make the certificate container larger on mobile */
+    }
+
+    .certificate-container .verify-button {
+        font-size: 14px; /* Smaller button text for mobile */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+
+    .certificate-container .highlight {
+        font-size: 12px; /* Smaller highlight text for mobile */
+    }
+
+    .certificate-container .hover-content {
+        padding: 15px; /* Increase padding for mobile readability */
+    }
+
+    .certificate-container .medium-image {
+        border-radius: 10px; /* Keep the border-radius consistent */
+    }
+}
+
 
 .about-me-section {
     display: flex;
