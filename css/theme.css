@@ -667,12 +667,18 @@ body {
         display: none; /* Hide dividers on mobile */
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
     .team .col-md {
         position: static !important; /* Removes left/right shift */
     }
 }
 
+/* Ensure titles are centered on mobile */
+@media (max-width: 768px) {
+    .hero-text {
+        text-align: center; /* Center the titles */
+    }
+}
 
 
 .cta {
