@@ -351,18 +351,24 @@ hr {
         display: block;
     }
 
+    .photo-promo .col-md-8 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensure everything inside is centered */
+    }
+
     .photo-promo button {
         margin: 10px auto; /* Center button */
         display: block;
     }
 }
 
-
 .photo-promo button {
     margin-left: 0;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 
 body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
