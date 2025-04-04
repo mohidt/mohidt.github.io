@@ -179,6 +179,7 @@ hr {
 	background-color: #000;
 	color: #fff;
 	overflow: hidden;
+    
 }
 
 .hero h1 {
@@ -593,16 +594,37 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: 20px; /* Adds space between sections */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+/* Default (Desktop) Layout */
 .about-me-experience-card {
     flex: 1;
+    min-width: 30%; /* Ensures three columns layout */
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
     text-align: left;
 }
+
+
+/* Responsive Layout for Mobile */
+@media (max-width: 768px) {
+    .about-me-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-experience-card {
+        min-width: 100%; /* Stacks cards vertically */
+    }
+
+    .about-me-vertical-line {
+        display: none; /* Hide dividers on mobile */
+    }
+}
+
 
 
 .cta {
@@ -655,7 +677,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    gap: var(--spacing-medium); /* Adds space between testimonial cards */
+    gap: var(--spacing-medium); /* Keeps spacing between testimonial cards */
+    flex-wrap: wrap;
 }
 
 .testimonial-card {
@@ -669,6 +692,7 @@ body {
     flex-direction: column;
     align-items: left; /* Centers content horizontally */
     justify-content: flex-start; /* Aligns content at the top */
+    min-width: 20%;
 }
 
 .testimonial-card h3 {
@@ -697,4 +721,16 @@ body {
     border-radius: 50%;
     margin-bottom: var(--spacing-small);
     object-fit: cover; /* Ensures the image inside the icon remains centered without distortion */
+}
+
+/* Mobile Layout: Stack testimonials vertically */
+@media (max-width: 768px) {
+    .testimonial-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        min-width: 100%;
+    }
 }
