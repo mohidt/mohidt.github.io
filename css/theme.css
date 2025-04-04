@@ -336,15 +336,27 @@ hr {
 }
 
 .photo-promo h2, 
-.photo-promo p {
-    margin-left: 0;
-    padding-left: 150px; /* Keep consistent with text alignment */
+.photo-promo p, 
+.photo-promo .col-md-8 a {
+    padding-left: 150px; /* Default for desktop */
+    text-align: left; /* Ensures desktop alignment */
 }
 
-.photo-promo .col-md-8 a {
-    display: inline-block;
-    padding-left: 150px;
+@media (max-width: 768px) {
+    .photo-promo h2, 
+    .photo-promo p, 
+    .photo-promo .col-md-8 a {
+        padding-left: 0 !important; /* Remove padding only on mobile */
+        text-align: center; /* Center content */
+        display: block;
+    }
+
+    .photo-promo button {
+        margin: 10px auto; /* Center button */
+        display: block;
+    }
 }
+
 
 .photo-promo button {
     margin-left: 0;
@@ -601,7 +613,7 @@ body {
 /* Default (Desktop) Layout */
 .about-me-experience-card {
     flex: 1;
-    min-width: 30%; /* Ensures three columns layout */
+    min-width: 10%; /* Ensures three columns layout */
     padding: 20px;
     background: #f9f9f9;
     border-radius: 10px;
@@ -738,4 +750,12 @@ body {
     .testimonial-card {
         min-width: 100%;
     }
+}
+
+.about-me-experience-card .icon {
+    width: var(--icon-size); /* Use same icon size variable */
+    height: var(--icon-size); /* Use same icon size variable */
+    border-radius: 50%; /* Rounded shape */
+    margin-bottom: var(--spacing-small); /* Consistent margin */
+    object-fit: cover; /* Ensures the image is centered without distortion */
 }
