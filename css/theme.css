@@ -826,9 +826,39 @@ html {
       }
       
       @media (max-width: 768px) {
-        .testimonial-section {
-          padding-left: 1rem;
-          padding-right: 1rem;
-        }
-      }
-      
+  .testimonial-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Fix too much horizontal padding */
+  .padding-small {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Fix vertical spacing between each project card */
+  .row.margin-bottom-small {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;           /* gap between cards */
+    margin-bottom: 40px; /* gap between rows of projects */
+  }
+
+  /* Ensure each card has bottom spacing within its row */
+  .row > .col-md {
+    margin-bottom: 20px;
+  }
+
+  /* Remove bottom margin from last card in each row */
+  .row > .col-md:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Ensure hover cards span full width on mobile */
+  .hover-outer-box {
+    width: 100%;
+  }
+}
