@@ -785,6 +785,26 @@ html {
         .row > .col-md {
           margin-bottom: 20px;
         }
+
+        /* Optional: Remove margin from last column in the group if needed */
+        .row > .col-md:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-vertical-line {
+          display: none;
+        }
       }
       
+      @media (max-width: 768px) {
+        .testimonial-section .about-me-experience-card {
+          margin-bottom: 20px;
+        }
+      
+        .testimonial-section .about-me-experience-card:last-child {
+          margin-bottom: 0;
+        }
+      }
       
