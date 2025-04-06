@@ -801,4 +801,18 @@ html {
           margin-bottom: 0;
         }
       }
+      @media (max-width: 768px) {
+        .testimonial-vertical-line {
+          display: none;
+        }
       
+        .testimonial-section {
+          flex-direction: column;
+          row-gap: 20px; /* even gap between all testimonials */
+        }
+      
+        .testimonial-section .col-md {
+          width: 100%;
+        }
+      }
+            
