@@ -787,3 +787,18 @@ html {
         }
       }
       
+      @media (max-width: 768px) {
+        .row > .col-md {
+          width: 100%;
+        }
+      
+        .hover-outer-box {
+          margin-bottom: 20px;
+        }
+      
+        /* Optional: removes extra space after the last card in a section */
+        .row > .col-md:last-child .hover-outer-box {
+          margin-bottom: 0;
+        }
+      }
+      
