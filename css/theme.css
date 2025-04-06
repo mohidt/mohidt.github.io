@@ -808,3 +808,20 @@ html {
         }
       }
       
+      @media (max-width: 768px) {
+        .testimonial-vertical-line {
+          display: none !important;
+          height: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      
+        .testimonial-section .about-me-experience-card {
+          margin-bottom: 20px;
+        }
+      
+        .testimonial-section .about-me-experience-card:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      
