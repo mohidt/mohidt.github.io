@@ -1,529 +1,640 @@
+<!--
+  CLEANED SECTION: HEAD & HEADER
+  This section sets up the page metadata, loads external stylesheets and fonts,
+  and includes the navigation bar and hero section.
+-->
 <!DOCTYPE html>
 <html lang="de-DE" prefix="og: http://ogp.me/ns#">
+  <head>
     <meta charset="UTF-8">
-    <title> Mohid Tahir - My Portfolio</title>
-    <meta name="description" content="Mohid Tahir - My Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohid Tahir - My Portfolio</title>
+    <meta name="description" content="Mohid Tahir - My Portfolio" />
+
+    <!-- Author and favicon -->
     <link rel="author" href="https://lautenschlager.de" />
-    <link rel="icon" type="image/png" sizes="32x32" href="107EBF10-0545-4BCA-A14F-1AB9B8590953-modified.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="107EBF10-0545-4BCA-A14F-1AB9B8590953-modified.png" />
+
+    <!-- Normalize and grid system -->
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css" media="all" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+
+    <!-- Custom Theme -->
     <link rel="stylesheet" type="text/css" href="css/theme.css" media="all" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-<body>
+  </head>
+
+  <body>
+    <!-- HEADER & NAVIGATION -->
     <header class="fade-in">
-        <div class="navigation-bar flex middle-xs">
-            <img src="Screenshot_2023-08-11_001944-removebg-preview.png" class="logo"> 
-            <nav class="end-xs">
-                <ul>
-                    <li><a href="#Experience">Engineering Experience</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#About-Me">About Me</a></li>
-                    <li><a href="#Testimonials">Testimonials</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="navigation-bar flex middle-xs">
+        <img src="Screenshot_2023-08-11_001944-removebg-preview.png" class="logo" />
+        <nav class="end-xs">
+          <ul>
+            <li><a href="#Experience">Engineering Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#About-Me">About Me</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- HERO SECTION -->
+      <div
+        class="hero flex middle-xs"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('daniele-franchi-5GDr-cSK7mY-unsplash-copy.jpg');"
+      >
+        <div class="hero-text">
+          <img src="107EBF10-0545-4BCA-A14F-1AB9B8590953-modified.png" class="small-image" />
+          <h2 class="hero-text">Mohid Tahir</h2>
+          <p>
+            Welcome to my portfolio, which details my creative works along with my work experience.<br />
+            <!-- Another empty line of space -->
+          </p>
+
+          <!-- Resume Download Button -->
+          <a href="Mohid - Mechanical Engineer - Resume.pdf" download>
+            <button>Download My Resume</button>
+          </a>
         </div>
-        <div class="hero flex middle-xs" style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('daniele-franchi-5GDr-cSK7mY-unsplash-copy.jpg');
-    ">
-    <div class="hero-text ">
-        <img src="107EBF10-0545-4BCA-A14F-1AB9B8590953-modified.png" class="small-image">
-        <h2 class="hero-text">Mohid Tahir</h2>
-        
-        <p> Welcome to my portfolio, which details my creative works along with my work experience.
-            <br> <!-- Another empty line of space -->
-        </p>
-    </head>
-    <body>
-      <a href="Mohid - Mechanical Engineer - Resume.pdf" download>
-        <button>Download My Resume</button>
-      </a>
-    </body>
-    </html>
-    </div>
-</div>
-</header>
-<div class="wrapper">
-    <section class="services" id="Experience">
+      </div>
+    </header>
+
+    <!-- START OF MAIN CONTENT -->
+    <div class="wrapper">
+      <!-- ENGINEERING EXPERIENCE SECTION -->
+      <section class="services" id="Experience">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 center-xs">
-                    <h2 class="hero-text">Engineering Experience</h2>
-                </div>
+          <div class="row">
+            <div class="col-md-12 center-xs">
+              <h2 class="hero-text">Engineering Experience</h2>
             </div>
-            <!-- Skillset Icons -->
-            <div class="row icon-row">
-                <div class="col-xs center-xs">
-                    <img src="Matlab_Logo.png" class="icon"><br/>
-                    <span>MATLAB</span>
-                </div>
-                <div class="col-xs center-xs">
-                    <img src="Python-logo-notext.svg.png" class="icon"><br/>
-                    <span>Python</span>
-                </div>
-                <div class="col-xs center-xs">
-                    <img src="autocad-logo-png_seeklogo-482394.png" class="icon"><br/>
-                    <span>AutoCAD</span>
-                </div>
-                <div class="col-xs center-xs">
-                    <img src="Microsoft_Office_logo_(2013–2019).svg.png" class="icon"><br/>
-                    <span>Microsoft Office Suite</span>
-                </div>
-                <div class="col-xs center-xs">
-                    <img src="DSY.PA-35ee07a0.png" class="icon"><br/>
-                    <span>SolidWorks</span>
-                </div>
-                <div class="col-xs center-xs">
-                    <img src="Onshape_logo_full.png" class="icon"><br/>
-                    <span>Onshape</span>
-                </div>
+          </div>
+
+          <!-- Skillset Icons -->
+          <div class="row icon-row">
+            <div class="col-xs center-xs">
+              <img src="Matlab_Logo.png" class="icon" /><br />
+              <span>MATLAB</span>
             </div>
-
-            <br>
-            <br>
-            <!-- Experience Sections with Vertical Lines -->
-            <div class="row experience-section">
-                <div class="col-md experience-card">
-                    <h3>Technical Skills & Engineering Approach</h3>
-                    <p>
-                        My engineering skill set encompasses a blend of analytical problem-solving, programming, and computer-aided design. 
-                        I have developed proficiency in MATLAB and Python for data analysis and engineering simulations, allowing me to model 
-                        and optimize complex systems.  
-                    </p>
-                    
-                    <p>
-                        Additionally, I am skilled in AutoCAD, SolidWorks, and Onshape, which I have used to design and prototype mechanical components. 
-                        My experience with Microsoft Office Suite supports effective documentation, data management, and reporting.  
-                    </p>
-
-                    <p>
-                        Whether I’m analyzing datasets, refining CAD models, or troubleshooting design issues, 
-                        I approach challenges with a methodical and results-driven mindset.  
-                    </p>
-                </div>
-
-                <div class="vertical-line"></div> <!-- Vertical Divider -->
-
-                <div class="col-md experience-card">
-                    <h3>Internship Experience & Key Takeaways</h3>
-                    <p>
-                        My internships at AGS Automotive Systems and Parts Apart have provided me with hands-on experience in both manufacturing 
-                        engineering and product design.  
-                    </p>
-
-                    <p>
-                        At AGS, I focused on optimizing production processes, improving efficiency by 15%, and gaining a deep understanding 
-                        of how design decisions impact large-scale manufacturing.  
-                    </p>
-
-                    <p>
-                        At Parts Apart, I was immersed in the full product development cycle, from market research to prototyping, refining CAD models, 
-                        and collaborating closely with stakeholders.  
-                    </p>
-
-                    <p>
-                        Together, these experiences have strengthened my ability to bridge design and real-world application, 
-                        balance innovation with feasibility, and work within cross-functional teams to develop practical engineering solutions.  
-                    </p>
-                </div>
-
-                <div class="vertical-line"></div> <!-- Vertical Divider -->
-
-                <div class="col-md experience-card">
-                    <h3>University & Personal Projects</h3>
-                    <p>
-                        Beyond my professional experience, I have engaged in hands-on projects that further developed my engineering skill set. 
-                        In the Engineering Strategies and Practice II course at the University of Toronto, I collaborated with a team to develop 
-                        a functional prototype for a real-world client, ensuring clear documentation and effective communication throughout the design process.  
-                    </p>
-
-                    <p>
-                        Additionally, I have applied my skills to personal projects such as designing and building a miniature pneumatic engine, 
-                        crafting custom wooden furniture, and contributing to Formula SAE.  
-                    </p>
-
-                    <p>
-                        These experiences reinforce my passion for engineering and my ability to turn theoretical knowledge into practical, innovative solutions.  
-                    </p>
-                </div>
+            <div class="col-xs center-xs">
+              <img src="Python-logo-notext.svg.png" class="icon" /><br />
+              <span>Python</span>
             </div>
-        </div>
-    </section>
-</div>
-
-<div class="certificate-container">
-    <div class="hover-outer-box">
-        <img src="Certificate_C-JZ9GAWDLVT.jpg" class="medium-image">
-        <div class="hover-inner-box">
-            <div class="hover-content">
-                <h3>
-                    <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-JZ9GAWDLVT">
-                        <button class="verify-button">Verify Certificate</button>
-                    </a>
-                </h3>
-                <p class="highlight">Successfully Completed the SolidWorks Associate Exam</p>
+            <div class="col-xs center-xs">
+              <img src="autocad-logo-png_seeklogo-482394.png" class="icon" /><br />
+              <span>AutoCAD</span>
             </div>
-        </div>
+            <div class="col-xs center-xs">
+              <img src="Microsoft_Office_logo_(2013–2019).svg.png" class="icon" /><br />
+              <span>Microsoft Office Suite</span>
+            </div>
+            <div class="col-xs center-xs">
+              <img src="DSY.PA-35ee07a0.png" class="icon" /><br />
+              <span>SolidWorks</span>
+            </div>
+            <div class="col-xs center-xs">
+              <img src="Onshape_logo_full.png" class="icon" /><br />
+              <span>Onshape</span>
+            </div>
+          </div>
+
+          <br />
+          <br />
+<!--
+  EXPERIENCE CARDS SECTION
+  Three columns: technical skills, internship insights, and university/personal project work.
+  Each card communicates an aspect of engineering experience.
+-->
+<div class="row experience-section">
+    <!-- Column 1: Technical Skills -->
+    <div class="col-md experience-card">
+      <h3>Technical Skills &amp; Engineering Approach</h3>
+      <p>
+        My engineering skill set encompasses a blend of analytical problem-solving, programming, and computer-aided design.
+        I have developed proficiency in MATLAB and Python for data analysis and engineering simulations, allowing me to model
+        and optimize complex systems.
+      </p>
+      <p>
+        Additionally, I am skilled in AutoCAD, SolidWorks, and Onshape, which I have used to design and prototype mechanical components.
+        My experience with Microsoft Office Suite supports effective documentation, data management, and reporting.
+      </p>
+      <p>
+        Whether I’m analyzing datasets, refining CAD models, or troubleshooting design issues,
+        I approach challenges with a methodical and results-driven mindset.
+      </p>
     </div>
-</div>
-
-<br>
-<br>
+  
+    <div class="vertical-line"></div> <!-- Divider Between Cards -->
+  
+    <!-- Column 2: Internship Experience -->
+    <div class="col-md experience-card">
+      <h3>Internship Experience &amp; Key Takeaways</h3>
+      <p>
+        My internships at AGS Automotive Systems and Parts Apart have provided me with hands-on experience in both manufacturing
+        engineering and product design.
+      </p>
+      <p>
+        At AGS, I focused on optimizing production processes, improving efficiency by 15%, and gaining a deep understanding
+        of how design decisions impact large-scale manufacturing.
+      </p>
+      <p>
+        At Parts Apart, I was immersed in the full product development cycle, from market research to prototyping, refining CAD models,
+        and collaborating closely with stakeholders.
+      </p>
+      <p>
+        Together, these experiences have strengthened my ability to bridge design and real-world application,
+        balance innovation with feasibility, and work within cross-functional teams to develop practical engineering solutions.
+      </p>
+    </div>
+  
+    <div class="vertical-line"></div> <!-- Divider Between Cards -->
+  
+    <!-- Column 3: University and Personal Projects -->
+    <div class="col-md experience-card">
+      <h3>University &amp; Personal Projects</h3>
+      <p>
+        Beyond my professional experience, I have engaged in hands-on projects that further developed my engineering skill set.
+        In the Engineering Strategies and Practice II course at the University of Toronto, I collaborated with a team to develop
+        a functional prototype for a real-world client, ensuring clear documentation and effective communication throughout the design process.
+      </p>
+      <p>
+        Additionally, I have applied my skills to personal projects such as designing and building a miniature pneumatic engine,
+        crafting custom wooden furniture, and contributing to Formula SAE.
+      </p>
+      <p>
+        These experiences reinforce my passion for engineering and my ability to turn theoretical knowledge into practical, innovative solutions.
+      </p>
+    </div>
+  </div>
+  </div>
+  </section>
+  
+  <!-- CERTIFICATION HIGHLIGHT -->
+  <div class="certificate-container">
+    <div class="hover-outer-box">
+      <img src="Certificate_C-JZ9GAWDLVT.jpg" class="medium-image" />
+      <div class="hover-inner-box">
+        <div class="hover-content">
+          <h3>
+            <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&amp;i=C-JZ9GAWDLVT">
+              <button class="verify-button">Verify Certificate</button>
+            </a>
+          </h3>
+          <p class="highlight">Successfully Completed the SolidWorks Associate Exam</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br />
+  <br />
+  
+<!-- PROJECTS SECTION: Sketchfab Model + CTA -->
 <div class="centered-container" id="Projects">
-    <br>
-    <br>
+    <br />
+    <br />
     <h1 class="hero-text">Projects</h1>
     <p>Various projects I have worked on throughout high school and university</p>
-    <br>
-    <iframe scrolling='no' frameborder='0' allowfullscreen='true' src="https://sketchfab.com/models/b3c00bda19a141658cb5d8df49547df0/embed?autospin=1&autostart=1&ui_theme=dark" name='PreviewFrame3D' id='PreviewFrame3D' width='1000' height='500' style="border-radius: 20px;"></iframe><br/>
-    <a href='https://www.3dcontentcentral.com/download-model.aspx?catalogid=171&id=1895775'>
-        <button class="light" style="border-radius: 12px;">Full Gearbox Assembly</button>
+    <br />
+    <iframe
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      src="https://sketchfab.com/models/b3c00bda19a141658cb5d8df49547df0/embed?autospin=1&amp;autostart=1&amp;ui_theme=dark"
+      name="PreviewFrame3D"
+      id="PreviewFrame3D"
+      width="1000"
+      height="500"
+      style="border-radius: 20px;"
+    ></iframe><br />
+    <a href="https://www.3dcontentcentral.com/download-model.aspx?catalogid=171&amp;id=1895775">
+      <button class="light" style="border-radius: 12px;">Full Gearbox Assembly</button>
     </a>
-    
-    <!-- Arrow and text for "See all projects" -->
+  
+    <!-- See All Projects Arrow CTA -->
     <div style="text-align: center; margin-top: 30px;">
-        <a style="font-size: 20px; color: #ffffff; text-decoration: none; font-weight: bold;">See All Projects</a>
-        <!-- Animated arrow -->
-        <span class="dynamic-arrow" style="font-size: 50px; display: block; margin-top: 10px;">↓</span>
-        <br>
+      <a style="font-size: 20px; color: #ffffff; text-decoration: none; font-weight: bold;">See All Projects</a>
+      <span class="dynamic-arrow" style="font-size: 50px; display: block; margin-top: 10px;">↓</span>
+      <br />
     </div>
-</div>
-
-<style>
+  </div>
+  
+  <!-- Animated Arrow Styling -->
+  <style>
     .dynamic-arrow {
-        display: inline-block;
-        animation: bounce 1.5s infinite;
+      display: inline-block;
+      animation: bounce 1.5s infinite;
     }
-
+  
     @keyframes bounce {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(10px); }
-        100% { transform: translateY(0); }
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
-</style>
+  </style>
+  
+<!-- COLLABORATIVE PROJECTS SECTION -->
+<div class="padding-small">
+    <br />
+    <h1 class="hero-text">Collaborative Projects</h1>
+    <div class="row margin-bottom-small">
+      <!-- Dissections Project -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="BeFunky-collage.jpg" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Dissections - MIE243</h3>
+              <p>Throughout MIE243, various "Dissections" were conducted. These involved being given a mechanical device, taking it apart, and then modelling it in Solidworks. The first dissection was a hand-draft of a Ball Bearing.</p>
+              <p>The rest are as follows:</p>
+              <p>2: A Jigsaw</p>
+              <p>3: A Can Opener</p>
+              <p>4: A Screwdriver</p>
+              <p>5 and 6: Modelling A Gearbox from Scratch (12:1 Parallel)</p>
+              <a href="All Dissections  (1).zip" download>
+                <button>Download A Zip of Every CAD + Drawings</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- CNC Machine Project -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="Safeimagekit-resized-img (1).png" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Pick and Place CNC Machine Project</h3>
+              <p>The Term Project for MIE243 (Mechanical Engineering Design) was to create a CNC Machine and document the process. We had 2 Check-Ins with the Project TA, and conducted various meetings to discuss things like Candidate Designs and Project Requirements.</p>
+              <a href="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing" download>
+                <button>Download A Zip of Our Final Project</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Experimental Design Device -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="IMG_1396.jpg" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Device for Experimental Design Course</h3>
+              <p>This Project was designed for a Master's Professor teaching Six Sigma for Engineers. We were tasked with creating a multivariate device to be used in the classroom for a portion of the course he teaches.</p>
+              <p>Pictured is my team members testing the device.</p>
+              <a href="Project Final Presentation.pdf" download>
+                <button>Download The Project's Final Presentation</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- PERSONAL PROJECTS SECTION -->
+    <br />
+    <h1 class="hero-text">Personal Projects</h1>
+    <div class="row margin-bottom-small">
+      <!-- Coffee Table -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="B4AFA40E-2056-4A0F-ACA9-55C6C9D88196 (2).jpg" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Coffee Table</h3>
+              <p>Created during my sophomore year of high school. I learned a lot about drafting, machining, and construction over the duration of creating this table. I learned about how you go from a plank of wood into a full creation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Storage Box -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="FF599614-2E91-43A2-9EB4-4E713CBFD11B (1).jpg" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Storage/Jewelry Box</h3>
+              <p>Created during my sophomore year of high school. This project taught me about how important measurements are, as every part of this had to fit together perfectly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Short Story -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="Safeimagekit-resized-img.png" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>My Own Short Story</h3>
+              <p>Created an ebook of a short story I wrote for a creative writing scholarship. Click download for the epub file.</p>
+              <a href="Snow Falling Soundlessly at Night - Mohid Tahir.epub" download>
+                <button>Download</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row margin-bottom-small">
+      <!-- Pneumatic Engine -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="4AD6FA9E-2684-4802-8414-062DA555FD90.JPG" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Pneumatic Engine</h3>
+              <p>Created during a machining course at George Brown College. This felt like my very first mechanical project. I learned more about machining metals, as all of my prior experience was with wood. I learned how to use various machines like a lathe, and overall I think this project shows my commitment to learning even outside of the University of Toronto environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Birdhouse -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="Untitled design.png" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>Birdhouse</h3>
+              <p>Created in my freshman year of high school. This project was my first real entry into the world of construction. I even have it hung in my backyard. This photo shows what it would look like prior to and after the paint job.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- CO2 Gas Car -->
+      <div class="col-md-4">
+        <div class="hover-outer-box">
+          <img src="B5455E7A-E6D0-4EF8-A958-7584C872AA2D.JPG" />
+          <div class="hover-inner-box">
+            <div class="hover-content">
+              <h3>CO2 Gas Car</h3>
+              <p>Created in my freshman year of high school. This was my first project ever, and it taught me a lot about aerodynamics, more specifically how the shape, size and weight of the car affect speed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- LINKEDIN CTA SECTION -->
+  <section class="cta full-width-bg">
+    <div class="row center-xs">
+      <div class="col-md">
+        <img src="displaying-19-gallery-images-for-linkedin-logo-png-25.png" class="small-image" />
+        <h2>Follow My LinkedIn</h2>
+        <p>You can find a deeper dive into my career path and various skills on my LinkedIn Profile</p>
+        <a href="https://www.linkedin.com/in/mohid-tahir">
+          <button class="light">LinkedIn</button>
+        </a>
+      </div>
+    </div>
+  </section>
+<!--
+  ABOUT ME SECTION
+  Split into three vertical columns: Journey, Focus Areas, and Creative Pursuits.
+  Highlights academic path, specialization, and artistic interests.
+-->
+<main>
+    <section class="intro" id="About-Me">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h2 class="hero-text">About Me</h2>
+          </div>
+        </div>
+  
+        <div class="row about-me-section">
+          <!-- Column 1: My Journey -->
+          <div class="col-md about-me-experience-card">
+            <h3>My Journey</h3>
+            <p>
+              Currently, I am a student at the University of Toronto pursuing a Bachelor's of Applied Science and Engineering through the Mechanical Engineering program.
+              My time within the program has allowed me to develop various skills that will aid me in engineering-related careers.
+              I have also obtained plenty of relevant experience working with others through volunteering and high school involvement.
+              I would love to make new connections, and gain more experience in the field I am pursuing.
+            </p>
+          </div>
+  
+          <div class="about-me-vertical-line"></div> <!-- Divider -->
+  
+          <!-- Column 2: Focus Areas -->
+          <div class="col-md about-me-experience-card">
+            <h3>Focus Areas</h3>
+            <p>
+              I am pursuing the Mechatronics and Manufacturing streams within Mechanical Engineering.
+              My work with SolidWorks and construction clearly gives me valuable insight into what these two paths may look like.
+              My work in Engineering Strategies and Practice taught me a lot about documentation while my part-time work at Dairy Queen gave me a glimpse into industry and business,
+              which is useful in my pursuit of a business minor.
+            </p>
+          </div>
+  
+          <div class="about-me-vertical-line"></div> <!-- Divider -->
+  
+          <!-- Column 3: Creative Pursuits -->
+          <div class="col-md about-me-experience-card">
+            <h3>Creative Pursuits</h3>
+            <p>
+              Outside of my engineering-related experience, I have a love for photography, and it is one of my favourite creative outlets.
+              Throughout this portfolio, you can see works from both parts of my world, my best photos and my best projects.
+              I also enjoy creative writing, cinematography, and design. I have shared three of my favourite pieces below.
+            </p>
+          </div>
+        </div>
+        <br />
+  
+<!-- Photography Gallery Section -->
+<div class="row team center-xs">
+    <!-- Photo 1 -->
+    <div class="col-md" style="position: relative; left: -12.5px;">
+      <div class="hover-outer-box">
+        <img src="10F097C2-2DAC-47CE-BD7F-7AEEBA5F2724.JPG" alt="Head in the Clouds" />
+        <div class="hover-inner-box">
+          <div class="hover-content">
+            <h3>"Head in the Clouds"</h3>
+            <p>Taken by me, Modeled by me.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="col-md">
+      <div class="hover-outer-box">
+        <img src="DA3BB6CA-04B8-45EE-A242-69974CF58059.JPG" alt="Time is Ticking" />
+        <div class="hover-inner-box">
+          <div class="hover-content">
+            <h3>"Time is Ticking"</h3>
+            <p>Extreme focus on one particular subject.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="col-md" style="position: relative; left: 12.5px;">
+      <div class="hover-outer-box">
+        <img src="449AF7CD-E85C-49DA-8448-A156CCB38C39.jpg" alt="Jack of all Trades" />
+        <div class="hover-inner-box">
+          <div class="hover-content">
+            <h3>"Jack of all Trades"</h3>
+            <p>A photo relying on symbolism.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-            <div class="padding-small">
-              <br>
-                <h1 class="hero-text">Collaborative Projects</h1>
-                <div class="row margin-bottom-small">
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="BeFunky-collage.jpg">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Dissections - MIE243</h3>
-                                    <p>Throughout MIE243, various "Dissections" were conducted. These involved being given a mechanical device, taking it apart, and then modelling it in Solidworks. The first dissection was a hand-draft of a Ball Bearing. <p>
-                                    <p>The rest are as follows:<p>
-                                    <p>2: A Jigsaw</p>
-                                    <p>3: A Can Opener</p>
-                                    <p>4: A Screwdriver</p>
-                                    <p>5 and 6: Modelling A Gearbox from Scratch (12:1 Parallel)</p></p>
-                                    <a href="All Dissections  (1).zip" download>
-                                        <button>Download A Zip of Every CAD + Drawings</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="Safeimagekit-resized-img (1).png">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Pick and Place CNC Machine Project</h3>
-                                    <p>The Term Project for MIE243 (Mechanical Engineering Design) was to create a CNC Machine and document the process. We had 2 Check-Ins with the Project TA, and conducted various meetings to discuss things like Candidate Designs and Project Requirements. Everything can be downloaded from the button below.</p>
-                                    <a href="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing" download>
-                                        <button>Download A Zip of Our Final Project</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="IMG_1396.jpg">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Device for Experimental Design Course</h3>
-                                    <p>This Project was designed for a Master's Professor teaching Six Sigma for Engineers. We were tasked with creating a multivariate device to be used in the classroom for a portion of the course he teaches. You can find our full description of the project through downloading the slides.</p>
-                                    <p>Pictured is my team members testing the device.</p>
-                                    <a href="Project Final Presentation.pdf" download>
-                                        <button>Download The Project's Final Presentation</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <h1 class="hero-text">Personal Projects</h1>
-                <div class="row margin-bottom-small">
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="B4AFA40E-2056-4A0F-ACA9-55C6C9D88196 (2).jpg">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Coffee Table</h3>
-                                    <p>Created during my sophomore year of high school. I learned a lot about drafting, machining, and construction over the duration of creating this table. I learned about how you go from a plank of wood into a full creation.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="FF599614-2E91-43A2-9EB4-4E713CBFD11B (1).jpg">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Storage/Jewelry Box</h3>
-                                    <p>Created during my sophomore year of high school. This project taught me about how important measurements are, as every part of this had to fit together perfectly.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="Safeimagekit-resized-img.png">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>My Own Short Story</h3>
-                                    <p>Created an ebook of a short story I wrote for a creative writing scholarship. Click download for the epub file.</p>
-                                    <a href="Snow Falling Soundlessly at Night - Mohid Tahir.epub" download>
-                                        <button>Download</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row margin-bottom-small">
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="4AD6FA9E-2684-4802-8414-062DA555FD90.JPG">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Pneumatic Engine</h3>
-                                    <p>Created during a machining course at George Brown College. This felt like my very first mechanical project. I learned more about machining metals, as all of my prior experience was with wood. I learned how to use various machines like a lathe, and overall I think this project shows my commitment to learning even outside of the University of Toronto environment.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="Untitled design.png" >
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>Birdhouse</h3>
-                                    <p>Created in my freshman year of high school. This project was my first real entry into the world of construction. I even have it hung in my backyard. This photo shows what it would look like prior to and after the paint job.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="hover-outer-box">
-                            <img src="B5455E7A-E6D0-4EF8-A958-7584C872AA2D.JPG">
-                            <div class="hover-inner-box">
-                                <div class="hover-content">
-                                    <h3>CO2 Gas Car</h3>
-                                    <p>Created in my freshman year of high school. This was my first project ever, and it taught me a lot about aerodynamics, more specifically how the shape, size and weight of the car affect speed.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="cta full-width-bg">
-                <div class="row center-xs">
-                    <div class="col-md">
-                        <img src="displaying-19-gallery-images-for-linkedin-logo-png-25.png" class="small-image">
-                        <h2>Follow My LinkedIn</h2>
-                        <p>You can find a deeper dive into my career path and various skills on my LinkedIn Profile</p>
-                        <a href="https://www.linkedin.com/in/mohid-tahir"><button class="light">LinkedIn</button></a>
-                    </div>
-                </div>
-            </section>
-            
-            <main>
-                <section class="intro" id="About-Me">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md">
-                                <h2 class="hero-text">About Me</h2>
-                            </div>
-                        </div>
-                        <div class="row about-me-section">
-                            <!-- First Column - Paragraph 1 -->
-                            <div class="col-md about-me-experience-card">
-                                <h3>My Journey</h3>
-                                <p>
-                                    Currently, I am a student at the University of Toronto pursuing a Bachelor's of Applied Science and Engineering through the Mechanical Engineering program. My time within the program has allowed me to develop various skills that will aid me in engineering-related careers. I have also obtained plenty of relevant experience working with others through volunteering and high school involvement. I would love to make new connections, and gain more experience in the field I am pursuing.
-                                </p>
-                            </div>
-            
-                            <div class="about-me-vertical-line"></div> <!-- Vertical Divider -->
-            
-                            <!-- Second Column - Paragraph 2 -->
-                            <div class="col-md about-me-experience-card">
-                                <h3>Focus Areas</h3>
-                                <p>
-                                    I am pursuing the Mechatronics and Manufacturing streams within Mechanical Engineering. My work with Solidworks and construction clearly gives me valuable insight into what these two paths may look like. My work in Engineering Strategies and Practice taught me a lot about documentation while my part-time work at Dairy Queen gave me a glimpse into industry and business, which is useful in my pursuit of a business minor.
-                                </p>
-                            </div>
-            
-                            <div class="about-me-vertical-line"></div> <!-- Vertical Divider -->
-            
-                            <!-- Third Column - Paragraph 3 -->
-                            <div class="col-md about-me-experience-card">
-                                <h3>Creative Pursuits</h3>
-                                <p>
-                                    Outside of my engineering-related experience, I have a love for photography, and it is one of my favourite creative outlets. Throughout this portfolio, you can see works from both parts of my world, my best photos and my best projects. I also enjoy creative writing, cinematography, and design. I have shared three of my favourite pieces below.
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Photography Section -->
-                        <div class="row team center-xs">
-                            <div class="col-md"style="position: relative; left: -12.5px;">
-                                <div class="hover-outer-box">
-                                    <img src="10F097C2-2DAC-47CE-BD7F-7AEEBA5F2724.JPG" alt="Head in the Clouds">
-                                    <div class="hover-inner-box">
-                                        <div class="hover-content">
-                                            <h3>"Head in the Clouds"</h3>
-                                            <p>Taken by me, Modeled by me.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="hover-outer-box">
-                                    <img src="DA3BB6CA-04B8-45EE-A242-69974CF58059.JPG" alt="Time is Ticking">
-                                    <div class="hover-inner-box">
-                                        <div class="hover-content">
-                                            <h3>"Time is Ticking"</h3>
-                                            <p>Extreme focus on one particular subject.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md" style="position: relative; left: 12.5px;">
-                                <div class="hover-outer-box">
-                                    <img src="449AF7CD-E85C-49DA-8448-A156CCB38C39.jpg" alt="Jack of all Trades">
-                                    <div class="hover-inner-box">
-                                        <div class="hover-content">
-                                            <h3>"Jack of all Trades"</h3>
-                                            <p>A photo relying on symbolism.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            
-            <section class="photo-promo middle-xs">
-                <div class="row middle-md">
-                    <div class="col-md-8">
-                        <h2 style="color: white;">For more photography...</h2>
-                        <p style="color: white;">Unsplash is my main creative platform for sharing my photography with the world. Take a look there if you'd like.</p>
-                        <a href="https://unsplash.com/@mohidt">
-                            <button class="light">Unsplash</button>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="1-VnKoValwGK3-d1bZhD6sVA.jpeg" alt="Photography preview">
-                    </div>
-                </div>
-            </section>
+</section>
+</main>
+
+<!-- PHOTO PROMO CTA -->
+<section class="photo-promo middle-xs">
+<div class="row middle-md">
+<div class="col-md-8">
+  <h2 style="color: white;">For more photography...</h2>
+  <p style="color: white;">
+    Unsplash is my main creative platform for sharing my photography with the world. Take a look there if you'd like.
+  </p>
+  <a href="https://unsplash.com/@mohidt">
+    <button class="light">Unsplash</button>
+  </a>
+</div>
+<div class="col-md-4">
+  <img src="1-VnKoValwGK3-d1bZhD6sVA.jpeg" alt="Photography preview" />
+</div>
+</div>
+</section>
             
             
+<!-- TESTIMONIALS SECTION -->
 <section class="blurbs" id="Testimonials">
     <div class="container">
-        <div class="row">
-            <div class="col-md">
-                <h2 class="hero-text">Testimonials</h2>
-            </div>
+      <div class="row">
+        <div class="col-md">
+          <h2 class="hero-text">Testimonials</h2>
         </div>
-        <div class="row testimonial-section">
-            <!-- First Column - Testimonial 1 -->
-            <div class="col-md about-me-experience-card">
-                <img src="1095867-200.png" class="icon">
-                <h3>Second Year Term Project Group Member</h3>
-                <p>"Mohid, you did a great job on check-in #2. I saw that you listened to my previous comment and did an excellent job on the presentation, and I appreciate your mindful application of feedback. I just wanted to mention that you are an essential part of this team and have more self-confidence; please easily say your ideas and comment to the rest of the group; there is no wrong answer, and we can use your thoughts more in this project. Overall I’m lucky to have you on my team."</p>    
-            </div>
-
-            <div class="testimonial-vertical-line"></div> <!-- Vertical Divider -->
-
-            <!-- Second Column - Testimonial 2 -->
-            <div class="col-md about-me-experience-card">
-                <img src="1095867-200.png" class="icon">
-                <h3>Mechanical Engineering Design Course Team Member</h3>
-                <p>"Mohid has displayed a strong work ethic and reliability in this group. He has taken the initiative to delegate responsibilities on numerous occasions. One thing that all the team members (including myself) can work on for the future is ensuring more clear and frequent communication between one another."</p>
-            </div>
-
-            <div class="testimonial-vertical-line"></div> <!-- Vertical Divider -->
-
-            <!-- Third Column - Testimonial 3 -->
-            <div class="col-md about-me-experience-card">
-                <img src="1095867-200.png" class="icon">
-                <h3>Second Year Term Project Group Member</h3>
-                <p>"Mohid has shown extraordinary communication skills and reliability throughout this project. He has done a good job of helping the group meet important deadlines and organize our tasks. In the future, Mohid can continue to contribute to the group in the same way that he has been doing so, as his contributions are deeply valued by our team."</p>
-            </div>
+      </div>
+  
+      <div class="row testimonial-section">
+        <!-- Testimonial 1 -->
+        <div class="col-md about-me-experience-card">
+          <img src="1095867-200.png" class="icon" />
+          <h3>Second Year Term Project Group Member</h3>
+          <p>
+            "Mohid, you did a great job on check-in #2. I saw that you listened to my previous comment and did an excellent job on the presentation,
+            and I appreciate your mindful application of feedback. I just wanted to mention that you are an essential part of this team and have more self-confidence;
+            please easily say your ideas and comment to the rest of the group; there is no wrong answer, and we can use your thoughts more in this project.
+            Overall I’m lucky to have you on my team."
+          </p>
         </div>
+  
+        <div class="testimonial-vertical-line"></div> <!-- Divider -->
+  
+        <!-- Testimonial 2 -->
+        <div class="col-md about-me-experience-card">
+          <img src="1095867-200.png" class="icon" />
+          <h3>Mechanical Engineering Design Course Team Member</h3>
+          <p>
+            "Mohid has displayed a strong work ethic and reliability in this group.
+            He has taken the initiative to delegate responsibilities on numerous occasions.
+            One thing that all the team members (including myself) can work on for the future
+            is ensuring more clear and frequent communication between one another."
+          </p>
+        </div>
+  
+        <div class="testimonial-vertical-line"></div> <!-- Divider -->
+  
+        <!-- Testimonial 3 -->
+        <div class="col-md about-me-experience-card">
+          <img src="1095867-200.png" class="icon" />
+          <h3>Second Year Term Project Group Member</h3>
+          <p>
+            "Mohid has shown extraordinary communication skills and reliability throughout this project.
+            He has done a good job of helping the group meet important deadlines and organize our tasks.
+            In the future, Mohid can continue to contribute to the group in the same way that he has been doing so,
+            as his contributions are deeply valued by our team."
+          </p>
+        </div>
+      </div>
     </div>
-</section>
-                <section class="cta" id="Contact">
-                    <div class="container">
-                        <div class="row center-xs">
-                            <div class="col-md">
-                                <br>
-                                <h2 class="hero-text">Contact Information</h2>
-                                <div class="col-md">University Email: <br/><a href="mailto:mohid.tahir@mail.utoronto.ca">mohid.tahir@mail.utoronto.ca</a></div>
-                                <br>
-                                <div class="col-md">Work Email: <br/><a href="mailto:mohidt@outlook.com">mohidt@outlook.com</a></div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-left">
-                <br>
-                <br>
-                    <img src="Screenshot_2023-08-11_002909-removebg-preview.png" class="margin-bottom" style="max-width: 350px;">
-                </div>
-                <div class="col-md-6 text-right">
-                    <p style="color: black;">This website was created with the help of a template created for free commercial use by Andreas Lautenschlager  © 2019..</p><br>
-                    <p style="color: black;">Follow him on Twitter here: 
-                        <a href="https://twitter.com/lautenschlagera" target="_blank"> 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #38A1F3;">
-                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                            </svg>
-                        </a>
-                    </p>
-                    <br>
-                    <p style="color: black;">More free downloads under <a href="https://lautenschlager.de" target="_blank" rel="noopener">lautenschlager.de</a></p>
-                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
-                        <img alt="Creative Commons License" style="border-width:0; max-width: 60px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
-                    </a><br><br>
-                    <p style="color: black;">This work is liscensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
-                    <br>
-                    <br>
-                    <p style="color: black;">I thank the following people for their contribution: <a href="credits.txt">Credits</a>.</p>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
+  </section>
+<!-- CONTACT SECTION -->
+<section class="cta" id="Contact" style="margin-bottom: 0; padding-bottom: 5;">
+    <div class="container">
+      <div class="row center-xs">
+        <div class="col-md">
+          <h2 class="hero-text">Contact Information</h2>
+          <div class="col-md">
+            University Email: <br />
+            <a href="mailto:mohid.tahir@mail.utoronto.ca">mohid.tahir@mail.utoronto.ca</a>
+          </div>
+          <br />
+          <div class="col-md">
+            Work Email: <br />
+            <a href="mailto:mohidt@outlook.com">mohidt@outlook.com</a>
+          </div>
         </div>
-    </footer>
-
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/script.js" defer></script>
-    </body>
-    </html>
-    
+      </div>
+    </div>
+  </section>
+                
+<!-- FOOTER SECTION (Minimized for compactness) -->
+<footer style="margin-top: 0; padding-top: 0;">
+    <div class="container">
+      <div class="row">
+        <!-- Left Side: Logo -->
+        <div class="col-md-6 text-left">
+            <br>
+          <img src="Screenshot_2023-08-11_002909-removebg-preview.png" style="max-width: 200px; margin-top: 10px; margin-bottom: 0;" />
+        </div>
+  
+        <!-- Right Side: Attribution and External Links -->
+        <div class="col-md-6 text-right" style="font-size: 0.9em;">
+          <p style="color: black; margin: 4px 0;">
+            <br>
+            Template by Andreas Lautenschlager © 2019 — <a href="https://lautenschlager.de" target="_blank" rel="noopener">lautenschlager.de</a>
+          </p>
+          <p style="color: black; margin: 4px 0;">
+            <a href="https://twitter.com/lautenschlagera" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
+              @lautenschlagera
+            </a>
+          </p>
+          <p style="color: black; margin: 4px 0;">
+            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+              <img alt="Creative Commons License" style="border-width: 0; max-width: 50px; vertical-align: middle;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            Licensed under
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+          </p>
+          <p style="color: black; margin: 0;">
+            <a href="credits.txt">Credits</a>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- SCRIPTS -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/script.js" defer></script>
+  </body>
+  </html>
