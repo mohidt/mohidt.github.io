@@ -825,4 +825,10 @@ html {
         }
       }
       
+      @media (max-width: 768px) {
+        .testimonial-section {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
       
