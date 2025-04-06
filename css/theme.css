@@ -280,6 +280,12 @@ html {
       }
   }
   
+  @media (max-width: 768px) {
+    .hover-outer-box {
+      margin-bottom: 24px;
+    }
+  }
+  
   
   /* Serivces */
   
@@ -752,3 +758,16 @@ html {
     color: #222;
     }
   
+    @media (min-width: 768px) {
+        .photo-nudge-left {
+          position: relative;
+          left: -12.5px;
+        }
+      
+        .photo-nudge-right {
+          position: relative;
+          left: 12.5px;
+        }
+      }
+
+      
