@@ -781,4 +781,14 @@ html {
         }
       }
 
+      @media (max-width: 768px) {
+        .row > .col-md {
+          margin-bottom: 20px;
+        }
+      
+        /* Optional: Remove margin from last column in the group if needed */
+        .row > .col-md:last-child {
+          margin-bottom: 0;
+        }
+      }
       
