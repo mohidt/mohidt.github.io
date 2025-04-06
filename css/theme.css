@@ -787,32 +787,4 @@ html {
         }
       }
       
-      @media (max-width: 768px) {
-        .row > .col-md {
-          width: 100%;
-        }
       
-        .hover-outer-box {
-          margin-bottom: 20px;
-        }
-      
-        /* Optional: removes extra space after the last card in a section */
-        .row > .col-md:last-child .hover-outer-box {
-          margin-bottom: 0;
-        }
-      }
-      @media (max-width: 768px) {
-        .testimonial-vertical-line {
-          display: none;
-        }
-      
-        .testimonial-section {
-          flex-direction: column;
-          row-gap: 20px; /* even gap between all testimonials */
-        }
-      
-        .testimonial-section .col-md {
-          width: 100%;
-        }
-      }
-            
