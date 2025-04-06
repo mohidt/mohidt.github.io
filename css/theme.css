@@ -280,11 +280,6 @@ html {
       }
   }
   
-  @media (max-width: 768px) {
-    .hover-outer-box {
-      margin-bottom: 24px;
-    }
-  }
   
   
   /* Serivces */
