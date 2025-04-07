@@ -512,42 +512,35 @@ html {
     }
   }
   
-/* Engineering Experience – Desktop */
-.experience-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px; /* Matches about-me and testimonials */
-}
-
-/* Card Layout */
-.experience-card {
-  flex: 1 1 0; /* Even columns */
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  text-align: left;
-}
-
-/* Responsive – Mobile */
-@media (max-width: 768px) {
   .experience-section {
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 20px; /* Adds space between sections */
   }
-
+  
   .experience-card {
-    width: 100%;
+      flex: 1;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      text-align: left;
   }
-
-  .vertical-line {
-    display: none;
+  @media (max-width: 768px) {
+    .experience-section {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .experience-card {
+      width: 100%;
+    }
+  
+    .vertical-line {
+      display: none;
+    }
   }
-}
-
+  
 
   
   
@@ -654,42 +647,32 @@ html {
       flex-wrap: wrap; /* Allows wrapping on smaller screens */
   }
   
-/* About Me Section – Desktop */
-.about-me-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px; /* Matches testimonial and experience spacing */
-}
-
-/* Card Layout */
-.about-me-experience-card {
-  flex: 1 1 0; /* Evenly divide across 3 columns */
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 10px;
-  text-align: left;
-}
-
-/* Responsive – Mobile */
-@media (max-width: 768px) {
-  .about-me-section {
-    flex-direction: column;
-    gap: 20px; /* Uniform spacing */
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
+  /* Default (Desktop) Layout */
   .about-me-experience-card {
-    width: 100%;
+      flex: 1;
+      min-width: 10%; /* Ensures three columns layout */
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      text-align: left;
   }
-
-  .about-me-vertical-line {
-    display: none;
+  
+  
+  /* Responsive Layout for Mobile */
+  @media (max-width: 768px) {
+      .about-me-section {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .about-me-experience-card {
+          min-width: 100%; /* Stacks cards vertically */
+      }
+  
+      .about-me-vertical-line {
+          display: none; /* Hide dividers on mobile */
+      }
   }
-}
-
   @media (max-width: 1040px) {
       .team .col-md {
           position: static !important; /* Removes left/right shift */
@@ -746,56 +729,36 @@ html {
       --divider-color: #ccc;
       --icon-size: 40px;
   }
-/* Desktop layout: horizontal cards with spacing */
-.testimonial-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 40px;
-}
-
-.testimonial-card {
-  flex: 1 1 0; /* or use 0 for equal width with auto sizing */
-  display: flex;
-}
-
-/* Reduce icon size only for testimonials */
-.testimonial-card .icon {
-  width: 40px;
-  height: 40px;
-}
-
-.testimonial-card .about-me-experience-card {
-  width: 100%;
-  margin-bottom: 0;
-}
-/* Mobile layout: stack cards with consistent spacing */
-@media (max-width: 768px) {
+  
+  /* Testimonials Section */
   .testimonial-section {
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    gap: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: var(--spacing-medium); /* Keeps spacing between testimonial cards */
+      flex-wrap: wrap;
   }
-
-  .testimonial-card {
-    flex: 1 1 100%;
+  
+  /* Mobile Layout: Stack testimonials vertically */
+  @media (max-width: 768px) {
+      .testimonial-section {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .testimonial-card {
+          min-width: 100%;
+      }
   }
-
-  .testimonial-section .about-me-experience-card {
-    margin-bottom: 0;
+  
+  .about-me-experience-card .icon {
+      width: var(--icon-size); /* Use same icon size variable */
+      height: var(--icon-size); /* Use same icon size variable */
+      border-radius: 50%; /* Rounded shape */
+      margin-bottom: var(--spacing-small); /* Consistent margin */
+      object-fit: cover; /* Ensures the image is centered without distortion */
   }
-
-  .testimonial-vertical-line {
-    display: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-
-
+  
   body {
       overflow-x: hidden; /* Prevent horizontal scrolling */
       font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -829,6 +792,45 @@ html {
         }
       }
 
+      @media (max-width: 768px) {
+        .testimonial-vertical-line {
+          display: none;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .testimonial-section .about-me-experience-card {
+          margin-bottom: 20px;
+        }
+      
+        .testimonial-section .about-me-experience-card:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .testimonial-vertical-line {
+          display: none !important;
+          height: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+      
+        .testimonial-section .about-me-experience-card {
+          margin-bottom: 0px;
+        }
+      
+        .testimonial-section .about-me-experience-card:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      
+      @media (max-width: 768px) {
+  .testimonial-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 @media (max-width: 768px) {
   /* Fix too much horizontal padding */
@@ -888,5 +890,3 @@ html {
 #Projects p {
   margin-top: 0;
 }
-
-
