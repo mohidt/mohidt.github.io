@@ -739,26 +739,27 @@ html {
       flex-wrap: wrap;
   }
   
-  /* Mobile Layout: Stack testimonials vertically */
-  @media (max-width: 768px) {
-      .testimonial-section {
-          flex-direction: column;
-          align-items: center;
-      }
-  
-      .testimonial-card {
-          min-width: 100%;
-      }
+/* Mobile Layout: Stack testimonials vertically */
+@media (max-width: 768px) {
+  .testimonial-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px; /* ✅ Matches About Me / Experience section gaps */
+      padding-left: 1rem;
+      padding-right: 1rem;
   }
-  
-  .about-me-experience-card .icon {
-      width: var(--icon-size); /* Use same icon size variable */
-      height: var(--icon-size); /* Use same icon size variable */
-      border-radius: 50%; /* Rounded shape */
-      margin-bottom: var(--spacing-small); /* Consistent margin */
-      object-fit: cover; /* Ensures the image is centered without distortion */
+
+  .testimonial-card {
+      min-width: 100%;
   }
-  
+
+  /* Remove any leftover margin that might cause double spacing */
+  .testimonial-section .about-me-experience-card {
+      margin-bottom: 0;
+  }
+}
+
   body {
       overflow-x: hidden; /* Prevent horizontal scrolling */
       font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -878,7 +879,7 @@ html {
 /* Mobile: smaller height */
 @media (max-width: 768px) {
   .sketchfab-embed {
-    width: 100%;
+    width: 90%;
     height: 250px; /* Adjust this value if needed */
   }
 }
