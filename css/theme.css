@@ -890,3 +890,8 @@ html {
 #Projects p {
   margin-top: 0;
 }
+
+.padding-small {
+  padding-left: calc(1rem); /* 1rem from the original padding + 0.5rem to cancel row's negative margin */
+  padding-right: calc(1rem);
+}
