@@ -935,6 +935,8 @@ html {
 .hover-outer-box img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 @media (max-width: 1024px) {
