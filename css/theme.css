@@ -729,36 +729,55 @@ html {
       --divider-color: #ccc;
       --icon-size: 40px;
   }
-  
-  /* Testimonials Section */
-  .testimonial-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-      gap: var(--spacing-medium); /* Keeps spacing between testimonial cards */
-      flex-wrap: wrap;
-  }
-  
-/* Mobile Layout: Stack testimonials vertically */
+/* Desktop layout: horizontal cards with spacing */
+.testimonial-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+}
+
+.testimonial-card {
+  flex: 1 1 0; /* or use 0 for equal width with auto sizing */
+  display: flex;
+}
+
+/* Reduce icon size only for testimonials */
+.testimonial-card .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.testimonial-card .about-me-experience-card {
+  width: 100%;
+  margin-bottom: 0;
+}
+/* Mobile layout: stack cards with consistent spacing */
 @media (max-width: 768px) {
   .testimonial-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px; /* ✅ Matches About Me / Experience section gaps */
-      padding-left: 1rem;
-      padding-right: 1rem;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 20px;
   }
 
   .testimonial-card {
-      min-width: 100%;
+    flex: 1 1 100%;
   }
 
-  /* Remove any leftover margin that might cause double spacing */
   .testimonial-section .about-me-experience-card {
-      margin-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .testimonial-vertical-line {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
+
 
   body {
       overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -793,45 +812,6 @@ html {
         }
       }
 
-      @media (max-width: 768px) {
-        .testimonial-vertical-line {
-          display: none;
-        }
-      }
-      
-      @media (max-width: 768px) {
-        .testimonial-section .about-me-experience-card {
-          margin-bottom: 20px;
-        }
-      
-        .testimonial-section .about-me-experience-card:last-child {
-          margin-bottom: 0;
-        }
-      }
-      
-      @media (max-width: 768px) {
-        .testimonial-vertical-line {
-          display: none !important;
-          height: 0 !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-      
-        .testimonial-section .about-me-experience-card {
-          margin-bottom: 0px;
-        }
-      
-        .testimonial-section .about-me-experience-card:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-      
-      @media (max-width: 768px) {
-  .testimonial-section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
 
 @media (max-width: 768px) {
   /* Fix too much horizontal padding */
@@ -891,3 +871,5 @@ html {
 #Projects p {
   margin-top: 0;
 }
+
+
