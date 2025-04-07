@@ -918,3 +918,21 @@ html {
     text-align: center;
   }
 }
+
+@media (max-width: 1024px) {
+  .row.margin-bottom-small {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .hover-outer-box {
+    margin-bottom: 20px;
+  }
+}
+
+.hover-outer-box img {
+  width: 100%;
+  height: auto;
+}
