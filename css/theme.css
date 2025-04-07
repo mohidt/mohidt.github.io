@@ -895,3 +895,26 @@ html {
   padding-left: calc(1rem); /* 1rem from the original padding + 0.5rem to cancel row's negative margin */
   padding-right: calc(1rem);
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-text {
+    font-size: 1.7rem;
+    padding: 0 1rem;
+  }
+
+  .medium-image {
+    width: 90%;
+  }
+
+  .hover-content {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .photo-promo h2,
+  .photo-promo p,
+  .photo-promo .col-md-8 a {
+    padding-left: 50px;
+    text-align: center;
+  }
+}
