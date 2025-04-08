@@ -846,12 +846,12 @@ html {
 @media (min-width: 768px) and (max-width: 1024px) {
   .photo-nudge-left {
     position: relative;
-    left: -12.5px;
+    left: -10px;
   }
 
   .photo-nudge-right {
     position: relative;
-    left: 12.5px;
+    left: 10px;
   }
 }
 
