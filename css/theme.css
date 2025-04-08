@@ -338,7 +338,7 @@ html {
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
-      padding-left: 150px; /* Default for desktop */
+      padding-left: 200px; /* Default for desktop */
       text-align: left; /* Ensures desktop alignment */
   }
   
@@ -578,6 +578,7 @@ html {
   .fade-in {
     -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
   }
   
   /* Common Variables for Spacing */
@@ -878,6 +879,13 @@ html {
   }
 }
 
+@media (max-width: 834px) and (orientation: portrait) {
+  .sketchfab-embed {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 20px;
+  }
+}
 
 
   
