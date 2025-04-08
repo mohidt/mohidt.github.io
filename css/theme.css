@@ -867,7 +867,7 @@ html {
 }
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
   .photo-promo .col-md-8 {
-    padding-left: 2rem !important; /* Reduce from 50px */
+    padding-left: 1rem !important; /* Reduce from 50px */
     padding-right: 1rem !important;
   }
 
