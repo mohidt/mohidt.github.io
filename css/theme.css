@@ -793,11 +793,13 @@ html {
 }
 
 @media (max-width: 768px) {
-  .photo-nudge-left,
-  .photo-nudge-right {
+  .team .col-xs-12:first-child,
+  .team .col-xs-12:last-child {
     left: 0 !important;
+    position: static !important;
   }
 }
+
 
 /* ---------- iPad LANDSCAPE (835px–1024px) ---------- */
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
