@@ -865,27 +865,25 @@ html {
     height: 350px;
   }
 }
-@media (min-width: 835px) and (max-width: 1000px) and (orientation: landscape) {
-  .photo-promo .row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+  .photo-promo .col-md-8 {
+    padding-left: 2rem !important; /* Reduce from 50px */
+    padding-right: 1rem !important;
   }
 
-  .photo-promo .col-md-8,
   .photo-promo .col-md-4 {
-    width: 100%;
-    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
   }
 
   .photo-promo img {
-    width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
     border-radius: 12px;
   }
-} 
+}
 
 /* ---------- MID-RANGE TABLET TWEAKS (768px–1024px) ---------- */
 @media (min-width: 768px) and (max-width: 1024px) {
