@@ -230,7 +230,6 @@ html {
   
   
   /* Hover */
-  
   .hover-outer-box {
     position: relative;
     display: flex;
@@ -268,22 +267,8 @@ html {
     padding: 1rem;
   }
   
-  @media (max-width: 1450px) { /* Adjust the breakpoint as needed */
-      .hover-content {
-          font-size: 9.5px; /* Decrease the font size for smaller screens */
-      }
-  }
-  
-  @media (max-width: 1040px) { /* Adjust the breakpoint as needed */
-      .hover-content {
-          font-size: 10px; /* Decrease the font size for smaller screens */
-      }
-  }
-  
-  
   
   /* Serivces */
-  
   .services .icon-row {
     padding: 30px 0;
   }
@@ -293,20 +278,39 @@ html {
   }
   
   
+
   /* cta */
-  
-  
   .cta {
-    background-color: #000;
-    padding: 60px 0;
+    background-color: #000; /* Use shorthand black if you prefer */
+    padding: 40px 0; /* Standard padding */
     color: #fff;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
-  
-  
+
   .cta .display {
     margin-top: -100px;
   }
+
+  .cta .container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .cta .row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+
   
+   /* photo promo */
   .photo-promo {
       background-color: black; /* Ensure the background is black */
       padding: 40px 0; /* Match the original CTA padding */
@@ -337,38 +341,13 @@ html {
       text-align: left; /* Ensures desktop alignment */
   }
   
-  @media (max-width: 768px) {
-      .photo-promo h2,
-      .photo-promo p,
-      .photo-promo .col-md-8 a {
-          padding-left: 0 !important; /* Remove padding only on mobile */
-          text-align: center; /* Center content */
-          display: block;
-      }
-  
-      .photo-promo .col-md-8 {
-          display: flex;
-          flex-direction: column;
-          align-items: center; /* Ensure everything inside is centered */
-      }
-  
-      .photo-promo button {
-          margin: 10px auto; /* Center button */
-          display: block;
-      }
-  }
-  
   .photo-promo button {
       margin-left: 0;
       padding-left: 50px;
       padding-right: 50px;
   }
   
-  
-  
-  
   /* blurbs */
-  
   .blurbs .icon {
     max-width: 64px;
   }
@@ -379,7 +358,6 @@ html {
   
   
   /* newsletter */
-  
   .newsletter{
     background-color: #eee;
     padding: 60px 0;
@@ -390,8 +368,6 @@ html {
     margin-bottom: 1rem;
     text-transform: uppercase;
   }
-  
-  
   
   .newsletter form{
     align-content: center;
@@ -405,14 +381,11 @@ html {
   
   
   /* contact */
-  
-  
   .contact .col-md {
     padding: 1rem;
   }
   
   /* forms */
-  
   input, textarea {
     background-color: #eee;
     width: 100%;
@@ -447,7 +420,6 @@ html {
   }
   
   /* footer */
-  
   footer {
       background-color: white;
       padding: 40px 0 10px 0; /* Reduce bottom padding */
@@ -469,31 +441,6 @@ html {
   }
   
   
-  
-  
-  
-  /* Mediaqueries */
-  
-  @media (max-width: 1280px) {
-    .navigation-bar .logo{
-      margin:  0 auto;
-    }
-    .navigation-bar nav{
-      display: none;
-    }
-  
-    .row {
-      margin: 0 auto;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  
-    .cta .display {
-      margin-top: 1rem;
-    }
-  }
-  
-  
   /* animation  */
   @-webkit-keyframes fade-in {
     0% {
@@ -512,6 +459,7 @@ html {
     }
   }
   
+    /* Experience Section  */
   .experience-section {
       display: flex;
       justify-content: space-between;
@@ -526,24 +474,7 @@ html {
       border-radius: 10px;
       text-align: left;
   }
-  @media (max-width: 768px) {
-    .experience-section {
-      flex-direction: column;
-      align-items: stretch;
-    }
-  
-    .experience-card {
-      width: 100%;
-    }
-  
-    .vertical-line {
-      display: none;
-    }
-  }
-  
-
-  
-  
+    /* Certificate Section  */
   .certificate-container .hover-outer-box {
       position: relative;
       display: flex;
@@ -614,31 +545,7 @@ html {
       margin-top: 10px;
   }
   
-  /* Mobile adjustments */
-  @media (max-width: 768px) {
-      .certificate-container .hover-outer-box {
-          width: 90%; /* Make the certificate container larger on mobile */
-      }
-  
-      .certificate-container .verify-button {
-          font-size: 14px; /* Smaller button text for mobile */
-          padding: 8px 12px; /* Adjust button padding */
-      }
-  
-      .certificate-container .highlight {
-          font-size: 12px; /* Smaller highlight text for mobile */
-      }
-  
-      .certificate-container .hover-content {
-          padding: 15px; /* Increase padding for mobile readability */
-      }
-  
-      .certificate-container .medium-image {
-          border-radius: 10px; /* Keep the border-radius consistent */
-      }
-  }
-  
-  
+    /* About Me  */
   .about-me-section {
       display: flex;
       justify-content: space-between;
@@ -657,59 +564,13 @@ html {
       text-align: left;
   }
   
-  
-  /* Responsive Layout for Mobile */
-  @media (max-width: 768px) {
-      .about-me-section {
-          flex-direction: column;
-          align-items: center;
-      }
-  
-      .about-me-experience-card {
-          min-width: 100%; /* Stacks cards vertically */
-      }
-  
-      .about-me-vertical-line {
-          display: none; /* Hide dividers on mobile */
-      }
-  }
-  @media (max-width: 1040px) {
-      .team .col-md {
-          position: static !important; /* Removes left/right shift */
-      }
-  }
-  
-  /* Ensure titles are centered on mobile */
-  @media (max-width: 768px) {
-      .hero-text {
-          text-align: center; /* Center the titles */
-      }
-  }
-  
-  
-  .cta {
-      background-color: black; /* Ensure the background is black */
-      padding: 40px 0; /* Adjust padding as necessary */
-      width: 100vw; /* Full width of the viewport */
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-  }
-  
-  .cta .container {
-      padding-left: 0;
-      padding-right: 0;
-      width: 100%;
-  }
-  
-  .cta .row {
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%; /* Ensure the row spans the full width */
-  }
-  
+  .about-me-experience-card .icon {
+    width: var(--icon-size); /* Use same icon size variable */
+    height: var(--icon-size); /* Use same icon size variable */
+    border-radius: 50%; /* Rounded shape */
+    margin-bottom: var(--spacing-small); /* Consistent margin */
+    object-fit: cover; /* Ensures the image is centered without distortion */
+}
   
   
   .fade-in {
@@ -739,167 +600,133 @@ html {
       flex-wrap: wrap;
   }
   
-  /* Mobile Layout: Stack testimonials vertically */
-  @media (max-width: 768px) {
-      .testimonial-section {
-          flex-direction: column;
-          align-items: center;
-      }
-  
-      .testimonial-card {
-          min-width: 100%;
-      }
-  }
-  
-  .about-me-experience-card .icon {
-      width: var(--icon-size); /* Use same icon size variable */
-      height: var(--icon-size); /* Use same icon size variable */
-      border-radius: 50%; /* Rounded shape */
-      margin-bottom: var(--spacing-small); /* Consistent margin */
-      object-fit: cover; /* Ensures the image is centered without distortion */
-  }
+
   
   body {
-      overflow-x: hidden; /* Prevent horizontal scrolling */
-      font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 1.0em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    overflow-x: hidden;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em; /* em used to avoid Chrome rem bug */
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
-    }
-  
-    @media (min-width: 768px) {
-        .photo-nudge-left {
-          position: relative;
-          left: -12.5px;
-        }
-      
-        .photo-nudge-right {
-          position: relative;
-          left: 12.5px;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .row > .col-md {
-          margin-bottom: 20px;
-        }
-
-        /* Optional: Remove margin from last column in the group if needed */
-        .row > .col-md:last-child {
-          margin-bottom: 0;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .testimonial-vertical-line {
-          display: none;
-        }
-      }
-      
-      @media (max-width: 768px) {
-        .testimonial-section .about-me-experience-card {
-          margin-bottom: 20px;
-        }
-      
-        .testimonial-section .about-me-experience-card:last-child {
-          margin-bottom: 0;
-        }
-      }
-      
-      @media (max-width: 768px) {
-        .testimonial-vertical-line {
-          display: none !important;
-          height: 0 !important;
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-      
-        .testimonial-section .about-me-experience-card {
-          margin-bottom: 0px;
-        }
-      
-        .testimonial-section .about-me-experience-card:last-of-type {
-          margin-bottom: 0;
-        }
-      }
-      
-      @media (max-width: 768px) {
-  .testimonial-section {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
-}
-
-@media (max-width: 768px) {
-  /* Fix too much horizontal padding */
+  
+  /* Reusable Classes */
   .padding-small {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-
-  /* Fix vertical spacing between each project card */
-  @media (max-width: 768px) {
-    .row.margin-bottom-small {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-bottom: 20px; /* 🔥 Fix: remove extra gap after each row */
-    }
+  
+  .hover-outer-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
   }
   
+  .sketchfab-embed {
+    max-width: 1000px;
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #Projects h1.hero-text {
+    margin-bottom: 1rem;
+  }
+  
+  #Projects p {
+    margin-top: 0;
+  }
+  
+/* ========== MEDIA QUERIES ========== */
 
-  /* Ensure each card has bottom spacing within its row */
-  .row > .col-md {
+/* ---------- MAX-WIDTH: 1450px ---------- */
+/* Slight font shrink for hover cards on large screens */
+@media (max-width: 1450px) {
+  .hover-content {
+    font-size: 9.5px;
+  }
+}
+
+/* ---------- MAX-WIDTH: 1280px ---------- */
+/* Adjustments for smaller desktops */
+@media (max-width: 1280px) {
+  .navigation-bar .logo {
+    margin: 0 auto;
+  }
+
+  .navigation-bar nav {
+    display: none;
+  }
+
+  .row {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cta .display {
+    margin-top: 1rem;
+  }
+}
+
+/* ---------- MAX-WIDTH: 1040px ---------- */
+/* Medium screen hover and team positioning fixes */
+@media (max-width: 1040px) {
+  .hover-content {
+    font-size: 10px;
+  }
+
+  .team .col-md {
+    position: static !important;
+  }
+}
+
+/* ---------- MAX-WIDTH: 1024px ---------- */
+/* Tablet view: tighter layout and spacing */
+@media (max-width: 1024px) {
+  .row.margin-bottom-small {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .hover-outer-box {
     margin-bottom: 20px;
   }
 
-  /* Remove bottom margin from last card in each row */
-  .row > .col-md:last-child {
-    margin-bottom: 0;
-  }
-
-  /* Ensure hover cards span full width on mobile */
-  .hover-outer-box {
-    width: 100%;
+  .hero-text {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
-/* Desktop: keep default size */
-.sketchfab-embed {
-  max-width: 1000px;
-  width: 100%;
-  height: 500px;
-  display: block;
-  margin: 0 auto;
-}
+/* ---------- MIN-WIDTH: 768px ---------- */
+/* Tablet: photo nudge for gallery layout */
+@media (min-width: 768px) {
+  .photo-nudge-left {
+    position: relative;
+    left: -12.5px;
+  }
 
-/* Mobile: smaller height */
-@media (max-width: 768px) {
-  .sketchfab-embed {
-    width: 90%;
-    height: 250px; /* Adjust this value if needed */
+  .photo-nudge-right {
+    position: relative;
+    left: 12.5px;
   }
 }
 
-#Projects h1.hero-text {
-  margin-bottom: 1rem; /* or try 0.5rem for tighter spacing */
-}
-
-#Projects p {
-  margin-top: 0;
-}
-
-.padding-small {
-  padding-left: calc(1rem); /* 1rem from the original padding + 0.5rem to cancel row's negative margin */
-  padding-right: calc(1rem);
-}
-
+/* ---------- MIN 768px AND MAX 1024px ---------- */
+/* Tablet-specific adjustments for content readability */
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero-text {
     font-size: 1.7rem;
     padding: 0 1rem;
+    text-align: center !important;
+    margin: 0 auto !important;
   }
 
   .medium-image {
@@ -919,30 +746,133 @@ html {
   }
 }
 
-@media (max-width: 1024px) {
+/* ---------- MAX-WIDTH: 768px ---------- */
+/* Mobile styles for layout stacking and spacing */
+@media (max-width: 768px) {
+  /* Projects & promo section layout */
+  .photo-promo h2,
+  .photo-promo p,
+  .photo-promo .col-md-8 a {
+    padding-left: 0 !important;
+    text-align: center;
+    display: block;
+  }
+
+  .photo-promo .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-promo button {
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Experience section: stack cards */
+  .experience-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .experience-card {
+    width: 100%;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  /* Certificates: mobile readability */
+  .certificate-container .hover-outer-box {
+    width: 90%;
+  }
+
+  .certificate-container .verify-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .certificate-container .highlight {
+    font-size: 12px;
+  }
+
+  .certificate-container .hover-content {
+    padding: 15px;
+  }
+
+  .certificate-container .medium-image {
+    border-radius: 10px;
+  }
+
+  /* About Me Section */
+  .about-me-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-experience-card {
+    min-width: 100%;
+  }
+
+  .about-me-vertical-line {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-text {
+    text-align: center;
+  }
+
+  /* Testimonials */
+  .testimonial-section {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .testimonial-card {
+    min-width: 100%;
+  }
+
+  .testimonial-vertical-line {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .testimonial-section .about-me-experience-card {
+    margin-bottom: 0;
+  }
+
+  .testimonial-section .about-me-experience-card:last-child,
+  .testimonial-section .about-me-experience-card:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* Project cards spacing */
   .row.margin-bottom-small {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .row > .col-md {
+    margin-bottom: 20px;
+  }
+
+  .row > .col-md:last-child {
+    margin-bottom: 0;
   }
 
   .hover-outer-box {
-    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
-.hover-outer-box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
-@media (max-width: 1024px) {
-  .hero-text {
-    text-align: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
+
+  
