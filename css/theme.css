@@ -724,7 +724,7 @@ html {
     .team .hover-outer-box img {
       width: 100%;
       height: auto !important;
-      aspect-ratio: 4 / 3; /* optional for consistent dimensions */
+      aspect-ratio: 3 / 2; /* optional for consistent dimensions */
       object-fit: cover;   /* or 'contain' if you want the full image always shown */
       border-radius: 12px;
       display: block;
@@ -911,7 +911,7 @@ html {
 
 @media (max-width: 834px) and (orientation: portrait) {
   .sketchfab-embed {
-    width: 50% !important;
+    width: 75% !important;
     height: 300px !important;
     border-radius: 20px;
   }
