@@ -683,5 +683,23 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/script.js" defer></script>
+
+    <!-- Spacer fix for iPad landscape -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const isIPadLandscape =
+        navigator.userAgent.match(/iPad/i) &&
+        window.innerWidth > window.innerHeight;
+
+      if (isIPadLandscape) {
+        document.querySelectorAll(".row.margin-bottom-small").forEach((row, index) => {
+          if (index < document.querySelectorAll(".row.margin-bottom-small").length - 1) {
+            const br = document.createElement("br");
+            row.parentNode.insertBefore(br, row.nextSibling);
+          }
+        });
+      }
+    });
+  </script>
   </body>
   </html>
