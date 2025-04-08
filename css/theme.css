@@ -882,13 +882,6 @@ html {
     padding-right: 1rem !important;
   }
 
-  .photo-promo .col-md-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0;
-  }
-
   .photo-promo img {
     max-width: 100%;
     height: auto;
