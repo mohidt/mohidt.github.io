@@ -91,6 +91,7 @@ html {
     transition: all 0.5s ease;
     cursor: pointer;
     font-size: 0.8rem;
+    border-radius: 8px;
   }
   
   
@@ -525,18 +526,19 @@ html {
   }
   
   .certificate-container .verify-button {
-      background-color: #1b1d1f;
-      color: white;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
       border: none;
       padding: 10px 15px;
-      font-size: 16px;
+      font-size: 14px;
       cursor: pointer;
       border-radius: 5px;
       transition: background 0.3s ease-in-out;
   }
   
   .certificate-container .verify-button:hover {
-      background-color: #a2a6aa;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
   }
   
   .certificate-container .highlight {
@@ -643,7 +645,6 @@ html {
 /* ========== MEDIA QUERIES ========== */
 
 /* ---------- MAX-WIDTH: 1450px ---------- */
-/* Slight font shrink for hover cards on large screens */
 @media (max-width: 1450px) {
   .hover-content {
     font-size: 9.5px;
@@ -651,7 +652,6 @@ html {
 }
 
 /* ---------- MAX-WIDTH: 1280px ---------- */
-/* Adjustments for smaller desktops */
 @media (max-width: 1280px) {
   .navigation-bar .logo {
     margin: 0 auto;
@@ -672,84 +672,43 @@ html {
   }
 }
 
-/* ---------- MAX-WIDTH: 1040px ---------- */
-/* Medium screen hover and team positioning fixes */
-@media (max-width: 1040px) {
-  .hover-content {
-    font-size: 10px;
+/* ---------- iPad PORTRAIT + PHONES (up to 834px) ---------- */
+@media (max-width: 834px) {
+  body {
+    font-size: 1rem;
   }
 
-  .team .col-md {
-    position: static !important;
+  .hero-text {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 1rem;
   }
-}
 
-/* ---------- MAX-WIDTH: 1024px ---------- */
-/* Tablet view: tighter layout and spacing */
-@media (max-width: 1024px) {
   .row.margin-bottom-small {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-
-  .hover-outer-box {
+    gap: 20px;
     margin-bottom: 20px;
   }
 
-  .hero-text {
-    text-align: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-/* ---------- MIN-WIDTH: 768px ---------- */
-/* Tablet: photo nudge for gallery layout */
-@media (min-width: 768px) {
-  .photo-nudge-left {
-    position: relative;
-    left: -12.5px;
+  .row > .col-md {
+    margin-bottom: 20px;
   }
 
-  .photo-nudge-right {
-    position: relative;
-    left: 12.5px;
-  }
-}
-
-/* ---------- MIN 768px AND MAX 1024px ---------- */
-/* Tablet-specific adjustments for content readability */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-text {
-    font-size: 1.7rem;
-    padding: 0 1rem;
-    text-align: center !important;
-    margin: 0 auto !important;
-  }
-
-  .medium-image {
-    width: 90%;
+  .row > .col-md:last-child {
+    margin-bottom: 0;
   }
 
   .hover-content {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 11px;
+    padding: 12px;
   }
 
-  .photo-promo h2,
-  .photo-promo p,
-  .photo-promo .col-md-8 a {
-    padding-left: 50px;
-    text-align: center;
+  .hover-outer-box {
+    width: 100%;
+    margin-bottom: 20px;
   }
-}
 
-/* ---------- MAX-WIDTH: 768px ---------- */
-/* Mobile styles for layout stacking and spacing */
-@media (max-width: 768px) {
-  /* Projects & promo section layout */
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
@@ -769,21 +728,29 @@ html {
     display: block;
   }
 
-  /* Experience section: stack cards */
-  .experience-section {
+  .experience-section,
+  .about-me-section,
+  .testimonial-section {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .experience-card {
+  .experience-card,
+  .testimonial-card,
+  .about-me-experience-card {
     width: 100%;
+    min-width: 100%;
   }
 
-  .vertical-line {
-    display: none;
+  .vertical-line,
+  .about-me-vertical-line,
+  .testimonial-vertical-line {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /* Certificates: mobile readability */
   .certificate-container .hover-outer-box {
     width: 90%;
   }
@@ -805,42 +772,9 @@ html {
     border-radius: 10px;
   }
 
-  /* About Me Section */
-  .about-me-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-me-experience-card {
-    min-width: 100%;
-  }
-
-  .about-me-vertical-line {
-    display: none;
-  }
-
-  /* Hero Section */
-  .hero-text {
-    text-align: center;
-  }
-
-  /* Testimonials */
   .testimonial-section {
-    flex-direction: column;
-    align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .testimonial-card {
-    min-width: 100%;
-  }
-
-  .testimonial-vertical-line {
-    display: none !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
   }
 
   .testimonial-section .about-me-experience-card {
@@ -852,32 +786,74 @@ html {
     margin-bottom: 0;
   }
 
-  /* Project cards spacing */
+  .sketchfab-embed {
+    width: 90%;
+    height: 230px;
+  }
+}
+
+/* ---------- iPad LANDSCAPE (835px–1024px) ---------- */
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   .row.margin-bottom-small {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-
-  .row > .col-md {
-    margin-bottom: 20px;
-  }
-
-  .row > .col-md:last-child {
-    margin-bottom: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 40px;
   }
 
   .hover-outer-box {
+    margin-bottom: 20px;
+  }
+
+  .hover-content {
+    font-size: 12px;
+    padding: 16px;
+  }
+
+  .medium-image {
+    width: 90%;
+  }
+
+  .photo-promo h2,
+  .photo-promo p,
+  .photo-promo .col-md-8 a {
+    padding-left: 50px;
+    text-align: center;
+  }
+
+  .team .col-md {
+    position: static !important;
+  }
+
+  .sketchfab-embed {
     width: 100%;
+    height: 350px;
   }
 }
 
-@media (max-width: 768px) {
-  .sketchfab-embed {
-    width: 90%;
-    height: 230px; /* Slightly smaller height for phones */
+/* ---------- MID-RANGE TABLET TWEAKS (768px–1024px) ---------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .photo-nudge-left {
+    position: relative;
+    left: -12.5px;
+  }
+
+  .photo-nudge-right {
+    position: relative;
+    left: 12.5px;
   }
 }
+
 
   
