@@ -863,20 +863,8 @@ html {
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
-    padding-left: 0 !important;
+    padding-left: 20px;
     text-align: center;
-    display: block;
-  }
-
-  .photo-promo .col-md-8 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .photo-promo button {
-    margin: 10px auto;
-    display: block;
   }
 
   .team .col-md {
