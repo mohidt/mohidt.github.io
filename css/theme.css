@@ -821,7 +821,7 @@ html {
 }
 
 /* ---------- iPad LANDSCAPE (835px–1024px) ---------- */
-@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 835px) and (max-width: 1280px) and (orientation: landscape) {
   body {
     font-size: 1.1rem;
     font-family: "Raleway", sans-serif !important;
@@ -863,7 +863,8 @@ html {
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
-    text-align: left;
+    padding-left: 20px;
+    text-align: center;
   }
 
   .team .col-md {
@@ -873,6 +874,19 @@ html {
   .sketchfab-embed {
     width: 100%;
     height: 350px;
+  }
+}
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+  .photo-promo .col-md-8 {
+    padding-left: 1rem !important; /* Reduce from 50px */
+    padding-right: 1rem !important;
+  }
+
+
+  .photo-promo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
   }
 }
 
