@@ -720,6 +720,17 @@ html {
     margin-bottom: 20px;
   }
 
+  @media (max-width: 834px) {
+    .team .hover-outer-box img {
+      width: 100%;
+      height: auto !important;
+      aspect-ratio: 4 / 3; /* optional for consistent dimensions */
+      object-fit: cover;   /* or 'contain' if you want the full image always shown */
+      border-radius: 12px;
+      display: block;
+    }
+  }
+
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
