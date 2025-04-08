@@ -688,6 +688,7 @@ html {
 @media (max-width: 834px) {
   body {
     font-size: 1rem;
+    font-family: "Raleway", sans-serif !important;
   }
 
   .hero-text {
@@ -817,6 +818,7 @@ html {
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
   body {
     font-size: 1.1rem;
+    font-family: "Raleway", sans-serif !important;
   }
 
   .hero-text {
@@ -825,19 +827,25 @@ html {
     margin: 0 auto;
   }
 
-  .row.margin-bottom-small {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 40px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
+  @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+    .row.margin-bottom-small {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 40px;
+      margin-bottom: 40px;
+      padding-bottom: 20px; /* ✅ Forces space between rows */
+    }
+  
+    /* Prevent excessive stacking/margin at bottom */
+    .row.margin-bottom-small:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
   }
-}
 
   .hover-outer-box {
     margin-bottom: 20px;
-    min-height:100%;
   }
 
   .hover-content {
@@ -864,6 +872,8 @@ html {
     width: 100%;
     height: 350px;
   }
+}
+
 
 /* ---------- MID-RANGE TABLET TWEAKS (768px–1024px) ---------- */
 @media (min-width: 768px) and (max-width: 1024px) {
