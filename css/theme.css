@@ -682,25 +682,6 @@ html {
   }
 }
 
-.photo-promo .col-md-8 {
-  padding-left: 1rem !important; /* Reduce from 50px */
-  padding-right: 1rem !important;
-}
-
-.photo-promo h2,
-.photo-promo p,
-.photo-promo .col-md-8 a {
-  padding-left: 200px;
-  text-align: left;
-}
-
-.photo-promo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-
 /* ---------- PHONES + iPad PORTRAIT (up to 834px) ---------- */
 @media (max-width: 834px) {
   body {
@@ -879,6 +860,13 @@ html {
     width: 90%;
   }
 
+  .photo-promo h2,
+  .photo-promo p,
+  .photo-promo .col-md-8 a {
+    padding-left: 20px;
+    text-align: center;
+  }
+
   .team .col-md {
     position: static !important;
   }
@@ -888,7 +876,25 @@ html {
     height: 350px;
   }
 }
+@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
+  .photo-promo .col-md-8 {
+    padding-left: 1rem !important; /* Reduce from 50px */
+    padding-right: 1rem !important;
+  }
 
+  .photo-promo .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .photo-promo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+}
 
 /* ---------- MID-RANGE TABLET TWEAKS (768px–1024px) ---------- */
 @media (min-width: 768px) and (max-width: 1024px) {
