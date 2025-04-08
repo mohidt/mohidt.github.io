@@ -863,8 +863,20 @@ html {
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
-    padding-left: 50px;
+    padding-left: 0 !important;
     text-align: center;
+    display: block;
+  }
+
+  .photo-promo .col-md-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-promo button {
+    margin: 10px auto;
+    display: block;
   }
 
   .team .col-md {
@@ -876,35 +888,10 @@ html {
     height: 350px;
   }
 }
-/* Only apply on iPad landscape */
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
   .photo-promo .col-md-8 {
-    padding-left: 1rem !important;
+    padding-left: 1rem !important; /* Reduce from 50px */
     padding-right: 1rem !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .photo-promo .col-md-8 h2,
-  .photo-promo .col-md-8 p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .photo-promo .col-md-8 a {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .photo-promo .unsplash-logo {
-    display: block;
-    max-width: 100px;
-    height: auto;
   }
 
   .photo-promo .col-md-4 {
@@ -914,7 +901,7 @@ html {
     padding-right: 0;
   }
 
-  .photo-promo img:not(.unsplash-logo) {
+  .photo-promo img {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
