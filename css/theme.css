@@ -873,6 +873,11 @@ html {
   }
 }
 
-
+@media (max-width: 768px) {
+  .sketchfab-embed {
+    width: 90%;
+    height: 230px; /* Slightly smaller height for phones */
+  }
+}
 
   
