@@ -386,7 +386,7 @@
         </div>
       </div>
          
-      <!-- Experimental Design Device – APS112/113 -->
+      <!-- Experimental Design Device – APS112 -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/6.png" />
@@ -896,15 +896,20 @@
   padding: 2rem;
   position: relative;
   overflow-y: auto;
+  overflow-x: hidden; /* 🔑 Prevent horizontal scroll */
   box-sizing: border-box;
+  word-wrap: break-word; /* Ensure long words/wide content wrap */
 }
 
 .modal-content img.medium-image {
+  width: 100%;
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  object-fit: contain;
 }
+
 
 .close-modal {
   position: absolute;
