@@ -722,7 +722,7 @@ html {
   }
 
   .row > .col-md {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .row > .col-md:last-child {
