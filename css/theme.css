@@ -738,17 +738,26 @@ html {
     width: 100%;
     margin-bottom: 20px;
   }
-
+}
   @media (max-width: 834px) {
+    .team .hover-outer-box {
+      width: 100%;
+      aspect-ratio: 3 / 2; /* forces same shape on all photos */
+      overflow: hidden;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
     .team .hover-outer-box img {
       width: 100%;
-      height: auto !important;
-      aspect-ratio: 3 / 2; /* optional for consistent dimensions */
-      object-fit: cover;   /* or 'contain' if you want the full image always shown */
-      border-radius: 12px;
+      height: 100%;
+      object-fit: cover;
       display: block;
+      border-radius: 12px;
     }
-  }
 
   .experience-section,
   .about-me-section,
@@ -893,5 +902,7 @@ html {
   }
 }
 
-
-  
+body.modal-open {
+  overflow: hidden;
+  touch-action: none;
+}
