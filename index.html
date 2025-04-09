@@ -247,205 +247,337 @@
   
 <!-- COLLABORATIVE PROJECTS SECTION -->
 <div class="padding-small">
-    <br />
-    <h1 class="hero-text">Collaborative Projects</h1>
-    <div class="row margin-bottom-small">
-      <!-- MIE301 Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/1.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Robotic Arm for Rover - MIE301</h3>
-              <p>This project involved redesigning a sample-collecting robotic arm for Jupiter’s moon Io. The team replaced a bulky rover-mounted system with a lightweight, drone-mounted mechanism optimized for Io’s harsh, volcanic terrain. Using MATLAB and SolidWorks, the design was made compact, efficient, and capable of withstanding expected forces, with aluminum alloy selected for strength and weight. The result is a highly maneuverable solution fit for future space missions.</p>
-              <a href="Robotic Arm CAD + MATLAB.zip" download>
-                <button>Download a Zip of CAD + MATLAB File</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <br />
+  <h1 class="hero-text">Collaborative Projects</h1>
+  <div class="row margin-bottom-small">
+    <!-- MIE301 Project -->
+    <div class="col-md-4">
+      <div class="hover-outer-box">
+        <img src="Portfolio Website Image Template/1.png" />
+        <div class="hover-inner-box">
+          <div class="hover-content">
+            <h3>Robotic Arm for Rover - MIE301</h3>
+            <p>We reimagined a sample-collecting robotic arm for Io, Jupiter’s most volcanic moon, shifting from a bulky land-based rover to a lightweight, drone-mounted mechanism.</p>
 
-      <!-- PCB Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/2.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Printed Circuit Board - MIE346</h3>
-              <p>This project aimed to design, simulate, and fabricate a custom PCB-based power supply capable of producing a filtered, linearly scaled voltage output from a small input signal. The design evolved over four stages (DA1–DA4), including schematics, filtering, fabrication, and testing.</p>
-              <a href="MIE346 PCB Design Assignment.pdf" download>
-                <button>Download a Summary of Design Assignments</button>
-              </a>
-            </div>
+            <button class="light view-details-button"
+              data-title="Robotic Arm for Rover – MIE301"
+              data-img="Portfolio Website Image Template/1.png"
+              data-description="Our team was tasked with redesigning a robotic arm originally meant for a Europa rover, adapting it for Io's chaotic volcanic terrain. To meet the client’s goal of increased mobility and efficiency, we removed the rover and mounted the arm on a compact drone. The new configuration allows flight-based navigation, improving reach and agility on a surface prone to lava floods, craters, and shifting landscapes."
+              data-tools="<li>MATLAB – link optimization for full extension within a confined drone fuselage</li><li>SolidWorks – 3D modeling and material testing simulations</li>"
+              data-features="<li>Drone-mounted for high-altitude and uneven terrain traversal</li><li>Folding four-bar linkage arm for compact storage and efficient deployment</li><li>Aluminum Alloy 1060 frame – lightweight, strong, and over-engineered for safety</li><li>Optimized link lengths (X: 45.8 cm, Y: 25.1 cm, Z: 15 cm) within 58.5 cm x 48.9 cm constraints</li>"
+              data-reflection="This project deepened my understanding of how to match analytical tools like MATLAB with real-world CAD implementation. We not only simulated motion, but validated material choices and forces, achieving a highly compact and adaptable design. It pushed our team to consider both theoretical and operational constraints in a space-oriented mission context."
+              data-download="Robotic Arm CAD + MATLAB.zip"
+              data-download-label="Download CAD + MATLAB Files"
+              style="margin-top: 10px; border-radius: 12px;">
+              View Details
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- MIE315 Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/3.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Google Home Housing - MIE315</h3>
-              <p>This project evaluated plastic vs. wooden housings for the Google Home speaker. Using financial analysis, life cycle assessment, and societal impact studies, the team found wood to be more cost-effective, sustainable, and socially beneficial—ultimately recommending a shift toward wooden housings.</p>
-              <a href="Google Home Speaker Wood vs Plastic.pdf" download>
-                <button>Download our Overview Poster</button>
-              </a>
-            </div>
+    <!-- MIE346 PCB Project -->
+    <div class="col-md-4">
+      <div class="hover-outer-box">
+        <img src="Portfolio Website Image Template/2.png" />
+        <div class="hover-inner-box">
+          <div class="hover-content">
+            <h3>Printed Circuit Board - MIE346</h3>
+            <p>Developed and fabricated a PCB-based power supply to scale and filter a low-voltage analog signal using op-amps and low-pass filters.</p>
+
+            <button class="light view-details-button"
+              data-title="Printed Circuit Board – MIE346"
+              data-img="Portfolio Website Image Template/2.png"
+              data-description="Our project goal was to take an analog signal ranging from 0–0.35V and linearly scale it to 0.25–3.3V with added filtering for noise reduction. We began with theoretical amplifier circuits, narrowed down two viable candidates, and selected a non-inverting op-amp configuration. The final solution delivered a positive gain and offset while respecting design constraints. We used simulation tools and nodal analysis to refine the schematic before creating a PCB."
+              data-tools="<li>SuperSpice – circuit simulations and sweeps</li><li>Analog Devices Filter Tool – for low-pass filter design</li><li>Multisim, Ultiboard, and Eagle – schematic capture and PCB layout</li><li>Oscilloscope & Multimeter – circuit validation</li>"
+              data-features="<li>Non-inverting op-amp configuration with R1–R6 for gain/offset</li><li>Two-stage Butterworth low-pass filter (1 kHz cutoff)</li><li>Custom PCB designed and fabricated in-house</li><li>Validated output voltage with <4% error vs theoretical model</li>"
+              data-reflection="This was my first experience building a PCB from scratch. From theoretical modeling to soldering and live measurements, I developed a better appreciation for analog design and precision filtering. Debugging issues like flipped op-amp orientation taught me the value of detailed verification and iterative testing."
+              data-download="MIE346 PCB Design Assignment.pdf"
+              data-download-label="Download Full Design Assignment"
+              style="margin-top: 10px; border-radius: 12px;">
+              View Details
+            </button>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- MIE315 Project -->
+    <div class="col-md-4">
+      <div class="hover-outer-box">
+        <img src="Portfolio Website Image Template/3.png" />
+        <div class="hover-inner-box">
+          <div class="hover-content">
+            <h3>Google Home Housing - MIE315</h3>
+            <p>Consulted on replacing plastic housings with wood for Google Home speakers, evaluating cost, sustainability, and social responsibility.</p>
+
+            <button class="light view-details-button"
+              data-title="Google Home Housing – MIE315"
+              data-img="Portfolio Website Image Template/3.png"
+              data-description="This consulting project evaluated whether Google should replace its plastic smart speaker housings with wooden alternatives. Our team conducted a three-part analysis — financial, environmental, and societal — to assess the viability of switching to sustainably sourced wood. The scope included a Net Present Value (NPV) comparison, hybrid life cycle assessment (LCA), and stakeholder-based societal review. We recommended wood due to its lower financial cost, environmental benefits, and alignment with Google’s social responsibility goals."
+              data-tools="<li>Hybrid Life Cycle Assessment (LCA)</li><li>Net Present Value (NPV) Financial Modeling</li><li>Stakeholder Societal Impact Framework</li><li>Weighted Decision Matrix</li>"
+              data-features="<li>Wood housing NPV: -$82.10 vs Plastic: -$178.34 (5-year, 5% rate)</li><li>Lower cumulative emissions and better disposal outcomes for wood</li><li>Societal benefits include local employment, lower health risks, and better public perception</li><li>Wood offers premium aesthetics, better acoustics, and environmental appeal</li>"
+              data-reflection="This project challenged me to combine technical evaluation with social and environmental considerations, a true multidisciplinary consulting scenario. It showed how good design isn’t just about mechanics, but also people, the planet, and long-term value. Our findings reflected a deep dive into real-world impact beyond just material choice."
+              data-download="Google Home Speaker Wood vs Plastic.pdf"
+              data-download-label="Download Overview Poster"
+              style="margin-top: 10px; border-radius: 12px;">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     </div>
 
     <div class="row margin-bottom-small"> 
-      <!-- Dissections Project -->
+      <!-- MIE243 Dissections Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/4.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
               <h3>Dissections - MIE243</h3>
-              <p>Throughout MIE243, various "Dissections" were conducted. These involved being given a mechanical device, taking it apart, and then modelling it in Solidworks. The first dissection was a hand-draft of a Ball Bearing.</p>
-              <p>The rest are as follows:</p>
-              <p>2: A Jigsaw</p>
-              <p>3: A Can Opener</p>
-              <p>4: A Screwdriver</p>
-              <p>5 and 6: Modelling A Gearbox from Scratch (12:1 Parallel)</p>
-              <a href="All Dissections  (1).zip" download>
-                <button>Download A Zip of Every CAD + Drawings</button>
-              </a>
+              <p>Hands-on mechanical reverse engineering project — taking apart devices, studying their components, and modeling them in SolidWorks.</p>
+
+              <button class="light view-details-button"
+                data-title="Dissections – MIE243"
+                data-img="Portfolio Website Image Template/4.png"
+                data-description="In MIE243: Mechanical Engineering Design, we were tasked with a series of mechanical 'dissections' — dismantling real devices, analyzing how they work, and recreating them digitally in SolidWorks. The progression of dissections spanned simple to complex components, culminating in the full design of a functioning gearbox system from scratch."
+                data-tools="<li>SolidWorks – reverse engineering and parametric modeling</li><li>Hand drafting techniques – for mechanical detailing (Ball Bearing)</li><li>Measurement tools – calipers and rulers for component sizing</li>"
+                data-features="<li>Ball Bearing – hand-drafted and dimensioned</li><li>Jigsaw – internal gearing and case modeled in SolidWorks</li><li>Can Opener – modeled with emphasis on motion mechanisms</li><li>Screwdriver – disassembled and reverse-engineered</li><li>12:1 Parallel Gearbox – modeled entirely from scratch with working mates and motion</li>"
+                data-reflection="These dissections helped me appreciate the precision and constraints involved in mechanical design. I learned to reverse engineer existing systems and gained confidence in CAD through hands-on analysis. Modeling the gearbox from scratch was especially satisfying — it pulled together everything I had learned in a cohesive final challenge."
+                data-download="All Dissections  (1).zip"
+                data-download-label="Download All CAD + Drawings"
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- CNC Machine Project -->
+
+      <!-- MIE243 Pick and Place CNC Machine Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/5.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
-              <h3>Pick and Place CNC Machine Project</h3>
-              <p>The Term Project for MIE243 (Mechanical Engineering Design) was to create a CNC Machine and document the process. We had 2 Check-Ins with the Project TA, and conducted various meetings to discuss things like Candidate Designs and Project Requirements.</p>
-              <a href="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing" download>
-                <button>Download A Zip of Our Final Project</button>
-              </a>
+              <h3>Pick and Place CNC Machine – MIE243</h3>
+              <p>Designed a desktop CNC machine to automate PCB component placement — emphasizing accuracy, modularity, and affordability.</p>
+
+              <button class="light view-details-button"
+                data-title="Pick and Place CNC Machine – MIE243"
+                data-img="Portfolio Website Image Template/5.png"
+                data-description="For our Mechanical Engineering Design term project, we created a conceptual design for a desktop CNC pick-and-place machine. Intended for educational settings, the goal was to design a cost-effective device capable of accurately placing surface-mounted components on pre-soldered PCBs using a vacuum-based toolhead. The project involved ideation, multivoting, detailed CAD modeling, and mechanical system integration — all while working within size, weight, and component compatibility constraints."
+                data-tools="<li>SolidWorks – full system CAD modeling and assembly</li><li>McMaster-Carr – component sourcing and BOM generation</li><li>Mechanical Design Methods – lead screws, rails, bearings, and T-slot analysis</li><li>Project Management – check-ins, multivoting, and team delegation</li>"
+                data-features="<li>3-axis motion system with ±0.01” accuracy</li><li>Lead screw z-axis with sleeve bearings for vertical stability</li><li>Interchangeable vacuum heads and rotation for component orientation</li><li>Custom reel system with ratchet feed, discard reels, and clamping</li><li>Camera positioning system for visual alignment and orientation checking</li>"
+                data-reflection="This project brought together every skill we’d learned so far — ideation, prototyping, reverse engineering, mechanical design, and teamwork. Modeling mechanisms like a self-aligning vacuum system, camera vision integration, and motion assemblies taught me how intricate real-world design can get. It made me feel like a mechanical engineer building something that could be real, useful, and genuinely exciting."
+                data-download="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing"
+                data-download-label="Download CAD Package"
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
-      
          
-      <!-- Experimental Design Device -->
+      <!-- Experimental Design Device – APS112/113 -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/6.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
-              <h3>Device for Experimental Design Course</h3>
-              <p>This Project was designed for a Master's Professor teaching Six Sigma for Engineers. We were tasked with creating a multivariate device to be used in the classroom for a portion of the course he teaches.</p>
-              <p>Pictured is my team members testing the device.</p>
-              <a href="Project Final Presentation.pdf" download>
-                <button>Download The Project's Final Presentation</button>
-              </a>
+              <h3>Experimental Design Device – APS112/113</h3>
+              <p>Developed a hands-on two-variable device for the Six Sigma Green Belt course to help students learn DMAIC through physical experimentation.</p>
+
+              <button class="light view-details-button"
+                data-title="Experimental Design Device – APS112"
+                data-img="Portfolio Website Image Template/6.png"
+                data-description="In collaboration with a Master's-level Six Sigma professor, our team designed a device to support beginner-level students learning DMAIC methodology. The goal was to replace a complex 3-variable catapult with a simplified, two-variable physical system. The final concept, called 'Full Strike', is a bowling-inspired ramp device that enables students to run statistical experiments with adjustable ball placement and ramp angle. Designed to produce predictable, tunable output for use with Six Sigma software, the project emphasized accessibility, iterability, and learning impact."
+                data-tools="<li>Functional decomposition & morphological charts</li><li>Weighted decision matrices & multivoting</li><li>Prototyping and DMAIC modeling in Six Sigma software</li><li>CAD sketches and design analysis</li>"
+                data-features="<li>Adjustable ramp angle (set points) and ball drop height (continuous)</li><li>Device outputs modeled as: Y(x) = K + aX1 + bX2 + cX1*X2</li><li>Lightweight & classroom-safe: under 10 kg, <50 cm dimensions</li><li>Designed for group use, fast iteration, and student surveys</li>"
+                data-reflection="This was one of the most education-focused and collaborative projects I’ve worked on. We got to think like both engineers and instructors;identifying the learning gap, simplifying the interface, and making a reliable device students could actually enjoy using. Applying Six Sigma principles to the learning process itself was a unique and rewarding experience."
+                data-download="Project Final Presentation.pdf"
+                data-download-label="Download Final Presentation Slides"
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  
+
     <!-- PERSONAL PROJECTS SECTION -->
     <br />
     <h1 class="hero-text">Personal Projects</h1>
     <div class="row margin-bottom-small">
-      <!-- Coffee Table -->
+      <!-- Coffee Table – Personal Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/7.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
               <h3>Coffee Table</h3>
-              <p>Created during my sophomore year of high school. I learned a lot about drafting, machining, and construction over the duration of creating this table. I learned about how you go from a plank of wood into a full creation.</p>
+              <p>One of my earliest builds — a woodworking project from high school where I learned to take raw lumber and shape it into something functional and polished.</p>
+
+              <button class="light view-details-button"
+                data-title="Coffee Table – Personal Project"
+                data-img="Portfolio Website Image Template/7.png"
+                data-description="Built during my sophomore year of high school, this coffee table project was my first hands-on experience with physical fabrication. I started with raw planks of wood and learned how to draft, cut, and machine each piece into place. I gained an early appreciation for precision, patience, and the transformation of simple materials into something complete."
+                data-tools="<li>Woodshop tools – mitre saw, bandsaw, belt sander</li><li>Hand sanding and finishing techniques</li><li>Joinery and basic construction methods</li>"
+                data-features="<li>Custom-cut hardwood frame</li><li>Smoothed edges and hand-applied finish</li><li>Symmetrical layout with central support</li>"
+                data-reflection="This was the first time I truly got to build something from the ground up. Even though it was a small project, it sparked my curiosity for design and making — a mindset that’s stayed with me through engineering."
+                data-download=""
+                data-download-label=""
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
   
-      <!-- Storage Box -->
+      <!-- Storage/Jewelry Box – Personal Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/8.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
               <h3>Storage/Jewelry Box</h3>
-              <p>Created during my sophomore year of high school. This project taught me about how important measurements are, as every part of this had to fit together perfectly.</p>
+              <p>A high school woodworking project that taught me the value of precision and patience while fitting every piece together perfectly.</p>
+
+              <button class="light view-details-button"
+                data-title="Storage/Jewelry Box – Personal Project"
+                data-img="Portfolio Website Image Template/8.png"
+                data-description="Built in my sophomore year of high school, this small wooden storage box was a hands-on lesson in how small measurement errors can have big consequences. The box was built entirely from scratch — including internal compartments — and required careful planning and assembly to ensure all pieces aligned cleanly. It doubled as a functional piece and a gift."
+                data-tools="<li>Woodshop tools – scroll saw, hand file, glue clamps</li><li>Manual measurement with calipers and rulers</li><li>Wood glue and sanding techniques</li>"
+                data-features="<li>Precision-fit lid</li><li>Seamless wooden appearance with hidden nails and screws</li><li>Smooth finish for a gift-ready result</li>"
+                data-reflection="This was one of the first times I realized how critical tolerances are in real-world design. A few millimeters off, and nothing would fit. It’s a lesson I’ve carried forward into every CAD, fabrication, and design project since."
+                data-download=""
+                data-download-label=""
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
+
   
-      <!-- Short Story -->
+      <!-- Short Story – Creative Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/9.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
-              <h3>My Own Short Story</h3>
-              <p>Created an ebook of a short story I wrote for a creative writing scholarship. Click download for the epub file.</p>
-              <a href="Snow Falling Soundlessly at Night - Mohid Tahir.epub" download>
-                <button>Download</button>
-              </a>
+              <h3>Short Story – Creative Project</h3>
+              <p>An original short story I wrote and published as an EPUB for a creative writing scholarship submission.</p>
+
+              <button class="light view-details-button"
+                data-title="Short Story – Creative Project"
+                data-img="Portfolio Website Image Template/9.png"
+                data-description="This story, titled *Snow Falling Soundlessly at Night*, was written as part of a creative writing scholarship application. It explores themes of isolation, memory, and quiet resilience through a character-driven narrative. I formatted and exported the piece as an EPUB to give it the polish and presence of a complete digital work."
+                data-tools="<li>Google Docs & Grammarly – drafting and revision</li><li>Calibre – EPUB conversion</li><li>Visual layout editing for digital readability</li>"
+                data-features="<li>Original fiction with a literary tone</li><li>Structured and formatted as an ebook</li><li>Exported and validated in EPUB format</li>"
+                data-reflection="This was a reminder that creativity spans across disciplines. Storytelling, like engineering, requires structure, iteration, and empathy. It was rewarding to express myself through writing and shape something quiet but meaningful."
+                data-download="Snow Falling Soundlessly at Night - Mohid Tahir.epub"
+                data-download-label="Download EPUB"
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
+
     </div>
-  
     <div class="row margin-bottom-small">
-      <!-- Pneumatic Engine -->
+      <!-- Pneumatic Engine – George Brown College -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/10.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
-              <h3>Pneumatic Engine</h3>
-              <p>Created during a machining course at George Brown College. This felt like my very first mechanical project. I learned more about machining metals, as all of my prior experience was with wood. I learned how to use various machines like a lathe, and overall I think this project shows my commitment to learning even outside of the University of Toronto environment.</p>
+              <h3>Pneumatic Engine – George Brown College</h3>
+              <p>My first metal machining project, completed during a night course outside U of T. It taught me the fundamentals of working with metal and precision tooling.</p>
+
+              <button class="light view-details-button"
+                data-title="Pneumatic Engine – George Brown College"
+                data-img="Portfolio Website Image Template/10.png"
+                data-description="Completed during a hands-on machining course at George Brown College, this was my introduction to working with metals and machine tools. I built a simple pneumatic engine from raw material stock, learning to cut, bore, and finish each part to specification. Having only worked with wood before, this project helped me transition into real mechanical fabrication and reinforced my interest in practical design work."
+                data-tools="<li>Manual lathe – for turning cylinders and shafts</li><li>Drill press and bandsaw – rough cutting and shaping</li><li>Machinist’s vise, layout tools, and calipers for precision</li>"
+                data-features="<li>Air-powered single-piston engine</li><li>Fully machined from aluminum stock</li><li>Hand-fit components with functional motion</li>"
+                data-reflection="This project felt like my first real mechanical build. It gave me confidence in using industrial tools and reminded me how valuable it is to step outside of school to keep learning. It also taught me the discipline and patience needed for tight tolerances and clean finishes."
+                data-download=""
+                data-download-label=""
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
+
   
-      <!-- Birdhouse -->
+      <!-- Birdhouse – Personal Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/11.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
-              <h3>Birdhouse</h3>
-              <p>Created in my freshman year of high school. This project was my first real entry into the world of construction. I even have it hung in my backyard. This photo shows what it would look like prior to and after the paint job.</p>
+              <h3>Birdhouse – Personal Project</h3>
+              <p>My first construction project, built during freshman year of high school. It’s still hanging in my backyard today.</p>
+
+              <button class="light view-details-button"
+                data-title="Birdhouse – Personal Project"
+                data-img="Portfolio Website Image Template/11.png"
+                data-description="Built in my first year of high school, this birdhouse was my earliest introduction to hands-on design and fabrication. It was a basic woodworking project, but it taught me the fundamentals of measuring, cutting, and assembling something functional. I still remember the satisfaction of painting it, mounting it, and seeing birds actually use it. It’s a small project, but it marked the beginning of my passion for building things."
+                data-tools="<li>Hand saw, hammer, and nails</li><li>Ruler and pencil for layout</li><li>Acrylic paint for finishing</li>"
+                data-features="<li>Classic A-frame structure with circular entrance</li><li>Pre- and post-paint finish shown</li><li>Still installed and functional in my backyard</li>"
+                data-reflection="This was one of the first times I ever built something real with my hands. It wasn’t perfect, but it gave me the sense that I could take an idea, measure it out, and bring it to life — something I’ve been chasing ever since."
+                data-download=""
+                data-download-label=""
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
-  
-      <!-- CO2 Gas Car -->
+
+      <!-- CO2 Gas Car – Personal Project -->
       <div class="col-md-4">
         <div class="hover-outer-box">
           <img src="Portfolio Website Image Template/12.png" />
           <div class="hover-inner-box">
             <div class="hover-content">
-              <h3>CO2 Gas Car</h3>
-              <p>Created in my freshman year of high school. This was my first project ever, and it taught me a lot about aerodynamics, more specifically how the shape, size and weight of the car affect speed.</p>
+              <h3>CO₂ Gas Car – Personal Project</h3>
+              <p>My first ever project — a small racing car powered by a CO₂ canister. It introduced me to aerodynamics and how design choices affect speed.</p>
+
+              <button class="light view-details-button"
+                data-title="CO₂ Gas Car – Personal Project"
+                data-img="Portfolio Website Image Template/12.png"
+                data-description="This was the very first project I ever built. Designed in a freshman technology class, the goal was to create a small wooden car powered by a CO₂ canister and raced down a track. I learned how shape, weight distribution, and surface drag all influence speed — and how even tiny imperfections could cost the race. It was a fun and competitive experience that introduced me to real engineering principles in motion."
+                data-tools="<li>Band saw, sanding blocks, and drill press</li><li>Wood shaping and finishing techniques</li><li>CO₂ cartridge launcher and timed test runs</li>"
+                data-features="<li>Aerodynamic body carved from wood</li><li>Rear axle mounting for CO₂ propulsion</li><li>Tested for speed and straight-line stability</li>"
+                data-reflection="This was the spark. It made engineering feel fast, creative, and real. I didn’t know it at the time, but this tiny wooden car started the path I’m still on today — designing, tweaking, testing, and always learning from every build."
+                data-download=""
+                data-download-label=""
+                style="margin-top: 10px; border-radius: 12px;">
+                View Details
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   
   <!-- LINKEDIN CTA SECTION -->
   <section class="cta full-width-bg">
@@ -567,7 +699,7 @@
   </a>
 </div>
 <div class="col-md-4">
-  <img src="1-VnKoValwGK3-d1bZhD6sVA.jpeg" alt="Photography preview" />
+  <img src="Image20250409104405.png" alt="Photography preview" style="width: 100px; height: 100px; margin-left: 100px;">
 </div>
 </div>
 </section>
@@ -699,7 +831,122 @@
           }
         });
       }
-    });
+    }); 
   </script>
   </body>
   </html>
+
+
+
+
+
+
+
+<!-- 🔽 Unified Dynamic Project Modal -->
+<div id="project-modal" class="modal-overlay" style="display: none;">
+  <span class="close-modal">&times;</span>
+  <div class="modal-content">
+    <h2 id="modal-title"></h2>
+    <img id="modal-img" alt="Project Image" class="medium-image" style="margin-bottom: 1rem; max-width: 400px; height: auto;">
+
+    <h3 style="margin-bottom: 0.5rem;">Project Overview</h3>
+    <p id="modal-description"></p>
+
+    <h3 style="margin-bottom: 0.5rem;">Tools Used</h3>
+    <ul id="modal-tools"></ul>
+
+    <h3 style="margin-bottom: 0.5rem;">Key Design Features</h3>
+    <ul id="modal-features"></ul>
+
+    <h3 style="margin-bottom: 0.5rem;">Reflection</h3>
+    <p id="modal-reflection"></p>
+
+    <a id="modal-download-link" href="#" download>
+      <button class="light" style="margin-top: 20px;" id="modal-download-label">Download</button>
+    </a>
+  </div>
+</div>
+
+<!-- 🔽 Modal Styling -->
+<style>
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.close-modal {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  z-index: 10000;
+}
+</style>
+
+<!-- 🔽 Modal Script -->
+<script>
+  const modal = document.getElementById('project-modal');
+  const closeModal = modal.querySelector('.close-modal');
+
+  const modalTitle = document.getElementById('modal-title');
+  const modalImg = document.getElementById('modal-img');
+  const modalDesc = document.getElementById('modal-description');
+  const modalTools = document.getElementById('modal-tools');
+  const modalFeatures = document.getElementById('modal-features');
+  const modalReflection = document.getElementById('modal-reflection');
+  const modalDownload = document.getElementById('modal-download-link');
+  const modalDownloadLabel = document.getElementById('modal-download-label');
+
+  document.querySelectorAll('.view-details-button').forEach(button => {
+    button.addEventListener('click', e => {
+      e.preventDefault();
+
+      modalTitle.textContent = button.dataset.title;
+      modalImg.src = button.dataset.img;
+      modalDesc.textContent = button.dataset.description;
+      modalTools.innerHTML = button.dataset.tools;
+      modalFeatures.innerHTML = button.dataset.features;
+      modalReflection.textContent = button.dataset.reflection;
+      if (button.dataset.download && button.dataset.download !== "") {
+        modalDownload.style.display = "inline-block";
+        modalDownload.href = button.dataset.download;
+        modalDownloadLabel.textContent = button.dataset.downloadLabel;
+      } else {
+        modalDownload.style.display = "none";
+      }
+
+
+      modal.style.display = 'flex';
+    });
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>

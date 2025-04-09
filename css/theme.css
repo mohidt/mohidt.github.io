@@ -338,7 +338,7 @@ html {
   .photo-promo h2,
   .photo-promo p,
   .photo-promo .col-md-8 a {
-      padding-left: 200px; /* Default for desktop */
+      padding-left: 345px; /* Default for desktop */
       text-align: left; /* Ensures desktop alignment */
   }
   
