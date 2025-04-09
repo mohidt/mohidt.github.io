@@ -494,6 +494,11 @@ html {
       border-radius: 10px;
       text-align: left;
   }
+
+  .experience-card h3,
+.about-me-experience-card h3 {
+  margin-bottom: 1rem; /* or try 1.2rem if you want slightly more breathing room */
+}
     /* Certificate Section  */
   .certificate-container .hover-outer-box {
       position: relative;
