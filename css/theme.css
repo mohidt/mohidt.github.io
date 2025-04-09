@@ -845,6 +845,17 @@ html {
   }
 }
 
+@media (max-width: 834px) {
+  .padding-small .row.margin-bottom-small:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .padding-small .row.margin-bottom-small + .row.margin-bottom-small {
+    margin-top: 20px;
+  }
+}
+
+
 /* ---------- iPad LANDSCAPE (835px–1024px) ---------- */
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
   body {
