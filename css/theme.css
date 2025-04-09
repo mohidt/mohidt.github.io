@@ -311,42 +311,61 @@ html {
 
 
   
-   /* photo promo */
   .photo-promo {
-      background-color: black; /* Ensure the background is black */
-      padding: 40px 0; /* Match the original CTA padding */
-      width: 100vw; /* Full viewport width */
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
+    background-color: black;
+    color: white;
+    padding: 3rem 1rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    box-sizing: border-box;
   }
   
-  .photo-promo .container {
-      padding-left: 0;
-      padding-right: 0;
-      width: 100%;
+  .promo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
   
-  .photo-promo .row {
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%; /* Ensure the row spans the full width */
+  .promo-image img {
+    max-width: 64px; /* smaller image */
+    height: auto;
+    border-radius: 12px;
   }
   
-  .photo-promo h2,
-  .photo-promo p,
-  .photo-promo .col-md-8 a {
-      padding-left: 345px; /* Default for desktop */
-      text-align: left; /* Ensures desktop alignment */
+  .promo-text h2,
+  .promo-text p {
+    margin-bottom: 1rem;
   }
   
-  .photo-promo button {
-      margin-left: 0;
-      padding-left: 50px;
-      padding-right: 50px;
+  .promo-text a button {
+    margin-top: 1rem;
   }
+  
+  
+  /* Mobile & tablet */
+  @media (max-width: 768px) {
+    .promo-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .promo-text {
+      text-align: center;
+    }
+  
+    .promo-image img {
+      max-width: 100px;
+    }
+  }
+  
   
   /* blurbs */
   .blurbs .icon {
@@ -731,25 +750,6 @@ html {
     }
   }
 
-  .photo-promo h2,
-  .photo-promo p,
-  .photo-promo .col-md-8 a {
-    padding-left: 0 !important;
-    text-align: center;
-    display: block;
-  }
-
-  .photo-promo .col-md-8 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .photo-promo button {
-    margin: 10px auto;
-    display: block;
-  }
-
   .experience-section,
   .about-me-section,
   .testimonial-section {
@@ -860,12 +860,6 @@ html {
     width: 90%;
   }
 
-  .photo-promo h2,
-  .photo-promo p,
-  .photo-promo .col-md-8 a {
-    padding-left: 20px;
-    text-align: center;
-  }
 
   .team .col-md {
     position: static !important;
@@ -876,25 +870,7 @@ html {
     height: 350px;
   }
 }
-@media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
-  .photo-promo .col-md-8 {
-    padding-left: 1rem !important; /* Reduce from 50px */
-    padding-right: 1rem !important;
-  }
 
-  .photo-promo .col-md-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0;
-  }
-
-  .photo-promo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-}
 
 /* ---------- MID-RANGE TABLET TWEAKS (768px–1024px) ---------- */
 @media (min-width: 768px) and (max-width: 1024px) {
