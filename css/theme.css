@@ -667,6 +667,7 @@ html {
     margin-top: 0;
   }
   
+  
 /* ========== MEDIA QUERIES ========== */
 
 /* ---------- MAX-WIDTH: 1450px ---------- */
@@ -732,6 +733,16 @@ html {
 
   .row > .col-md:last-child {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 834px) {
+    .team .col-md {
+      margin-bottom: 20px;
+    }
+  
+    .team .col-md:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .hover-content {
