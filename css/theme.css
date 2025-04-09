@@ -484,7 +484,7 @@ html {
       display: flex;
       justify-content: space-between;
       align-items: stretch;
-      gap: 20px; /* Adds space between sections */
+      gap: 25px; /* Adds space between sections */
   }
   
   .experience-card {
@@ -571,7 +571,7 @@ html {
       display: flex;
       justify-content: space-between;
       align-items: stretch;
-      gap: 20px; /* Space between cards */
+      gap: 25px; /* Space between cards */
       flex-wrap: wrap; /* Allows wrapping on smaller screens */
   }
   
@@ -618,7 +618,7 @@ html {
       display: flex;
       justify-content: space-between;
       align-items: stretch;
-      gap: var(--spacing-medium); /* Keeps spacing between testimonial cards */
+      gap: 25px; /* Keeps spacing between testimonial cards */
       flex-wrap: wrap;
   }
   
