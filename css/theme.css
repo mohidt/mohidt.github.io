@@ -855,6 +855,21 @@ html {
   }
 }
 
+@media (max-width: 834px) {
+  .services .icon-row .col-xs {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .services .icon-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
 
 /* ---------- iPad LANDSCAPE (835px–1024px) ---------- */
 @media (min-width: 835px) and (max-width: 1024px) and (orientation: landscape) {
