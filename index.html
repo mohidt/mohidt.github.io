@@ -1,1084 +1,1107 @@
-<!--
-  CLEANED SECTION: HEAD & HEADER
-  This section sets up the page metadata, loads external stylesheets and fonts,
-  and includes the navigation bar and hero section.
--->
 <!DOCTYPE html>
-<html lang="de-DE" prefix="og: http://ogp.me/ns#">
+<html lang="en-CA">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohid Tahir - My Portfolio</title>
-    <meta name="description" content="Mohid Tahir - My Portfolio" />
+    <title>Mohid Tahir | Mechanical Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Mechanical engineering portfolio featuring project work, design builds, and hands-on engineering experience by Mohid Tahir."
+    />
+    <meta name="theme-color" content="#111111" />
 
-    <!-- Author and favicon -->
-    <link rel="author" href="https://lautenschlager.de" />
     <link rel="icon" type="image/png" sizes="32x32" href="Image20250415131137-modified (1).png" />
 
-    <!-- Normalize and grid system -->
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css" media="all" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-
-    <!-- Custom Theme -->
     <link rel="stylesheet" type="text/css" href="css/theme.css" media="all" />
   </head>
 
-  <body>
-    <!-- HEADER & NAVIGATION -->
-    <header class="fade-in">
-      <div class="navigation-bar flex middle-xs">
-        <img src="Screenshot_2023-08-11_001944-removebg-preview.png" class="logo" />
-        <nav class="end-xs">
+  <body id="top">
+    <header class="site-header fade-in">
+      <div class="navigation-bar">
+        <a class="brand-mark" href="#top" aria-label="Mohid Tahir home">
+          <img
+            src="Screenshot_2023-08-11_001944-removebg-preview.png"
+            class="logo"
+            alt="Tahir Engineering logo"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
           <ul>
-            <li><a href="#Experience">Engineering Experience</a></li>
+            <li><a href="#Experience">Experience</a></li>
             <li><a href="#Projects">Projects</a></li>
-            <li><a href="#About-Me">About Me</a></li>
+            <li><a href="#About-Me">About</a></li>
             <li><a href="#Testimonials">Testimonials</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
 
-      <!-- HERO SECTION -->
-      <div
-        class="hero flex middle-xs"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('daniele-franchi-5GDr-cSK7mY-unsplash-copy.jpg');"
-      >
+      <div class="hero flex middle-xs">
         <div class="hero-text">
-          <img src="Image20250415131137-modified (1).png" class="small-image" />
-          <h1 class="hero-text">Mohid Tahir</h1>
-          <p>
-            <br>
-            Welcome to my portfolio, which details my creative works along with my work experience.<br />
-            <!-- Another empty line of space -->
+          <p class="hero-kicker">Mechanical Engineering Portfolio</p>
+          <img
+            src="Image20250415131137-modified (1).png"
+            class="small-image hero-mark"
+            alt="Mohid Tahir monogram"
+          />
+          <h1>Mohid Tahir</h1>
+          <p class="hero-intro">
+            Projects and work from University of Toronto, internships, and personal builds. I like taking ideas
+            through CAD, prototyping, and testing until they become something real.
           </p>
 
-          <!-- Resume Download Button -->
-          <a href="Mohid_Tahir_Resume.pdf" download>
-            <button>Download My Resume</button>
-          </a>
-          <br>
-          <a href="Mohid_Tahir_Master_Resume.pdf" download>
-            <button>Download My Master Resume</button>
+          <div class="hero-actions">
+            <a class="button-link" href="Mohid_Tahir_Resume.pdf" download>Resume</a>
+            <a class="button-link button-link--ghost" href="Mohid_Tahir_Master_Resume.pdf" download>
+              Master Resume
+            </a>
+            <a class="button-link button-link--light" href="#collaborative-projects">View Projects</a>
+          </div>
+
+          <a class="scroll-cue" href="#Experience">
+            Engineering Experience
+            <span class="dynamic-arrow" aria-hidden="true">&#8595;</span>
           </a>
         </div>
       </div>
     </header>
 
-    <!-- START OF MAIN CONTENT -->
-    <div class="wrapper">
-      <!-- ENGINEERING EXPERIENCE SECTION -->
+    <main>
       <section class="services" id="Experience">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-12 center-xs center-sm center-md center-lg">
-              <h2 class="hero-text">Engineering Experience</h2>
+          <div class="row center-xs">
+            <div class="col-xs-12 col-md-10 section-heading">
+              <h2 class="section-title">Engineering Experience</h2>
+              <p class="section-copy">
+                A few roles and projects that shaped how I work. Most of them sit somewhere
+                between design, manufacturing, communication, and hands-on problem solving.
+              </p>
             </div>
           </div>
 
-          <!-- Skillset Icons -->
-          <div class="row icon-row">
+          <div class="row icon-row skill-grid">
             <div class="col-xs center-xs">
-              <img src="Matlab_Logo.png" class="icon" /><br />
+              <img src="Matlab_Logo.png" class="icon" alt="MATLAB logo" loading="lazy" /><br />
               <span>MATLAB</span>
             </div>
             <div class="col-xs center-xs">
-              <img src="Python-logo-notext.svg.png" class="icon" /><br />
+              <img src="Python-logo-notext.svg.png" class="icon" alt="Python logo" loading="lazy" /><br />
               <span>Python</span>
             </div>
             <div class="col-xs center-xs">
-              <img src="autocad-logo-png_seeklogo-482394.png" class="icon" /><br />
+              <img src="autocad-logo-png_seeklogo-482394-Photoroom.png" class="icon" alt="AutoCAD logo" loading="lazy" /><br />
               <span>AutoCAD</span>
             </div>
             <div class="col-xs center-xs">
-              <img src="Microsoft_Office_logo_(2013–2019).svg.png" class="icon" /><br />
+              <img src="Microsoft_Office_logo_2013-2019.png" class="icon" alt="Microsoft Office logo" loading="lazy" /><br />
               <span>Microsoft Office Suite</span>
             </div>
             <div class="col-xs center-xs">
-              <img src="DSY.PA-35ee07a0.png" class="icon" /><br />
+              <img src="DSY.PA-35ee07a0.png" class="icon" alt="SolidWorks logo" loading="lazy" /><br />
               <span>SolidWorks</span>
             </div>
             <div class="col-xs center-xs">
-              <img src="Onshape_logo_full.png" class="icon" /><br />
+              <img src="Onshape_logo_full.png" class="icon" alt="Onshape logo" loading="lazy" /><br />
               <span>Onshape</span>
             </div>
           </div>
 
-          <br />
-          
-<!--
-  EXPERIENCE CARDS SECTION
-  Three columns: technical skills, internship insights, and university/personal project work.
-  Each card communicates an aspect of engineering experience.
--->
-<div class="row experience-section">
-    <!-- Column 1: Technical Skills -->
-    <div class="col-xs-12 col-md experience-card">
-      <h3>Technical Skills &amp; Engineering Approach</h3>
-      <p>
-        My engineering skill set encompasses a blend of analytical problem-solving, programming, and computer-aided design.
-        I have developed proficiency in MATLAB and Python for data analysis and engineering simulations, allowing me to model
-        and optimize complex systems.
-      </p>
-      <p>
-        Additionally, I am skilled in AutoCAD, SolidWorks, and Onshape, which I have used to design and prototype mechanical components.
-        My experience with Microsoft Office Suite supports effective documentation, data management, and reporting.
-      </p>
-      <p>
-        Whether I’m analyzing datasets, refining CAD models, or troubleshooting design issues,
-        I approach challenges with a methodical and results-driven mindset.
-      </p>
-    </div>
-  
-    <!-- Column 2: Internship Experience -->
-    <div class="col-xs-12 col-md experience-card">
-      <h3>Internship Experience &amp; Key Takeaways</h3>
-      <p>
-        My internships at AGS Automotive Systems and Parts Apart have provided me with hands-on experience in both manufacturing
-        engineering and product design.
-      </p>
-      <p>
-        At AGS, I focused on optimizing production processes, improving efficiency by 15%, and gaining a deep understanding
-        of how design decisions impact large-scale manufacturing.
-      </p>
-      <p>
-        At Parts Apart, I was immersed in the full product development cycle, from market research to prototyping, refining CAD models,
-        and collaborating closely with stakeholders.
-      </p>
-      <p>
-        Together, these experiences have strengthened my ability to bridge design and real-world application,
-        balance innovation with feasibility, and work within cross-functional teams to develop practical engineering solutions.
-      </p>
-    </div>
-  
-    <!-- Column 3: University and Personal Projects -->
-    <div class="col-xs-12 col-md experience-card">
-      <h3>University &amp; Personal Projects</h3>
-      <p>
-        Beyond my professional experience, I have engaged in hands-on projects that further developed my engineering skill set.
-        In the Engineering Strategies and Practice II course at the University of Toronto, I collaborated with a team to develop
-        a functional prototype for a real-world client, ensuring clear documentation and effective communication throughout the design process.
-      </p>
-      <p>
-        Additionally, I have applied my skills to personal projects such as designing and building a miniature pneumatic engine,
-        crafting custom wooden furniture, and contributing to Formula SAE.
-      </p>
-      <p>
-        These experiences reinforce my passion for engineering and my ability to turn theoretical knowledge into practical, innovative solutions.
-      </p>
-    </div>
-  </div>
-  </div>
-  </section>
-  
-  <!-- CERTIFICATION HIGHLIGHT -->
-  <div class="certificate-container">
-    <div class="hover-outer-box">
-      <img src="Certificate_C-JZ9GAWDLVT.jpg" class="medium-image" />
-      <div class="hover-inner-box">
-        <div class="hover-content">
-          <h3>
-            <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&amp;i=C-JZ9GAWDLVT">
-              <button class="verify-button">Verify Certificate</button>
+          <div class="experience-timeline" aria-label="Selected engineering experience">
+            <article class="experience-card experience-card--timeline">
+              <img
+                src="1752088070516-Photoroom.png"
+                class="experience-logo"
+                alt="AGS Automotive Systems logo"
+                loading="lazy"
+              />
+              <div class="experience-meta">
+                <p class="experience-card-label">May 2024 - Aug 2025</p>
+                <h3>Mechanical Engineering Intern</h3>
+                <p class="experience-company">AGS Automotive Systems</p>
+                <p class="experience-highlight">
+                  Built 20+ part and process models in SolidWorks, updated AutoCAD schematics,
+                  and used MOST time studies to support changes that cut process time by 15%.
+                </p>
+              </div>
+            </article>
+
+            <article class="experience-card experience-card--timeline">
+              <img
+                src="chuma_design_logo-Photoroom.png"
+                class="experience-logo"
+                alt="Parts Apart logo"
+                loading="lazy"
+              />
+              <div class="experience-meta">
+                <p class="experience-card-label">May 2023 - Aug 2023</p>
+                <h3>Design Engineering Intern</h3>
+                <p class="experience-company">Parts Apart</p>
+                <p class="experience-highlight">
+                  Worked on product development from research to CAD, prototyping, and iteration,
+                  helping turn an early concept into a practical prototype.
+                </p>
+              </div>
+            </article>
+
+            <article class="experience-card experience-card--timeline">
+              <img
+                src="download-Photoroom.png"
+                class="experience-logo"
+                alt="University of Toronto Engineering logo"
+                loading="lazy"
+              />
+              <div class="experience-meta">
+                <p class="experience-card-label">Jan 2022 - Apr 2022</p>
+                <h3>Communications Manager &amp; Project Team Member</h3>
+                <p class="experience-company">University of Toronto</p>
+                <p class="experience-highlight">
+                  Handled communication between our team and the client professor, kept
+                  documentation organized, and helped deliver a working APS112 teaching prototype.
+                </p>
+              </div>
+            </article>
+
+            <article class="experience-card experience-card--timeline">
+              <img
+                src="dairy-queen-logo-png-transparent-Photoroom.png"
+                class="experience-logo"
+                alt="Dairy Queen logo"
+                loading="lazy"
+              />
+              <div class="experience-meta">
+                <p class="experience-card-label">Jun 2020 - Jan 2024</p>
+                <h3>Shift Leader</h3>
+                <p class="experience-company">Dairy Queen</p>
+                <p class="experience-highlight">
+                  Led shifts of up to 4 people, handled cash and customer issues, and helped train
+                  new staff during busy periods.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-extras">
+        <div class="experience-extras-grid">
+          <article class="profile-showcase">
+            <div class="profile-header">
+              <p class="profile-kicker">Education &amp; Approach</p>
+              <h3>
+                I like projects that move from a rough idea to something real enough to build,
+                test, and improve.
+              </h3>
+              <p class="profile-intro">
+                That is the thread running through most of my coursework, internships, and side
+                projects.
+              </p>
+            </div>
+
+            <div class="profile-grid">
+              <section class="profile-panel profile-panel--education" aria-label="Education">
+                <p class="profile-panel-label">Education</p>
+                <h4>University of Toronto</h4>
+                <p class="profile-degree">BASc in Mechanical Engineering</p>
+                <p class="profile-copy">
+                  PEY Co-op, Minor in Engineering Business, and EV Design certificate.
+                </p>
+                <p class="profile-note">
+                  Selected coursework: Mechanical Engineering Design, Kinematics and Dynamics of
+                  Machines.
+                </p>
+              </section>
+
+              <section class="profile-panel" aria-label="Working style">
+                <p class="profile-panel-label">How I Work</p>
+                <ul class="profile-pill-list">
+                  <li>Collaboration</li>
+                  <li>Technical Documentation</li>
+                  <li>Project Management</li>
+                  <li>Critical Analysis</li>
+                  <li>Time Management</li>
+                  <li>Verbal &amp; Written Communication</li>
+                  <li>Team Coordination</li>
+                  <li>Follow-through</li>
+                  <li>Deadline Management</li>
+                </ul>
+              </section>
+
+              <section class="profile-panel" aria-label="Analysis and fabrication">
+                <p class="profile-panel-label">Analysis &amp; Build</p>
+                <ul class="profile-pill-list">
+                  <li>DFMEA</li>
+                  <li>DFM/DFA</li>
+                  <li>Weighted Decision Matrices</li>
+                  <li>Life Cycle Assessment</li>
+                  <li>Net Present Value Modeling</li>
+                  <li>MOST Time Studies</li>
+                  <li>Manual Machining</li>
+                  <li>Workflow Optimization</li>
+                  <li>Prototype Iteration</li>
+                  <li>Process Improvement</li>
+                  <li>Reverse Engineering</li>
+                  <li>Tolerance Analysis</li>
+                </ul>
+              </section>
+
+              <section class="profile-panel profile-panel--tools" aria-label="Additional tools">
+                <p class="profile-panel-label">Additional Tools</p>
+                <ul class="profile-pill-list">
+                  <li>Minitab</li>
+                  <li>Calibre</li>
+                  <li>Git</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>PLC</li>
+                  <li>G-code</li>
+                </ul>
+              </section>
+            </div>
+          </article>
+
+          <aside class="profile-side-rail">
+            <article class="certificate-card certificate-card--compact">
+              <div class="certificate-card-media">
+                <img
+                  src="Certificate_C-JZ9GAWDLVT.jpg"
+                  class="medium-image"
+                  alt="SolidWorks Associate certificate"
+                  loading="lazy"
+                />
+              </div>
+              <div class="certificate-card-body">
+                <p class="certificate-kicker">Certification</p>
+                <h3>SolidWorks Associate</h3>
+                <p class="certificate-copy">A solid checkpoint for the CAD side of my work.</p>
+                <a
+                  class="button-link verify-button"
+                  href="https://cv.virtualtester.com/qr/?b=SLDWRKS&amp;i=C-JZ9GAWDLVT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Verify Certificate
+                </a>
+              </div>
+            </article>
+
+            <article class="awards-panel">
+              <p class="profile-panel-label">Recognition</p>
+              <h4>Awards &amp; Certifications</h4>
+              <p class="awards-intro">A few milestones I am still genuinely proud of.</p>
+              <ul class="awards-list">
+                <li>Dean&rsquo;s Honours List</li>
+                <li>Basic Machining, George Brown</li>
+                <li>Secondary School Valedictorian</li>
+                <li>Ontario Scholar</li>
+              </ul>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section class="centered-container project-showcase" id="Projects">
+        <div class="section-heading section-heading--light">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-copy">
+            Coursework, team builds, and personal projects that I still like showing.
+          </p>
+        </div>
+
+        <div class="project-showcase-frame">
+          <iframe
+            class="sketchfab-embed"
+            scrolling="no"
+            allowfullscreen
+            src="https://sketchfab.com/models/b3c00bda19a141658cb5d8df49547df0/embed?autospin=1&amp;autostart=1&amp;ui_theme=dark"
+            name="PreviewFrame3D"
+            id="PreviewFrame3D"
+            title="Gearbox assembly 3D model"
+          ></iframe>
+        </div>
+
+        <div class="project-showcase-actions">
+          <a
+            class="button-link button-link--light"
+            href="https://www.3dcontentcentral.com/download-model.aspx?catalogid=171&amp;id=1895775"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Full Gearbox Assembly
+          </a>
+
+          <a class="scroll-cue scroll-cue--light" href="#collaborative-projects">
+            See all projects
+            <span class="dynamic-arrow" aria-hidden="true">&#8595;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="padding-small project-gallery" id="collaborative-projects">
+        <div class="section-heading section-heading--gallery center-xs">
+          <h2 class="section-title">Collaborative Projects</h2>
+          <p class="section-copy">
+            Team projects from coursework, clubs, and capstone work.
+          </p>
+        </div>
+
+        <div class="row margin-bottom-small featured-project-grid">
+          <div class="col-xs-12 col-md-4">
+            <article class="hover-outer-box project-card project-card--feature">
+              <img
+                src="Portfolio Website Image Template - APS380.png"
+                alt="APS380 all-wheel-drive demonstration platform"
+                loading="lazy"
+              />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <p class="project-chip">APS380 | EV Design</p>
+                  <h3>AWD EV Demonstration Platform</h3>
+                  <p>
+                    Built a scaled dual-motor AWD platform to show drivetrain layout and torque
+                    distribution.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="AWD EV Demonstration Platform - APS380"
+                    data-img="Portfolio Website Image Template - APS380.png"
+                    data-description="We built a scaled AWD EV platform to make APS380 concepts more tangible. The system used separate front and rear drivetrains, wheel-speed sensing, and an ESP32-based control setup. A lot of the work ended up being integration, alignment, and troubleshooting once all the parts had to work together."
+                    data-tools="&lt;li&gt;SolidWorks - drivetrain layout and redesign&lt;/li&gt;&lt;li&gt;ESP32 - control and data logging&lt;/li&gt;&lt;li&gt;Hall-effect sensors - wheel-speed measurement&lt;/li&gt;"
+                    data-features="&lt;li&gt;Dual-motor split-axle AWD layout with front and rear differentials&lt;/li&gt;&lt;li&gt;Wheel-speed sensing for testing and slip observation&lt;/li&gt;&lt;li&gt;Multiple redesigns to improve belt and pulley fit&lt;/li&gt;"
+                    data-reflection="This project made a lot of classroom drivetrain concepts feel more real. It also reminded me that getting a system to work together is often harder than drawing the first version."
+                    data-download="APS380 - Project Final Report.pdf"
+                    data-download-label="Download Final Report"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <article class="hover-outer-box project-card project-card--feature">
+              <img
+                src="img/UTWind_Capstone_Card.png"
+                alt="UTWind capstone cover"
+                loading="lazy"
+              />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <p class="project-chip">Capstone | UTWind</p>
+                  <h3>Low-Speed PMSG for Vertical Axis Wind Turbine</h3>
+                  <p>
+                    Designed a custom direct-drive generator for UTWind's 2026 turbine, targeting
+                    low-RPM output and low starting torque.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Low-Speed PMSG for Vertical Axis Wind Turbine - Capstone"
+                    data-img="img/UTWind_Capstone_Card.png"
+                    data-description="For capstone, our team designed a custom direct-drive outer-rotor radial-flux permanent magnet synchronous generator for UTWind's 2026 vertical axis wind turbine. The target was 600 to 1200 W at 100 to 200 RPM while keeping starting torque below 0.1 Nm. That meant balancing performance in simulation with something that still made sense to build."
+                    data-tools="&lt;li&gt;ANSYS RMxprt - analytical generator modeling&lt;/li&gt;&lt;li&gt;ANSYS Maxwell 2D - electromagnetic validation&lt;/li&gt;&lt;li&gt;SolidWorks - assembly development&lt;/li&gt;&lt;li&gt;Weighted decision matrices - concept selection&lt;/li&gt;"
+                    data-features="&lt;li&gt;Compared four generator architectures for low-speed use&lt;/li&gt;&lt;li&gt;Selected a 24/20 slot-pole fractional-slot concentrated winding with segmented NdFe35 magnets&lt;/li&gt;&lt;li&gt;Reached 842 W output and 0.09 Nm peak starting torque in simulation&lt;/li&gt;&lt;li&gt;Prepared procurement specs for magnets and lamination steel&lt;/li&gt;"
+                    data-reflection="This has been one of the most challenging projects I've worked on because it sits right between theory and buildability. It pushed me to think more carefully about tradeoffs instead of chasing one perfect number."
+                    data-download="Capstone Poster.pdf"
+                    data-download-label="Download Poster"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <article class="hover-outer-box project-card project-card--feature">
+              <img
+                src="img/Windrunner.png"
+                alt="WindRunner propeller-driven sprint car"
+                loading="lazy"
+              />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <p class="project-chip">MIE540 | Product Design</p>
+                  <h3>The WindRunner</h3>
+                  <p>
+                    A compact propeller-driven car we tuned around speed, safety, and a
+                    realistic toy-market price point.
+                  </p>
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="The WindRunner - MIE540"
+                    data-img="img/Windrunner.png"
+                    data-description="The WindRunner was a small propeller-driven sprint car our team designed to cover a short fixed distance as quickly as possible while still staying safe, self-contained, and affordable. We started with concept generation and customer requirements, then used DOE testing, surface checks on carpet and tile, and final validation runs to lock in the design."
+                    data-tools="&lt;li&gt;Full factorial DOE and factor analysis&lt;/li&gt;&lt;li&gt;Voice-of-customer requirements and concept selection&lt;/li&gt;&lt;li&gt;Tolerance analysis using worst-case and RSS methods&lt;/li&gt;&lt;li&gt;Prototype testing across carpet and tile surfaces&lt;/li&gt;"
+                    data-features="&lt;li&gt;Compact self-contained propeller car designed for a short sprint&lt;/li&gt;&lt;li&gt;Final design tuned through blade direction, battery type, and wheel diameter&lt;/li&gt;&lt;li&gt;Built around speed, safety, durability, and a $15 retail target with roughly a $6 BOM&lt;/li&gt;&lt;li&gt;Validated on the built prototype after optimization&lt;/li&gt;"
+                    data-reflection="I liked that this project mixed product thinking with testing. It was not only about making the car faster. It was also about making sure the design was safe, durable, and realistic to build."
+                    data-download="MIE540 Presentation.pdf"
+                    data-download-label="Download Presentation"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="row margin-bottom-small project-row">
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/1.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Robotic Arm for Rover - MIE301</h3>
+                  <p>
+                    Redesigned a sample-collecting robotic arm for Io by moving from a rover-mounted
+                    concept to a drone-mounted one.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Robotic Arm for Rover - MIE301"
+                    data-img="Portfolio Website Image Template/1.png"
+                    data-description="Our team redesigned a robotic arm that was originally meant for a Europa rover and adapted it for Io's volcanic terrain. To improve mobility, we dropped the rover base and mounted the arm on a compact drone instead. That shift changed a lot of the design decisions, especially around size, weight, and deployment."
+                    data-tools="<li>MATLAB - link optimization within a compact drone body</li><li>SolidWorks - 3D modeling and simulation</li>"
+                    data-features="<li>Drone-mounted concept for rough terrain</li><li>Folding four-bar linkage arm for compact storage and deployment</li><li>Aluminum Alloy 1060 frame for low weight and strength</li><li>Optimized link lengths within a 58.5 cm x 48.9 cm envelope</li>"
+                    data-reflection="I liked this one because it felt like a real design pivot. Once the platform changed, the whole problem changed with it."
+                    data-download="Robotic Arm CAD + MATLAB.zip"
+                    data-download-label="Download CAD + MATLAB Files"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/2.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Printed Circuit Board - MIE346</h3>
+                  <p>
+                    Designed and built a PCB that scaled and filtered a low-voltage analog signal.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Printed Circuit Board - MIE346"
+                    data-img="Portfolio Website Image Template/2.png"
+                    data-description="The goal of this project was to take an analog input from 0 to 0.35 V and scale it to 0.25 to 3.3 V while also filtering noise. We compared circuit options, chose a non-inverting op-amp design, refined it in simulation, and then laid out and tested the final PCB."
+                    data-tools="<li>SuperSpice - circuit simulation and sweeps</li><li>Analog Devices Filter Tool - low-pass filter design</li><li>Multisim, Ultiboard, and Eagle - schematic capture and PCB layout</li><li>Oscilloscope and multimeter - validation</li>"
+                    data-features="<li>Non-inverting op-amp configuration for gain and offset</li><li>Two-stage Butterworth low-pass filter with a 1 kHz cutoff</li><li>Custom PCB designed and fabricated in-house</li><li>Less than 4% error compared to theory</li>"
+                    data-reflection="This was my first full PCB project, so it was a good lesson in how quickly small mistakes show up once you move from a schematic to a real board."
+                    data-download="MIE346 PCB Design Assignment.pdf"
+                    data-download-label="Download Full Design Assignment"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/3.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Google Home Housing - MIE315</h3>
+                  <p>
+                    Compared wood and plastic housings for Google Home speakers through cost,
+                    environmental, and social analysis.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Google Home Housing - MIE315"
+                    data-img="Portfolio Website Image Template/3.png"
+                    data-description="This consulting project looked at whether Google should replace plastic smart speaker housings with wood. Our team compared the options using financial analysis, life cycle assessment, and stakeholder considerations, then made a recommendation based on cost, environmental impact, and broader design tradeoffs."
+                    data-tools="<li>Hybrid Life Cycle Assessment (LCA)</li><li>Net Present Value (NPV) modeling</li><li>Stakeholder impact framework</li><li>Weighted decision matrix</li>"
+                    data-features="<li>Wood housing NPV: -$82.10 vs plastic: -$178.34 over 5 years at a 5% rate</li><li>Lower cumulative emissions and better disposal outcomes for wood</li><li>Considered employment, health, and public perception impacts</li><li>Also weighed acoustics, appearance, and sustainability</li>"
+                    data-reflection="I liked that this project was not just about picking a material. It forced us to think about design in a wider way."
+                    data-download="Google Home Speaker Wood vs Plastic.pdf"
+                    data-download-label="Download Overview Poster"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row margin-bottom-small project-row">
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/4.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Dissections - MIE243</h3>
+                  <p>
+                    Reverse-engineered several devices and rebuilt them in SolidWorks.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Dissections - MIE243"
+                    data-img="Portfolio Website Image Template/4.png"
+                    data-description="In MIE243, we took apart real devices, studied how they worked, and rebuilt them digitally in SolidWorks. The dissections got more involved over time and ended with a complete 12:1 gearbox model built from scratch."
+                    data-tools="<li>SolidWorks - reverse engineering and parametric modeling</li><li>Hand drafting - mechanical detailing for the ball bearing</li><li>Measurement tools - calipers and rulers</li>"
+                    data-features="<li>Ball bearing hand drafted and dimensioned</li><li>Jigsaw, can opener, and screwdriver rebuilt in CAD</li><li>12:1 parallel gearbox modeled from scratch with working mates and motion</li>"
+                    data-reflection="These projects helped my CAD a lot because I had to understand how the real thing worked before I could model it properly."
+                    data-download="All Dissections  (1).zip"
+                    data-download-label="Download All CAD + Drawings"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/5.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Pick and Place CNC Machine - MIE243</h3>
+                  <p>
+                    Designed a desktop pick-and-place concept for PCB assembly with a focus on
+                    accuracy, modularity, and cost.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Pick and Place CNC Machine - MIE243"
+                    data-img="Portfolio Website Image Template/5.png"
+                    data-description="For our term project in Mechanical Engineering Design, we developed a conceptual desktop CNC pick-and-place machine for educational PCB assembly. The goal was to create a lower-cost system that could place surface-mounted components accurately while still being modular and realistic to build."
+                    data-tools="<li>SolidWorks - system CAD modeling and assembly</li><li>McMaster-Carr - component sourcing and BOM generation</li><li>Mechanical design methods - lead screws, rails, bearings, and T-slot analysis</li><li>Project management - check-ins, multivoting, and delegation</li>"
+                    data-features="<li>3-axis motion system with +/-0.01 in accuracy</li><li>Lead screw z-axis with sleeve bearings for vertical stability</li><li>Interchangeable vacuum heads with rotational adjustment</li><li>Custom reel system with ratchet feed and clamping</li><li>Camera positioning system for alignment checks</li>"
+                    data-reflection="This project felt like a good mix of mechanism design and practical constraint handling. It also felt like one of the first concepts I worked on that could actually become a real machine."
+                    data-download="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing"
+                    data-download-label="Download CAD Package"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/6.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Experimental Design Device - APS112</h3>
+                  <p>
+                    Built a two-variable teaching device for APS112 so students could learn DMAIC
+                    through physical experiments.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Experimental Design Device - APS112"
+                    data-img="Portfolio Website Image Template/6.png"
+                    data-description="Working with a Six Sigma professor, our team designed a physical device for beginner students learning DMAIC. The idea was to replace a more complicated 3-variable catapult with a simpler 2-variable system that was easier to run, easier to analyze, and better suited for a classroom."
+                    data-tools="<li>Functional decomposition and morphological charts</li><li>Weighted decision matrices and multivoting</li><li>Prototyping and DMAIC modeling in Six Sigma software</li><li>CAD sketches and design analysis</li>"
+                    data-features="<li>Adjustable ramp angle and continuous ball drop height</li><li>Output modeled as Y(x) = K + aX1 + bX2 + cX1*X2</li><li>Classroom-safe size and weight limits</li><li>Designed for group use and quick iteration</li>"
+                    data-reflection="I liked this project because it was not just about building a device. We also had to think about how someone would actually learn from using it."
+                    data-download="Project Final Presentation.pdf"
+                    data-download-label="Download Final Presentation Slides"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading center-xs section-heading--personal">
+          <h2 class="section-title">Personal Projects</h2>
+          <p class="section-copy">
+            Earlier builds and side projects that still say a lot about how I like to make things.
+          </p>
+        </div>
+
+        <div class="row margin-bottom-small project-row">
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/7.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Coffee Table</h3>
+                  <p>
+                    One of my earlier woodworking projects from high school. It taught me how to
+                    take raw material and turn it into something finished and usable.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Coffee Table - Personal Project"
+                    data-img="Portfolio Website Image Template/7.png"
+                    data-description="I built this coffee table in high school as one of my first real fabrication projects. Starting from raw wood, I measured, cut, shaped, and finished each piece. It gave me an early feel for precision, patience, and the satisfaction of making something functional."
+                    data-tools="<li>Woodshop tools - mitre saw, bandsaw, belt sander</li><li>Hand sanding and finishing techniques</li><li>Basic joinery and construction methods</li>"
+                    data-features="<li>Custom-cut hardwood frame</li><li>Smoothed edges and hand-applied finish</li><li>Symmetrical layout with central support</li>"
+                    data-reflection="It was a simple build, but it stuck with me. It was one of the first times I felt how satisfying it is to make something from scratch."
+                    data-download=""
+                    data-download-label=""
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/8.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Storage/Jewelry Box</h3>
+                  <p>
+                    A high school woodworking project that taught me how much small measurement
+                    errors matter.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Storage/Jewelry Box - Personal Project"
+                    data-img="Portfolio Website Image Template/8.png"
+                    data-description="This small wooden box was built from scratch in high school, including the internal compartments. It was a good lesson in fit, alignment, and patience because even small errors showed up right away once the parts had to come together cleanly."
+                    data-tools="<li>Woodshop tools - scroll saw, hand file, glue clamps</li><li>Manual measurement with calipers and rulers</li><li>Wood glue and sanding techniques</li>"
+                    data-features="<li>Precision-fit lid</li><li>Clean wooden appearance with hidden nails and screws</li><li>Smooth finish intended for gifting</li>"
+                    data-reflection="This was one of the first times tolerances felt real to me instead of abstract."
+                    data-download=""
+                    data-download-label=""
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/9.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Short Story</h3>
+                  <p>
+                    An original short story I wrote and formatted as an EPUB for a scholarship
+                    submission.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Short Story - Creative Project"
+                    data-img="Portfolio Website Image Template/9.png"
+                    data-description="This story, titled Snow Falling Soundlessly at Night, was written for a creative writing scholarship submission. I also formatted it as an EPUB, which made it feel more complete and gave it a finished digital form."
+                    data-tools="<li>Google Docs and Grammarly - drafting and revision</li><li>Calibre - EPUB conversion</li><li>Layout editing for digital readability</li>"
+                    data-features="<li>Original fiction with a literary tone</li><li>Structured and formatted as an ebook</li><li>Exported and validated in EPUB format</li>"
+                    data-reflection="I like keeping creative work here because making things is not limited to engineering."
+                    data-download="Snow Falling Soundlessly at Night - Mohid Tahir.epub"
+                    data-download-label="Download EPUB"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row margin-bottom-small project-row">
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/10.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Pneumatic Engine - George Brown College</h3>
+                  <p>
+                    My first metal machining project, completed through a short George Brown course
+                    that ran across two Saturdays.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Pneumatic Engine - George Brown College"
+                    data-img="Portfolio Website Image Template/10.png"
+                    data-description="This was my introduction to metalworking and machine tools. Through a short George Brown machining course that ran across two Saturdays, I built a small pneumatic engine from raw stock and learned how to cut, bore, and finish parts to spec."
+                    data-tools="<li>Manual lathe - turning cylinders and shafts</li><li>Drill press and bandsaw - rough cutting and shaping</li><li>Machinist's vise, layout tools, and calipers</li>"
+                    data-features="<li>Air-powered single-piston engine</li><li>Machined from aluminum stock</li><li>Hand-fit components with working motion</li>"
+                    data-reflection="This project gave me my first real feel for metal fabrication. It also showed me how different a design feels once you have to machine every part yourself."
+                    data-download=""
+                    data-download-label=""
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/11.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>Birdhouse</h3>
+                  <p>
+                    My first construction project from high school. It is still hanging in my
+                    backyard today.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="Birdhouse"
+                    data-img="Portfolio Website Image Template/11.png"
+                    data-description="I built this birdhouse in Grade 9 as one of my earliest hands-on projects. It was simple, but it taught me the basics of measuring, cutting, assembling, and finishing something that had to actually work."
+                    data-tools="<li>Hand saw, hammer, and nails</li><li>Ruler and pencil for layout</li><li>Acrylic paint for finishing</li>"
+                    data-features="<li>Classic A-frame structure with circular entrance</li><li>Shown before and after paint</li><li>Still installed and functional in my backyard</li>"
+                    data-reflection="It was not a complicated build, but I still remember how satisfying it felt to make something real and then see it actually get used."
+                    data-download=""
+                    data-download-label=""
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-4">
+            <div class="hover-outer-box project-card">
+              <img src="Portfolio Website Image Template/12.png" alt="Project preview" loading="lazy" />
+              <div class="hover-inner-box">
+                <div class="hover-content">
+                  <h3>CO2 Gas Car</h3>
+                  <p>
+                    My first project ever, a small racing car powered by a CO2 canister that got me
+                    interested in aerodynamics and performance.
+                  </p>
+
+                  <button
+                    class="light view-details-button"
+                    type="button"
+                    data-title="CO2 Gas Car - Personal Project"
+                    data-img="Portfolio Website Image Template/12.png"
+                    data-description="This was the first project I ever built. In a freshman technology class, we designed small wooden cars powered by CO2 canisters and raced them down a track. It was an early introduction to aerodynamics, weight distribution, drag, and how small design choices affect performance."
+                    data-tools="<li>Band saw, sanding blocks, and drill press</li><li>Wood shaping and finishing techniques</li><li>CO2 cartridge launcher and timed test runs</li>"
+                    data-features="<li>Aerodynamic body carved from wood</li><li>Rear axle mounting for CO2 propulsion</li><li>Tested for speed and straight-line stability</li>"
+                    data-reflection="This was the project that made engineering feel exciting to me for the first time."
+                    data-download=""
+                    data-download-label=""
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta linkedin-cta">
+        <div class="container">
+          <div class="row center-xs">
+            <div class="col-xs-12 col-md-8">
+              <img
+                src="displaying-19-gallery-images-for-linkedin-logo-png-25.png"
+                class="small-image social-mark"
+                alt="LinkedIn logo"
+                loading="lazy"
+              />
+              <h2>Follow My LinkedIn</h2>
+              <p>
+                LinkedIn has the fuller work history and skills list if you want that alongside
+                the projects here.
+              </p>
+              <a
+                class="button-link button-link--light"
+                href="https://www.linkedin.com/in/mohid-tahir"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" id="About-Me">
+        <div class="container">
+          <div class="row center-xs">
+            <div class="col-xs-12 col-md-10 section-heading">
+              <h2 class="section-title">About Me</h2>
+              <br />
+            </div>
+          </div>
+
+          <div class="row about-me-section">
+            <div class="col-xs-12 col-md about-me-experience-card about-card">
+              <h3>My Journey</h3>
+              <p>
+                What pulled me into engineering was seeing an idea stop being abstract. I like the
+                stretch from CAD to prototypes, testing, and the small revisions that make
+                something finally feel right.
+              </p>
+            </div>
+
+            <div class="col-xs-12 col-md about-me-experience-card about-card">
+              <h3>Focus Areas</h3>
+              <p>
+                I am most drawn to mechatronics, manufacturing, EV systems, and product
+                development. I like work where design, fabrication limits, performance, and team
+                coordination all matter at once.
+              </p>
+            </div>
+
+            <div class="col-xs-12 col-md about-me-experience-card about-card">
+              <h3>Creative Pursuits</h3>
+              <p>
+                Photography, writing, and cinematography are where I slow down and notice more.
+                They sharpen the same instincts I use in engineering: composition, patience,
+                detail, and how the finished thing will land with someone else.
+              </p>
+            </div>
+          </div>
+
+          <div class="row team center-xs">
+            <div class="col-xs-12 col-md photo-nudge-left">
+              <div class="hover-outer-box photo-card">
+                <img src="10F097C2-2DAC-47CE-BD7F-7AEEBA5F2724.JPG" alt="Head in the Clouds" loading="lazy" />
+                <div class="hover-inner-box">
+                  <div class="hover-content">
+                    <h3>"Head in the Clouds"</h3>
+                    <p>Taken and modeled by me.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md">
+              <div class="hover-outer-box photo-card">
+                <img src="DA3BB6CA-04B8-45EE-A242-69974CF58059.JPG" alt="Time is Ticking" loading="lazy" />
+                <div class="hover-inner-box">
+                  <div class="hover-content">
+                    <h3>"Time is Ticking"</h3>
+                    <p>Built around a tight focus on one subject.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md photo-nudge-right">
+              <div class="hover-outer-box photo-card">
+                <img src="449AF7CD-E85C-49DA-8448-A156CCB38C39.jpg" alt="Jack of all Trades" loading="lazy" />
+                <div class="hover-inner-box">
+                  <div class="hover-content">
+                    <h3>"Jack of all Trades"</h3>
+                    <p>A photo built around symbolism.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="photo-promo">
+        <div class="promo-container">
+          <div class="promo-image">
+            <img src="Image20250409104405-Photoroom.png" alt="Photography preview" loading="lazy" />
+          </div>
+          <div class="promo-text">
+            <h2>For more photography...</h2>
+            <p>
+              Unsplash is where I post most of my photography. If you want to see more of that
+              side of my work, you can find it there.
+            </p>
+            <a
+              class="button-link button-link--light"
+              href="https://unsplash.com/@mohidt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unsplash
             </a>
-          </h3>
-          <p class="highlight">Successfully Completed the SolidWorks Associate Exam</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <br />
-  <br />
-  
-<!-- PROJECTS SECTION: Sketchfab Model + CTA -->
-<div class="centered-container" id="Projects">
-    <br />
-    <br />
-    <h1 class="hero-text">Projects</h1>
-    <p>Various projects I have worked on throughout high school and university</p>
-    <br />
-    <iframe
-    class="sketchfab-embed"
-    scrolling="no"
-    frameborder="0"
-    allowfullscreen="true"
-    src="https://sketchfab.com/models/b3c00bda19a141658cb5d8df49547df0/embed?autospin=1&amp;autostart=1&amp;ui_theme=dark"
-    name="PreviewFrame3D"
-    id="PreviewFrame3D"
-    width="1000"
-    height="500"
-    style="border-radius: 20px;"
-  ></iframe><br>  
-    <a href="https://www.3dcontentcentral.com/download-model.aspx?catalogid=171&amp;id=1895775">
-      <button class="light">Full Gearbox Assembly</button>
-    </a>
-  
-    <!-- See All Projects Arrow CTA -->
-    <div style="text-align: center; margin-top: 30px;">
-      <a href="#collaborative-projects"
-          style="font-size: 20px; color: #ffffff; text-decoration: none; font-weight: bold; display: inline-block;">
-          See All Projects
-          <span class="dynamic-arrow" style="font-size: 50px; display: block; margin-top: 10px;">↓</span>
-      </a>
-      <br /><br><br>
-    </div>
-  </div>
-  
-  <!-- Animated Arrow Styling -->
-  <style>
-    .dynamic-arrow {
-      display: inline-block;
-      animation: bounce 1.5s infinite;
-    }
-  
-    @keyframes bounce {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-  </style>
-  
-<!-- COLLABORATIVE PROJECTS SECTION -->
-<div class="padding-small" id="collaborative-projects">
-  <br />
-  <h1 class="hero-text">Collaborative Projects</h1>
-
-  <!-- NEW ROW: APS380 + 2 future project slots -->
-  <div class="row margin-bottom-small">
-
-    <!-- APS380 Project -->
-    <div class="col-md-4">
-      <div class="hover-outer-box">
-        <img src="Portfolio Website Image Template - APS380.png" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>AWD EV Demonstration Platform - APS380</h3>
-            <p>Built a scaled dual-motor AWD EV platform to demonstrate drivetrain architecture and torque distribution.</p>
-
-            <button class="light view-details-button"
-              data-title="AWD EV Demonstration Platform – APS380"
-              data-img="Portfolio Website Image Template - APS380.png"
-              data-description="Designed and prototyped a scaled AWD EV demonstration platform to connect APS380 lecture concepts to hardware. The system uses independent front and rear drivetrains with wheel-speed sensing and a microcontroller-based control setup, with iterative integration and troubleshooting to improve robustness."
-              data-tools="<li>SolidWorks – drivetrain layout, integration, and rapid redesign</li><li>ESP32 – control and data logging</li><li>Hall-effect sensors – wheel-speed measurement</li>"
-              data-features="<li>Dual-motor split-axle AWD architecture with front and rear differentials</li><li>Instrumented wheel-speed sensing for slip observation and testing</li><li>Iterative mechanical redesign to resolve belt/pulley fit and alignment</li>"
-              data-reflection="This project reinforced how drivetrain concepts translate into real systems, and how testing and integration constraints drive design decisions."
-              data-download="APS380 - Project Final Report.pdf"
-              data-download-label="Download Final Report"
-              style="margin-top: 10px; border-radius: 12px;">
-              View Details
-            </button>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Coming Soon slot #1 -->
-    <div class="col-md-4 d-none d-md-block">
-      <div class="hover-outer-box">
-        <img src="Portfolio Website Image Template - Coming Soon.png" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>Coming Soon</h3>
-            <p>New project case study in progress — details landing soon.</p>
-
-            <button class="light" disabled style="margin-top: 10px; border-radius: 12px; opacity: 0.8; cursor: not-allowed;">
-              In Progress
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Coming Soon slot #2 -->
-    <div class="col-md-4 d-none d-md-block">
-      <div class="hover-outer-box">
-        <img src="Portfolio Website Image Template - Coming Soon.png" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>Coming Soon</h3>
-            <p>Another build is underway — I’ll publish it once it’s polished.</p>
-
-            <button class="light" disabled style="margin-top: 10px; border-radius: 12px; opacity: 0.8; cursor: not-allowed;">
-              Coming Up
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="row margin-bottom-small">
-    <!-- MIE301 Project -->
-    <div class="col-md-4">
-      <div class="hover-outer-box">
-        <img src="Portfolio Website Image Template/1.png" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>Robotic Arm for Rover - MIE301</h3>
-            <p>We reimagined a sample-collecting robotic arm for Io, Jupiter’s most volcanic moon, shifting from a bulky land-based rover to a lightweight, drone-mounted mechanism.</p>
-
-            <button class="light view-details-button"
-              data-title="Robotic Arm for Rover – MIE301"
-              data-img="Portfolio Website Image Template/1.png"
-              data-description="Our team was tasked with redesigning a robotic arm originally meant for a Europa rover, adapting it for Io's chaotic volcanic terrain. To meet the client’s goal of increased mobility and efficiency, we removed the rover and mounted the arm on a compact drone. The new configuration allows flight-based navigation, improving reach and agility on a surface prone to lava floods, craters, and shifting landscapes."
-              data-tools="<li>MATLAB – link optimization for full extension within a confined drone fuselage</li><li>SolidWorks – 3D modeling and material testing simulations</li>"
-              data-features="<li>Drone-mounted for high-altitude and uneven terrain traversal</li><li>Folding four-bar linkage arm for compact storage and efficient deployment</li><li>Aluminum Alloy 1060 frame – lightweight, strong, and over-engineered for safety</li><li>Optimized link lengths (X: 45.8 cm, Y: 25.1 cm, Z: 15 cm) within 58.5 cm x 48.9 cm constraints</li>"
-              data-reflection="This project deepened my understanding of how to match analytical tools like MATLAB with real-world CAD implementation. We not only simulated motion, but validated material choices and forces, achieving a highly compact and adaptable design. It pushed our team to consider both theoretical and operational constraints in a space-oriented mission context."
-              data-download="Robotic Arm CAD + MATLAB.zip"
-              data-download-label="Download CAD + MATLAB Files"
-              style="margin-top: 10px; border-radius: 12px;">
-              View Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MIE346 PCB Project -->
-    <div class="col-md-4">
-      <div class="hover-outer-box">
-        <img src="Portfolio Website Image Template/2.png" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>Printed Circuit Board - MIE346</h3>
-            <p>Developed and fabricated a PCB-based power supply to scale and filter a low-voltage analog signal using op-amps and low-pass filters.</p>
-
-            <button class="light view-details-button"
-              data-title="Printed Circuit Board – MIE346"
-              data-img="Portfolio Website Image Template/2.png"
-              data-description="Our project goal was to take an analog signal ranging from 0–0.35V and linearly scale it to 0.25–3.3V with added filtering for noise reduction. We began with theoretical amplifier circuits, narrowed down two viable candidates, and selected a non-inverting op-amp configuration. The final solution delivered a positive gain and offset while respecting design constraints. We used simulation tools and nodal analysis to refine the schematic before creating a PCB."
-              data-tools="<li>SuperSpice – circuit simulations and sweeps</li><li>Analog Devices Filter Tool – for low-pass filter design</li><li>Multisim, Ultiboard, and Eagle – schematic capture and PCB layout</li><li>Oscilloscope & Multimeter – circuit validation</li>"
-              data-features="<li>Non-inverting op-amp configuration with R1–R6 for gain/offset</li><li>Two-stage Butterworth low-pass filter (1 kHz cutoff)</li><li>Custom PCB designed and fabricated in-house</li><li>Validated output voltage with <4% error vs theoretical model</li>"
-              data-reflection="This was my first experience building a PCB from scratch. From theoretical modeling to soldering and live measurements, I developed a better appreciation for analog design and precision filtering. Debugging issues like flipped op-amp orientation taught me the value of detailed verification and iterative testing."
-              data-download="MIE346 PCB Design Assignment.pdf"
-              data-download-label="Download Full Design Assignment"
-              style="margin-top: 10px; border-radius: 12px;">
-              View Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MIE315 Project -->
-    <div class="col-md-4">
-      <div class="hover-outer-box">
-        <img src="Portfolio Website Image Template/3.png" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>Google Home Housing - MIE315</h3>
-            <p>Consulted on replacing plastic housings with wood for Google Home speakers, evaluating cost, sustainability, and social responsibility.</p>
-
-            <button class="light view-details-button"
-              data-title="Google Home Housing – MIE315"
-              data-img="Portfolio Website Image Template/3.png"
-              data-description="This consulting project evaluated whether Google should replace its plastic smart speaker housings with wooden alternatives. Our team conducted a three-part analysis — financial, environmental, and societal — to assess the viability of switching to sustainably sourced wood. The scope included a Net Present Value (NPV) comparison, hybrid life cycle assessment (LCA), and stakeholder-based societal review. We recommended wood due to its lower financial cost, environmental benefits, and alignment with Google’s social responsibility goals."
-              data-tools="<li>Hybrid Life Cycle Assessment (LCA)</li><li>Net Present Value (NPV) Financial Modeling</li><li>Stakeholder Societal Impact Framework</li><li>Weighted Decision Matrix</li>"
-              data-features="<li>Wood housing NPV: -$82.10 vs Plastic: -$178.34 (5-year, 5% rate)</li><li>Lower cumulative emissions and better disposal outcomes for wood</li><li>Societal benefits include local employment, lower health risks, and better public perception</li><li>Wood offers premium aesthetics, better acoustics, and environmental appeal</li>"
-              data-reflection="This project challenged me to combine technical evaluation with social and environmental considerations, a true multidisciplinary consulting scenario. It showed how good design isn’t just about mechanics, but also people, the planet, and long-term value. Our findings reflected a deep dive into real-world impact beyond just material choice."
-              data-download="Google Home Speaker Wood vs Plastic.pdf"
-              data-download-label="Download Overview Poster"
-              style="margin-top: 10px; border-radius: 12px;">
-              View Details
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    </div>
-
-    <div class="row margin-bottom-small"> 
-      <!-- MIE243 Dissections Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/4.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Dissections - MIE243</h3>
-              <p>Hands-on mechanical reverse engineering project — taking apart devices, studying their components, and modeling them in SolidWorks.</p>
-
-              <button class="light view-details-button"
-                data-title="Dissections – MIE243"
-                data-img="Portfolio Website Image Template/4.png"
-                data-description="In MIE243: Mechanical Engineering Design, we were tasked with a series of mechanical 'dissections' — dismantling real devices, analyzing how they work, and recreating them digitally in SolidWorks. The progression of dissections spanned simple to complex components, culminating in the full design of a functioning gearbox system from scratch."
-                data-tools="<li>SolidWorks – reverse engineering and parametric modeling</li><li>Hand drafting techniques – for mechanical detailing (Ball Bearing)</li><li>Measurement tools – calipers and rulers for component sizing</li>"
-                data-features="<li>Ball Bearing – hand-drafted and dimensioned</li><li>Jigsaw – internal gearing and case modeled in SolidWorks</li><li>Can Opener – modeled with emphasis on motion mechanisms</li><li>Screwdriver – disassembled and reverse-engineered</li><li>12:1 Parallel Gearbox – modeled entirely from scratch with working mates and motion</li>"
-                data-reflection="These dissections helped me appreciate the precision and constraints involved in mechanical design. I learned to reverse engineer existing systems and gained confidence in CAD through hands-on analysis. Modeling the gearbox from scratch was especially satisfying — it pulled together everything I had learned in a cohesive final challenge."
-                data-download="All Dissections  (1).zip"
-                data-download-label="Download All CAD + Drawings"
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- MIE243 Pick and Place CNC Machine Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/5.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Pick and Place CNC Machine – MIE243</h3>
-              <p>Designed a desktop CNC machine to automate PCB component placement — emphasizing accuracy, modularity, and affordability.</p>
-
-              <button class="light view-details-button"
-                data-title="Pick and Place CNC Machine – MIE243"
-                data-img="Portfolio Website Image Template/5.png"
-                data-description="For our Mechanical Engineering Design term project, we created a conceptual design for a desktop CNC pick-and-place machine. Intended for educational settings, the goal was to design a cost-effective device capable of accurately placing surface-mounted components on pre-soldered PCBs using a vacuum-based toolhead. The project involved ideation, multivoting, detailed CAD modeling, and mechanical system integration — all while working within size, weight, and component compatibility constraints."
-                data-tools="<li>SolidWorks – full system CAD modeling and assembly</li><li>McMaster-Carr – component sourcing and BOM generation</li><li>Mechanical Design Methods – lead screws, rails, bearings, and T-slot analysis</li><li>Project Management – check-ins, multivoting, and team delegation</li>"
-                data-features="<li>3-axis motion system with ±0.01” accuracy</li><li>Lead screw z-axis with sleeve bearings for vertical stability</li><li>Interchangeable vacuum heads and rotation for component orientation</li><li>Custom reel system with ratchet feed, discard reels, and clamping</li><li>Camera positioning system for visual alignment and orientation checking</li>"
-                data-reflection="This project brought together every skill we’d learned so far — ideation, prototyping, reverse engineering, mechanical design, and teamwork. Modeling mechanisms like a self-aligning vacuum system, camera vision integration, and motion assemblies taught me how intricate real-world design can get. It made me feel like a mechanical engineer building something that could be real, useful, and genuinely exciting."
-                data-download="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing"
-                data-download-label="Download CAD Package"
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-         
-      <!-- Experimental Design Device – APS112 -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/6.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Experimental Design Device – APS112</h3>
-              <p>Developed a hands-on two-variable device for the Six Sigma Green Belt course to help students learn DMAIC through physical experimentation.</p>
-
-              <button class="light view-details-button"
-                data-title="Experimental Design Device – APS112"
-                data-img="Portfolio Website Image Template/6.png"
-                data-description="In collaboration with a Master's-level Six Sigma professor, our team designed a device to support beginner-level students learning DMAIC methodology. The goal was to replace a complex 3-variable catapult with a simplified, two-variable physical system. The final concept, called 'Full Strike', is a bowling-inspired ramp device that enables students to run statistical experiments with adjustable ball placement and ramp angle. Designed to produce predictable, tunable output for use with Six Sigma software, the project emphasized accessibility, iterability, and learning impact."
-                data-tools="<li>Functional decomposition & morphological charts</li><li>Weighted decision matrices & multivoting</li><li>Prototyping and DMAIC modeling in Six Sigma software</li><li>CAD sketches and design analysis</li>"
-                data-features="<li>Adjustable ramp angle (set points) and ball drop height (continuous)</li><li>Device outputs modeled as: Y(x) = K + aX1 + bX2 + cX1*X2</li><li>Lightweight & classroom-safe: under 10 kg, <50 cm dimensions</li><li>Designed for group use, fast iteration, and student surveys</li>"
-                data-reflection="This was one of the most education-focused and collaborative projects I’ve worked on. We got to think like both engineers and instructors;identifying the learning gap, simplifying the interface, and making a reliable device students could actually enjoy using. Applying Six Sigma principles to the learning process itself was a unique and rewarding experience."
-                data-download="Project Final Presentation.pdf"
-                data-download-label="Download Final Presentation Slides"
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- PERSONAL PROJECTS SECTION -->
-    <br />
-    <h1 class="hero-text">Personal Projects</h1>
-    <div class="row margin-bottom-small">
-      <!-- Coffee Table – Personal Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/7.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Coffee Table</h3>
-              <p>One of my earliest builds — a woodworking project from high school where I learned to take raw lumber and shape it into something functional and polished.</p>
-
-              <button class="light view-details-button"
-                data-title="Coffee Table – Personal Project"
-                data-img="Portfolio Website Image Template/7.png"
-                data-description="Built during my sophomore year of high school, this coffee table project was my first hands-on experience with physical fabrication. I started with raw planks of wood and learned how to draft, cut, and machine each piece into place. I gained an early appreciation for precision, patience, and the transformation of simple materials into something complete."
-                data-tools="<li>Woodshop tools – mitre saw, bandsaw, belt sander</li><li>Hand sanding and finishing techniques</li><li>Joinery and basic construction methods</li>"
-                data-features="<li>Custom-cut hardwood frame</li><li>Smoothed edges and hand-applied finish</li><li>Symmetrical layout with central support</li>"
-                data-reflection="This was the first time I truly got to build something from the ground up. Even though it was a small project, it sparked my curiosity for design and making — a mindset that’s stayed with me through engineering."
-                data-download=""
-                data-download-label=""
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Storage/Jewelry Box – Personal Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/8.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Storage/Jewelry Box</h3>
-              <p>A high school woodworking project that taught me the value of precision and patience while fitting every piece together perfectly.</p>
-
-              <button class="light view-details-button"
-                data-title="Storage/Jewelry Box – Personal Project"
-                data-img="Portfolio Website Image Template/8.png"
-                data-description="Built in my sophomore year of high school, this small wooden storage box was a hands-on lesson in how small measurement errors can have big consequences. The box was built entirely from scratch — including internal compartments — and required careful planning and assembly to ensure all pieces aligned cleanly. It doubled as a functional piece and a gift."
-                data-tools="<li>Woodshop tools – scroll saw, hand file, glue clamps</li><li>Manual measurement with calipers and rulers</li><li>Wood glue and sanding techniques</li>"
-                data-features="<li>Precision-fit lid</li><li>Seamless wooden appearance with hidden nails and screws</li><li>Smooth finish for a gift-ready result</li>"
-                data-reflection="This was one of the first times I realized how critical tolerances are in real-world design. A few millimeters off, and nothing would fit. It’s a lesson I’ve carried forward into every CAD, fabrication, and design project since."
-                data-download=""
-                data-download-label=""
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  
-      <!-- Short Story -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/9.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Short Story</h3>
-              <p>An original short story I wrote and published as an EPUB for a creative writing scholarship submission.</p>
-
-              <button class="light view-details-button"
-                data-title="Short Story – Creative Project"
-                data-img="Portfolio Website Image Template/9.png"
-                data-description="This story, titled *Snow Falling Soundlessly at Night*, was written as part of a creative writing scholarship application. It explores themes of isolation, memory, and quiet resilience through a character-driven narrative. I formatted and exported the piece as an EPUB to give it the polish and presence of a complete digital work."
-                data-tools="<li>Google Docs & Grammarly – drafting and revision</li><li>Calibre – EPUB conversion</li><li>Visual layout editing for digital readability</li>"
-                data-features="<li>Original fiction with a literary tone</li><li>Structured and formatted as an ebook</li><li>Exported and validated in EPUB format</li>"
-                data-reflection="This was a reminder that creativity spans across disciplines. Storytelling, like engineering, requires structure, iteration, and empathy. It was rewarding to express myself through writing and shape something quiet but meaningful."
-                data-download="Snow Falling Soundlessly at Night - Mohid Tahir.epub"
-                data-download-label="Download EPUB"
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="row margin-bottom-small">
-      <!-- Pneumatic Engine – George Brown College -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/10.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Pneumatic Engine – George Brown College</h3>
-              <p>My first metal machining project, completed during a night course outside U of T. It taught me the fundamentals of working with metal and precision tooling.</p>
-
-              <button class="light view-details-button"
-                data-title="Pneumatic Engine – George Brown College"
-                data-img="Portfolio Website Image Template/10.png"
-                data-description="Completed during a hands-on machining course at George Brown College, this was my introduction to working with metals and machine tools. I built a simple pneumatic engine from raw material stock, learning to cut, bore, and finish each part to specification. Having only worked with wood before, this project helped me transition into real mechanical fabrication and reinforced my interest in practical design work."
-                data-tools="<li>Manual lathe – for turning cylinders and shafts</li><li>Drill press and bandsaw – rough cutting and shaping</li><li>Machinist’s vise, layout tools, and calipers for precision</li>"
-                data-features="<li>Air-powered single-piston engine</li><li>Fully machined from aluminum stock</li><li>Hand-fit components with functional motion</li>"
-                data-reflection="This project felt like my first real mechanical build. It gave me confidence in using industrial tools and reminded me how valuable it is to step outside of school to keep learning. It also taught me the discipline and patience needed for tight tolerances and clean finishes."
-                data-download=""
-                data-download-label=""
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-  
-      <!-- Birdhouse – Personal Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/11.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>Birdhouse</h3>
-              <p>My first construction project, built during freshman year of high school. It’s still hanging in my backyard today.</p>
-
-              <button class="light view-details-button"
-                data-title="Birdhouse"
-                data-img="Portfolio Website Image Template/11.png"
-                data-description="Built in my first year of high school, this birdhouse was my earliest introduction to hands-on design and fabrication. It was a basic woodworking project, but it taught me the fundamentals of measuring, cutting, and assembling something functional. I still remember the satisfaction of painting it, mounting it, and seeing birds actually use it. It’s a small project, but it marked the beginning of my passion for building things."
-                data-tools="<li>Hand saw, hammer, and nails</li><li>Ruler and pencil for layout</li><li>Acrylic paint for finishing</li>"
-                data-features="<li>Classic A-frame structure with circular entrance</li><li>Pre- and post-paint finish shown</li><li>Still installed and functional in my backyard</li>"
-                data-reflection="This was one of the first times I ever built something real with my hands. It wasn’t perfect, but it gave me the sense that I could take an idea, measure it out, and bring it to life — something I’ve been chasing ever since."
-                data-download=""
-                data-download-label=""
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CO2 Gas Car – Personal Project -->
-      <div class="col-md-4">
-        <div class="hover-outer-box">
-          <img src="Portfolio Website Image Template/12.png" />
-          <div class="hover-inner-box">
-            <div class="hover-content">
-              <h3>CO₂ Gas Car</h3>
-              <p>My first ever project — a small racing car powered by a CO₂ canister. It introduced me to aerodynamics and how design choices affect speed.</p>
-
-              <button class="light view-details-button"
-                data-title="CO₂ Gas Car – Personal Project"
-                data-img="Portfolio Website Image Template/12.png"
-                data-description="This was the very first project I ever built. Designed in a freshman technology class, the goal was to create a small wooden car powered by a CO₂ canister and raced down a track. I learned how shape, weight distribution, and surface drag all influence speed — and how even tiny imperfections could cost the race. It was a fun and competitive experience that introduced me to real engineering principles in motion."
-                data-tools="<li>Band saw, sanding blocks, and drill press</li><li>Wood shaping and finishing techniques</li><li>CO₂ cartridge launcher and timed test runs</li>"
-                data-features="<li>Aerodynamic body carved from wood</li><li>Rear axle mounting for CO₂ propulsion</li><li>Tested for speed and straight-line stability</li>"
-                data-reflection="This was the spark. It made engineering feel fast, creative, and real. I didn’t know it at the time, but this tiny wooden car started the path I’m still on today — designing, tweaking, testing, and always learning from every build."
-                data-download=""
-                data-download-label=""
-                style="margin-top: 10px; border-radius: 12px;">
-                View Details
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  <!-- LINKEDIN CTA SECTION -->
-  <section class="cta full-width-bg">
-    <div class="row center-xs">
-      <div class="col-md">
-        <img src="displaying-19-gallery-images-for-linkedin-logo-png-25.png" class="small-image" />
-        <h2>Follow My LinkedIn</h2>
-        <p>You can find a deeper dive into my career path and various skills on my LinkedIn Profile</p>
-        <a href="https://www.linkedin.com/in/mohid-tahir">
-          <button class="light">LinkedIn</button>
-        </a>
-      </div>
-    </div>
-  </section>
-<!--
-  ABOUT ME SECTION
-  Split into three vertical columns: Journey, Focus Areas, and Creative Pursuits.
-  Highlights academic path, specialization, and artistic interests.
--->
-<main>
-    <section class="intro" id="About-Me">
-      <div class="container">
-        <div class="row center-xs">
+      <section class="blurbs" id="Testimonials">
+        <div class="container">
+          <div class="row center-xs">
             <div class="col-md">
-              <h2 class="hero-text">About Me</h2>
+              <h2 class="section-title">Testimonials</h2>
+              <br />
             </div>
           </div>
-  
-        <div class="row about-me-section">
-          <!-- Column 1: My Journey -->
-          <div class="col-xs-12 col-md about-me-experience-card">
-            <h3>My Journey</h3>
-            <p>
-              Currently, I am a student at the University of Toronto pursuing a Bachelor's of Applied Science and Engineering through the Mechanical Engineering program.
-              My time within the program has allowed me to develop various skills that will aid me in engineering-related careers.
-              I have also obtained plenty of relevant experience working with others through volunteering and high school involvement.
-              I would love to make new connections, and gain more experience in the field I am pursuing.
-            </p>
-          </div>
-  
-          <!-- Column 2: Focus Areas -->
-          <div class="col-xs-12 col-md about-me-experience-card">
-            <h3>Focus Areas</h3>
-            <p>
-              I am pursuing the Mechatronics and Manufacturing streams within Mechanical Engineering.
-              My work with SolidWorks and construction clearly gives me valuable insight into what these two paths may look like.
-              My work in Engineering Strategies and Practice taught me a lot about documentation while my part-time work at Dairy Queen gave me a glimpse into industry and business,
-              which is useful in my pursuit of a business minor.
-            </p>
-          </div>
-  
-          <!-- Column 3: Creative Pursuits -->
-          <div class="col-xs-12 col-md about-me-experience-card">
-            <h3>Creative Pursuits</h3>
-            <p>
-              Outside of my engineering-related experience, I have a love for photography, and it is one of my favourite creative outlets.
-              Throughout this portfolio, you can see works from both parts of my world, my best photos and my best projects.
-              I also enjoy creative writing, cinematography, and design. I have shared three of my favourite pieces below.
-            </p>
-          </div>
-        </div>
-        <br />
-  
-<!-- Photography Gallery Section -->
-<div class="row team center-xs">
-    <!-- Photo 1 -->
-    <div class="col-xs-12 col-md" style="position: relative; left: -7.5px;">
-      <div class="hover-outer-box">
-        <img src="10F097C2-2DAC-47CE-BD7F-7AEEBA5F2724.JPG" alt="Head in the Clouds" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>"Head in the Clouds"</h3>
-            <p>Taken by me, Modeled by me.</p>
+
+          <div class="testimonial-section">
+            <div class="col-xs-12 col-md about-me-experience-card testimonial-card">
+              <img src="1095867-200.png" class="icon" alt="Quote icon" loading="lazy" />
+              <h3>Second Year Term Project Group Member</h3>
+              <p>
+                "Mohid, you did a great job on check-in #2. I saw that you listened to my previous
+                comment and did an excellent job on the presentation, and I appreciate your mindful
+                application of feedback. I just wanted to mention that you are an essential part of
+                this team and have more self-confidence; please easily say your ideas and comment to
+                the rest of the group; there is no wrong answer, and we can use your thoughts more
+                in this project. Overall I'm lucky to have you on my team."
+              </p>
+            </div>
+
+            <div class="col-xs-12 col-md about-me-experience-card testimonial-card">
+              <img src="1095867-200.png" class="icon" alt="Quote icon" loading="lazy" />
+              <h3>Engineering Design Course Team Member</h3>
+              <p>
+                "Mohid has displayed a strong work ethic and reliability in this group. He has
+                taken the initiative to delegate responsibilities on numerous occasions. One thing
+                that all the team members, including myself, can work on for the future is ensuring
+                more clear and frequent communication between one another."
+              </p>
+            </div>
+
+            <div class="col-xs-12 col-md about-me-experience-card testimonial-card">
+              <img src="1095867-200.png" class="icon" alt="Quote icon" loading="lazy" />
+              <h3>Second Year Term Project Group Member</h3>
+              <p>
+                "Mohid has shown extraordinary communication skills and reliability throughout this
+                project. He has done a good job of helping the group meet important deadlines and
+                organize our tasks. In the future, Mohid can continue to contribute to the group in
+                the same way that he has been doing so, as his contributions are deeply valued by
+                our team."
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Photo 2 -->
-    <div class="col-xs-12 col-md">
-      <div class="hover-outer-box">
-        <img src="DA3BB6CA-04B8-45EE-A242-69974CF58059.JPG" alt="Time is Ticking" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>"Time is Ticking"</h3>
-            <p>Extreme focus on one particular subject.</p>
+      <section class="cta contact-cta" id="Contact">
+        <div class="container">
+          <div class="row center-xs">
+            <div class="col-xs-12 col-md-8">
+              <h2 class="section-title">Contact Information</h2>
+              <br />
+              <p>
+                University Email<br />
+                <a href="mailto:mohid.tahir@mail.utoronto.ca">mohid.tahir@mail.utoronto.ca</a>
+              </p>
+              <p>
+                Work Email<br />
+                <a href="mailto:mohidt@outlook.com">mohidt@outlook.com</a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- Photo 3 -->
-    <div class="col-xs-12 col-md" style="position: relative; left: 7.5px;">
-      <div class="hover-outer-box">
-        <img src="449AF7CD-E85C-49DA-8448-A156CCB38C39.jpg" alt="Jack of all Trades" />
-        <div class="hover-inner-box">
-          <div class="hover-content">
-            <h3>"Jack of all Trades"</h3>
-            <p>A photo relying on symbolism.</p>
-          </div>
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-brand">
+          <img
+            src="Screenshot_2023-08-11_002909-removebg-preview.png"
+            class="footer-logo"
+            alt="Tahir Engineering footer logo"
+            loading="lazy"
+          />
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-</main>
-
-<!-- PHOTO PROMO CTA -->
-<section class="photo-promo">
-  <div class="promo-container">
-    <div class="promo-image">
-      <img src="Image20250409104405.png" alt="Photography preview" />
-    </div>
-    <div class="promo-text">
-      <h2>For more photography...</h2>
-      <p>
-        Unsplash is my main creative platform for sharing my photography with the world.
-        Take a look there if you'd like.
-      </p>
-      <a href="https://unsplash.com/@mohidt">
-        <button class="light">Unsplash</button>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-            
-<!-- TESTIMONIALS SECTION -->
-<section class="blurbs" id="Testimonials">
-  <div class="container">
-    <!-- Centered title row -->
-    <div class="row center-xs">
-      <div class="col-md">
-        <h2 class="hero-text">Testimonials</h2>
-      </div>
-    </div>
-
-    <!-- Testimonial Cards with Flex Gap -->
-    <div class="testimonial-section">
-      <!-- Testimonial 1 -->
-      <div class="col-xs-12 col-md about-me-experience-card">
-        <img src="1095867-200.png" class="icon" />
-        <h3>Second Year Term Project Group Member</h3>
-        <p>
-          "Mohid, you did a great job on check-in #2. I saw that you listened to my previous comment and did an excellent job on the presentation,
-          and I appreciate your mindful application of feedback. I just wanted to mention that you are an essential part of this team and have more self-confidence;
-          please easily say your ideas and comment to the rest of the group; there is no wrong answer, and we can use your thoughts more in this project.
-          Overall I’m lucky to have you on my team."
-        </p>
-      </div>
-
-      <!-- Testimonial 2 -->
-      <div class="col-xs-12 col-md about-me-experience-card">
-        <img src="1095867-200.png" class="icon" />
-        <h3>Engineering Design Course Team Member</h3>
-        <p>
-          "Mohid has displayed a strong work ethic and reliability in this group.
-          He has taken the initiative to delegate responsibilities on numerous occasions.
-          One thing that all the team members (including myself) can work on for the future
-          is ensuring more clear and frequent communication between one another."
-        </p>
-      </div>
-
-      <!-- Testimonial 3 -->
-      <div class="col-xs-12 col-md about-me-experience-card">
-        <img src="1095867-200.png" class="icon" />
-        <h3>Second Year Term Project Group Member</h3>
-        <p>
-          "Mohid has shown extraordinary communication skills and reliability throughout this project.
-          He has done a good job of helping the group meet important deadlines and organize our tasks.
-          In the future, Mohid can continue to contribute to the group in the same way that he has been doing so,
-          as his contributions are deeply valued by our team."
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- CONTACT SECTION -->
-<section class="cta" id="Contact" style="margin-bottom: 0; padding-bottom: 20px;">
-    <div class="container">
-      <div class="row center-xs">
-        <div class="col-md">
-          <h2 class="hero-text">Contact Information</h2>
-          <p>University Email: <br />
-            <a href="mailto:mohid.tahir@mail.utoronto.ca">mohid.tahir@mail.utoronto.ca</a>
+        <div class="footer-meta">
+          <p class="footer-copy">
+            Built from a licensed Andreas Lautenschlager template and customized for this
+            portfolio. <a href="credits.txt">View Credits</a>
           </p>
-          <p>Work Email: <br />
-            <a href="mailto:mohidt@outlook.com">mohidt@outlook.com</a>
-          </p>
-        </div>        
-      </div>
-    </div>
-  </section>
-                
-<!-- FOOTER SECTION (Minimized for compactness) -->
-<footer style="margin-top: 0; padding-top: 0;">
-    <div class="container">
-      <div class="row">
-        <!-- Left Side: Logo -->
-        <div class="col-md-6 text-left">
-            <br>
-          <img src="Screenshot_2023-08-11_002909-removebg-preview.png" style="max-width: 200px; margin-top: 0px; margin-bottom: 0;" />
         </div>
-  
-        <!-- Right Side: Attribution and External Links -->
-        <div class="col-md-6 text-right" style="font-size: 0.9em;">
-          <p style="color: black; margin: 4px 0;">
-            <br>
-            Template by Andreas Lautenschlager © 2019 — <a href="https://lautenschlager.de" target="_blank" rel="noopener">lautenschlager.de</a>
-          </p>
-          <p style="color: black; margin: 4px 0;">
-            <a href="https://twitter.com/lautenschlagera" target="_blank">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
-              @lautenschlagera
+      </div>
+    </footer>
+
+    <div id="project-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-topbar">
+          <p class="modal-kicker">Project Details</p>
+          <button class="close-modal" type="button" aria-label="Close project details">&times;</button>
+        </div>
+        <div class="modal-layout">
+          <div class="modal-sidebar">
+            <h2 id="modal-title"></h2>
+            <img id="modal-img" alt="Project preview" class="medium-image modal-image" />
+
+            <a id="modal-download-link" class="button-link button-link--light modal-download" href="#">
+              <span id="modal-download-label">Download</span>
             </a>
-          </p>
-          <p style="color: black; margin: 4px 0;">
-            <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
-              <img alt="Creative Commons License" style="border-width: 0; max-width: 50px; vertical-align: middle;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-            </a>
-            Licensed under
-            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
-          </p>
-          <p style="color: black; margin: 0;">
-            <a href="credits.txt">Credits</a>
-          </p>
+          </div>
+
+          <div class="modal-body">
+            <section class="modal-panel" id="modal-overview-section">
+              <h3>Project Overview</h3>
+              <p id="modal-description"></p>
+            </section>
+
+            <section class="modal-panel" id="modal-tools-section">
+              <h3>Tools Used</h3>
+              <ul id="modal-tools"></ul>
+            </section>
+
+            <section class="modal-panel" id="modal-features-section">
+              <h3>Key Design Features</h3>
+              <ul id="modal-features"></ul>
+            </section>
+
+            <section class="modal-panel" id="modal-reflection-section">
+              <h3>Reflection</h3>
+              <p id="modal-reflection"></p>
+            </section>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-  
-  <!-- SCRIPTS -->
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/script.js" defer></script>
 
-    <!-- Spacer fix for iPad landscape -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const isIPadLandscape =
-        navigator.userAgent.match(/iPad/i) &&
-        window.innerWidth > window.innerHeight;
-
-      if (isIPadLandscape) {
-        document.querySelectorAll(".row.margin-bottom-small").forEach((row, index) => {
-          if (index < document.querySelectorAll(".row.margin-bottom-small").length - 1) {
-            const br = document.createElement("br");
-            row.parentNode.insertBefore(br, row.nextSibling);
-          }
-        });
-      }
-    }); 
-  </script>
+    <script src="js/script.js" defer></script>
   </body>
-  </html>
-
-
-
-
-
-
-
-<!-- 🔽 Unified Dynamic Project Modal -->
-<div id="project-modal" class="modal-overlay" style="display: none;">
-  <div class="modal-content">
-    <span class="close-modal">&times;</span>
-    <h2 id="modal-title"></h2>
-    <img id="modal-img" alt="Project Image" class="medium-image" style="margin-bottom: 1rem; max-width: 400px; height: auto;">
-
-    <h3 style="margin-bottom: 0.5rem;">Project Overview</h3>
-    <p id="modal-description"></p>
-
-    <h3 style="margin-bottom: 0.5rem;">Tools Used</h3>
-    <ul id="modal-tools"></ul>
-
-    <h3 style="margin-bottom: 0.5rem;">Key Design Features</h3>
-    <ul id="modal-features"></ul>
-
-    <h3 style="margin-bottom: 0.5rem;">Reflection</h3>
-    <p id="modal-reflection"></p>
-
-    <a id="modal-download-link" href="#" download>
-      <button class="light" style="margin-top: 20px; padding: 6px 12px; text-align: left; width: fit-content; border-radius: 6px;" id="modal-download-label">
-        Download
-      </button>
-      
-    </a>
-  </div>
-</div>
-
-<!-- 🔽 Modal Styling -->
-<style>
-  
-.modal-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  padding: 1rem;
-  overscroll-behavior: contain; /* prevents weird scroll bounce on mobile */
-  -webkit-overflow-scrolling: touch; /* smooth scroll for iOS */
-}
-
-.modal-content {
-  background: #111;
-  color: white;
-  max-width: 800px;
-  width: 100%;
-  max-height: 90vh;
-  border-radius: 12px;
-  padding: 2rem;
-  position: relative;
-  overflow-y: auto;
-  overflow-x: hidden; /* 🔑 Prevent horizontal scroll */
-  box-sizing: border-box;
-  word-wrap: break-word; /* Ensure long words/wide content wrap */
-}
-
-.modal-content img.medium-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
-
-.close-modal {
-  position: absolute;
-  top: 16px;
-  right: 20px;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-  z-index: 10;
-}
-
-body.modal-open {
-  overflow: hidden;
-  touch-action: none;
-}
-
-
-
-/* Mobile-specific tweaks */
-@media (max-width: 480px) {
-  .modal-content {
-    padding: 1.25rem;
-    max-height: 85vh;
-  }
-
-  @media (max-width: 480px) {
-  .close-modal {
-    font-size: 1.75rem;
-    top: 12px;
-    right: 16px;
-  }
-}
-
-
-  .modal-content img.medium-image {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-
-</style>
-
-<!-- 🔽 Modal Script -->
-<script>
-  const modal = document.getElementById('project-modal');
-  const closeModal = modal.querySelector('.close-modal');
-
-  const modalTitle = document.getElementById('modal-title');
-  const modalImg = document.getElementById('modal-img');
-  const modalDesc = document.getElementById('modal-description');
-  const modalTools = document.getElementById('modal-tools');
-  const modalFeatures = document.getElementById('modal-features');
-  const modalReflection = document.getElementById('modal-reflection');
-  const modalDownload = document.getElementById('modal-download-link');
-  const modalDownloadLabel = document.getElementById('modal-download-label');
-
-  document.querySelectorAll('.view-details-button').forEach(button => {
-  button.addEventListener('click', e => {
-    e.preventDefault();
-
-    modalTitle.textContent = button.dataset.title;
-    modalImg.src = button.dataset.img;
-    modalDesc.textContent = button.dataset.description;
-    modalTools.innerHTML = button.dataset.tools;
-    modalFeatures.innerHTML = button.dataset.features;
-    modalReflection.textContent = button.dataset.reflection;
-
-    if (button.dataset.download && button.dataset.download !== "") {
-      modalDownload.style.display = "inline-block";
-      modalDownload.href = button.dataset.download;
-      modalDownloadLabel.textContent = button.dataset.downloadLabel;
-    } else {
-      modalDownload.style.display = "none";
-    }
-
-    modal.style.display = 'flex';
-
-    // ✅ Prevent body scroll/zoom underneath modal
-    document.body.classList.add('modal-open');
-  });
-});
-
-closeModal.addEventListener('click', () => {
-  modal.style.display = 'none';
-  document.body.classList.remove('modal-open'); // ✅ Re-enable body scroll
-});
-
-window.addEventListener('click', e => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-    document.body.classList.remove('modal-open'); // ✅ Re-enable body scroll
-  }
-});
-
-</script>
+</html>

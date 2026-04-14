@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-labelledby="title desc">
+  <title id="title">University of Toronto Engineering seal tile</title>
+  <desc id="desc">Simplified University of Toronto Engineering seal.</desc>
+  <rect width="400" height="220" rx="28" fill="#ffffff"/>
+  <g transform="translate(110 20)">
+    <circle cx="90" cy="90" r="78" fill="none" stroke="#3f5b86" stroke-width="6"/>
+    <circle cx="90" cy="90" r="60" fill="none" stroke="#7f90ad" stroke-width="4"/>
+    <path d="M68 68h44c17 0 30 13 30 30v36H68Z" fill="#284d7a"/>
+    <path d="M68 68h74v18H68Z" fill="#375f93"/>
+    <path d="M95 56c7 0 13 6 13 13 0 8-6 13-13 13s-13-5-13-13c0-7 6-13 13-13Z" fill="#284d7a"/>
+    <path d="M90 85v32M74 100h32" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+    <path d="M112 126c-8 10-17 16-22 16s-14-6-22-16c6 2 14 3 22 3s16-1 22-3Z" fill="#ffffff"/>
+  </g>
+  <text x="200" y="188" fill="#41597f" font-family="Georgia, 'Times New Roman', serif" font-size="24" text-anchor="middle">UofT Engineering</text>
+</svg>

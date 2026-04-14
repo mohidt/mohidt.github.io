@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-labelledby="title desc">
+  <title id="title">Dairy Queen logo tile</title>
+  <desc id="desc">Dairy Queen emblem on a red background.</desc>
+  <rect width="400" height="220" rx="28" fill="#f53b40"/>
+  <path d="M84 110 126 74h164l42 36-42 36H126Z" fill="none" stroke="#ffffff" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M123 72c34-24 84-31 146-15l-12 24c-42-8-82-4-124 12Z" fill="#f8b549"/>
+  <path d="M124 147c50 13 93 12 146-7l-11-23c-44 12-84 14-126 6Z" fill="#2a7fc7"/>
+  <text
+    x="144"
+    y="132"
+    fill="#ffffff"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="82"
+    font-style="italic"
+    font-weight="700"
+  >DQ</text>
+</svg>
