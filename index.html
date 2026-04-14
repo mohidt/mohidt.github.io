@@ -1024,18 +1024,88 @@
 
       <section class="cta contact-cta" id="Contact">
         <div class="container">
-          <div class="row center-xs">
-            <div class="col-xs-12 col-md-8">
-              <h2 class="section-title">Contact Information</h2>
-              <br />
-              <p>
-                University Email<br />
-                <a href="mailto:mohid.tahir@mail.utoronto.ca">mohid.tahir@mail.utoronto.ca</a>
+          <div class="contact-shell">
+            <div class="contact-copy">
+              <p class="contact-kicker">Open To Conversations</p>
+              <h2 class="section-title">Get In Touch</h2>
+              <p class="contact-lead">
+                If you are reaching out about engineering roles, collaboration, or something you
+                saw in the portfolio, I would be glad to hear from you.
               </p>
-              <p>
-                Work Email<br />
-                <a href="mailto:mohidt@outlook.com">mohidt@outlook.com</a>
+              <p class="contact-subcopy">
+                The form is the easiest way to send a quick note, and the email options are here
+                if you would rather contact me directly.
               </p>
+
+              <div class="contact-links">
+                <div class="contact-link-card">
+                  <span class="contact-link-label">University Email</span>
+                  <a href="mailto:mohid.tahir@mail.utoronto.ca">mohid.tahir@mail.utoronto.ca</a>
+                  <p>Best for academic, student team, and campus-related outreach.</p>
+                </div>
+
+                <div class="contact-link-card">
+                  <span class="contact-link-label">Work Email</span>
+                  <a href="mailto:mohidt@outlook.com">mohidt@outlook.com</a>
+                  <p>Best for professional opportunities, collaborations, and general inquiries.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-panel">
+              <h3>Send A Message</h3>
+              <p class="contact-form-intro">
+                A short hello, opportunity, or project question is more than enough.
+              </p>
+
+              <form
+                class="contact-form"
+                name="contact"
+                method="POST"
+                action="/thank-you.html"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <p class="contact-form-trap">
+                  <label>
+                    Do not fill this out if you are human.
+                    <input type="text" name="bot-field" tabindex="-1" autocomplete="off" />
+                  </label>
+                </p>
+
+                <label class="contact-field">
+                  <span>Name</span>
+                  <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+                </label>
+
+                <label class="contact-field">
+                  <span>Email</span>
+                  <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </label>
+
+                <label class="contact-field">
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="What would you like to talk about?"
+                    required
+                  ></textarea>
+                </label>
+
+                <div class="contact-form-actions">
+                  <button type="submit">Send Message</button>
+                  <p class="contact-form-note">
+                    
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
