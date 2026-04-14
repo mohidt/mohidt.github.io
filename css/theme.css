@@ -1439,6 +1439,12 @@ body.menu-open {
   }
 }
 
+@media (hover: none) {
+  .photo-card .hover-inner-box {
+    display: none;
+  }
+}
+
 @media (max-width: 1080px) {
   .nav-toggle {
     display: inline-flex;
