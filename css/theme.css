@@ -1486,10 +1486,11 @@ button.light:focus-visible,
 .modal-body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto;
   gap: 0.8rem;
   margin-top: 0;
-  align-content: stretch;
+  min-height: 0;
+  align-content: start;
 }
 
 .modal-panel {
@@ -1501,7 +1502,7 @@ button.light:focus-visible,
   border-radius: 22px;
   background: rgba(255, 255, 255, 0.035);
   min-height: 0;
-  height: 100%;
+  height: auto;
 }
 
 #modal-overview-section {
@@ -1532,7 +1533,7 @@ button.light:focus-visible,
 
 .modal-content p,
 .modal-content li {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.55;
 }
 
@@ -1582,7 +1583,7 @@ body.menu-open {
   overflow: hidden;
 }
 
-@media (max-width: 1180px), (max-height: 860px) {
+@media (max-width: 1180px) {
   .modal-content {
     width: min(1040px, calc(100vw - 18px));
     max-height: min(97vh, 1120px);

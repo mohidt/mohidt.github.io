@@ -48,28 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalDownload = document.getElementById("modal-download-link");
   const modalDownloadLabel = document.getElementById("modal-download-label");
   const modalBody = modal.querySelector(".modal-body");
-  const stackedModalQuery = window.matchMedia("(max-width: 1180px), (max-height: 860px)");
   let lastFocusedElement = null;
 
   const syncModalBodyHeight = () => {
-    if (!modal.classList.contains("is-visible") || !modalBody) {
+    if (!modalBody) {
       return;
     }
 
     modalBody.style.height = "";
-
-    if (stackedModalQuery.matches) {
-      return;
-    }
-
-    const anchorElement = modalDownload.style.display !== "none" ? modalDownload : modalImg;
-    const anchorRect = anchorElement.getBoundingClientRect();
-    const bodyRect = modalBody.getBoundingClientRect();
-    const targetHeight = Math.round(anchorRect.bottom - bodyRect.top);
-
-    if (targetHeight > 0) {
-      modalBody.style.height = `${targetHeight}px`;
-    }
   };
 
   const closeModal = () => {
@@ -145,12 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener("resize", syncModalBodyHeight);
-
-  if (typeof stackedModalQuery.addEventListener === "function") {
-    stackedModalQuery.addEventListener("change", syncModalBodyHeight);
-  } else if (typeof stackedModalQuery.addListener === "function") {
-    stackedModalQuery.addListener(syncModalBodyHeight);
-  }
 
   modalImg.addEventListener("load", syncModalBodyHeight);
 });
