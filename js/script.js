@@ -34,6 +34,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const resumeDropdown = document.getElementById("resume-dropdown");
+  const resumeToggle = resumeDropdown
+    ? resumeDropdown.querySelector(".resume-dropdown-toggle")
+    : null;
+
+  if (resumeDropdown && resumeToggle) {
+    const closeResume = () => {
+      resumeDropdown.classList.remove("is-open");
+      resumeToggle.setAttribute("aria-expanded", "false");
+    };
+
+    resumeToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = resumeDropdown.classList.toggle("is-open");
+      resumeToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!resumeDropdown.contains(event.target)) {
+        closeResume();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && resumeDropdown.classList.contains("is-open")) {
+        closeResume();
+        resumeToggle.focus();
+      }
+    });
+  }
+
   if (!modal) {
     return;
   }
