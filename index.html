@@ -320,19 +320,20 @@
         <div class="section-heading section-heading--light">
           <h2 class="section-title">Projects</h2>
           <p class="section-copy">
-            Coursework, team builds, and personal projects that I still like showing.
+            Below is the 12:1 Parallel Gearbox I modelled from scratch for MIE243. You can spin it,
+            or open the full assembly. The rest of the projects are further down the page.
           </p>
         </div>
 
         <div class="project-showcase-frame">
           <iframe
             class="sketchfab-embed"
-            scrolling="no"
+            loading="lazy"
             allowfullscreen
             src="https://sketchfab.com/models/b3c00bda19a141658cb5d8df49547df0/embed?autospin=1&amp;autostart=1&amp;ui_theme=dark"
             name="PreviewFrame3D"
             id="PreviewFrame3D"
-            title="Gearbox assembly 3D model"
+            title="Interactive 3D model of a 12 to 1 parallel-shaft gearbox assembly"
           ></iframe>
         </div>
 
@@ -357,7 +358,9 @@
         <div class="section-heading section-heading--gallery center-xs">
           <h2 class="section-title">Collaborative Projects</h2>
           <p class="section-copy">
-            Team projects from coursework, clubs, and capstone work.
+            Capstone, coursework and club projects. Each one opens up with what we were asked to do,
+            what we ended up building, and how it turned out. Reports and CAD packages are attached
+            where I can share them.
           </p>
         </div>
 
@@ -366,7 +369,7 @@
             <article class="hover-outer-box project-card project-card--feature">
               <img
                 src="Portfolio Website Image Template - APS380.png"
-                alt="APS380 all-wheel-drive demonstration platform"
+                alt="Scaled dual-motor all-wheel-drive EV demonstration platform built for APS380"
                 loading="lazy"
               />
               <div class="hover-inner-box">
@@ -374,8 +377,8 @@
                   <p class="project-chip">APS380 | EV Design</p>
                   <h3>AWD EV Demonstration Platform</h3>
                   <p>
-                    Built a scaled dual-motor AWD platform to show drivetrain layout and torque
-                    distribution.
+                    Built for APS380. A scaled dual-motor platform, so that drivetrain layout and
+                    torque split were things you could actually watch instead of just read about.
                   </p>
 
                   <button
@@ -383,10 +386,10 @@
                     type="button"
                     data-title="AWD EV Demonstration Platform"
                     data-img="Portfolio Website Image Template - APS380.png"
-                    data-description="We built a scaled AWD EV platform to make APS380 concepts more tangible. The system used separate front and rear drivetrains, wheel-speed sensing, and an ESP32-based control setup. A lot of the work ended up being integration, alignment, and troubleshooting once all the parts had to work together."
-                    data-tools="&lt;li&gt;SolidWorks - drivetrain layout and redesign&lt;/li&gt;&lt;li&gt;ESP32 - control and data logging&lt;/li&gt;&lt;li&gt;Hall-effect sensors - wheel-speed measurement&lt;/li&gt;"
-                    data-features="&lt;li&gt;Dual-motor split-axle AWD layout with front and rear differentials&lt;/li&gt;&lt;li&gt;Wheel-speed sensing for testing and slip observation&lt;/li&gt;&lt;li&gt;Multiple redesigns to improve belt and pulley fit&lt;/li&gt;"
-                    data-reflection="We originally proposed a planetary gear transmission but pivoted to a split-axle layout once 3D printing tolerances made the gearbox impractical. That scope change, plus having to redesign the pulleys mid-project to fix belt-skip, taught me that knowing when to simplify is just as important as the original design."
+                    data-description="APS380 covers EV drivetrain architecture mostly on paper, so our team built a scaled AWD platform you can actually watch. It runs separate front and rear drivetrains under an ESP32 control setup. My part of this was the mechanical side, more specifically the drivetrain packaging, the SolidWorks layout, and the belt and pulley redesigns. The controls and the wheel-speed instrumentation were handled by my teammates. Everything can be downloaded from the button below."
+                    data-tools="&lt;li&gt;SolidWorks, for the drivetrain packaging and the pulley redesign&lt;/li&gt;&lt;li&gt;3D printing, for the pulleys and mounts across a few iterations&lt;/li&gt;&lt;li&gt;ESP32 platform for control and logging, built by my teammates&lt;/li&gt;"
+                    data-features="&lt;li&gt;Dual-motor split-axle layout with separate front and rear differentials&lt;/li&gt;&lt;li&gt;Sized so the torque split is still visible at bench speeds&lt;/li&gt;&lt;li&gt;Wheel-speed sensing for watching slip, integrated by the controls sub-team&lt;/li&gt;&lt;li&gt;Printed pulleys re-profiled after we started getting belt-skip under load&lt;/li&gt;"
+                    data-reflection="We originally proposed a planetary gear transmission and had to drop it once the printed tolerances made the gearbox impossible to build at our scale. Rebuilding around a split-axle layout partway through the term cost us a few weeks, but it was the only version that was ever going to run. I learned to check a concept against the process that has to make it before committing to it, which is not something I was doing before this."
                     data-download="APS380 - Project Final Report.pdf"
                     data-download-label="Download Final Report"
                   >
@@ -401,7 +404,7 @@
             <article class="hover-outer-box project-card project-card--feature">
               <img
                 src="img/UTWind_Capstone_Card.png"
-                alt="UTWind capstone cover"
+                alt="UTWind capstone direct-drive permanent magnet generator"
                 loading="lazy"
               />
               <div class="hover-inner-box">
@@ -409,8 +412,8 @@
                   <p class="project-chip">Capstone | UTWind</p>
                   <h3>Low-Speed PMSG for Vertical Axis Wind Turbine</h3>
                   <p>
-                    Designed a custom direct-drive generator for UTWind's 2026 turbine, targeting
-                    low-RPM output and low starting torque.
+                    My Capstone. We designed a custom direct-drive generator for UTWind's 2026 turbine,
+                    which had to make power at low RPM without being difficult to start.
                   </p>
 
                   <button
@@ -418,10 +421,10 @@
                     type="button"
                     data-title="Low-Speed PMSG for Vertical Axis Wind Turbine"
                     data-img="img/UTWind_Capstone_Card.png"
-                    data-description="For capstone, our team designed a custom direct-drive outer-rotor radial-flux permanent magnet synchronous generator for UTWind's 2026 vertical axis wind turbine. The target was 600 to 1200 W at 100 to 200 RPM while keeping starting torque below 0.1 Nm. That meant balancing performance in simulation with something that still made sense to build."
-                    data-tools="&lt;li&gt;ANSYS RMxprt - analytical generator modeling&lt;/li&gt;&lt;li&gt;ANSYS Maxwell 2D - electromagnetic validation&lt;/li&gt;&lt;li&gt;SolidWorks - assembly development&lt;/li&gt;&lt;li&gt;Weighted decision matrices - concept selection&lt;/li&gt;"
-                    data-features="&lt;li&gt;Compared four generator architectures for low-speed use&lt;/li&gt;&lt;li&gt;Selected a 24/20 slot-pole fractional-slot concentrated winding with segmented NdFe35 magnets&lt;/li&gt;&lt;li&gt;Reached 842 W output and 0.09 Nm peak starting torque in simulation&lt;/li&gt;&lt;li&gt;Prepared procurement specs for magnets and lamination steel&lt;/li&gt;"
-                    data-reflection="We compared four generator architectures before landing on the 24-slot, 20-pole fractional-slot design with segmented NdFe35 magnets. Hitting 842 W and keeping starting torque at 0.09 Nm in simulation meant going back and forth between RMxprt and Maxwell dozens of times. It is the project that taught me how much iteration real electromagnetic design takes."
+                    data-description="This was my Capstone project, done for the UTWind Power Systems subteam under Professor Eric Diller. Commercial generators are built for high speed, and a vertical axis turbine turns slowly and needs almost no torque to break away, so an off-the-shelf unit holds the turbine back on both counts. Our team of four designed a direct-drive outer-rotor radial-flux permanent magnet synchronous generator for the UTWind 2026 turbine, targeting 600 to 1200 W at 100 to 200 RPM with starting torque under 0.1 Nm. Every number below is simulated, since the work was handed over as a proof of concept for UTWind to build from. The poster can be downloaded from the button below."
+                    data-tools="&lt;li&gt;SolidWorks, for the generator assembly&lt;/li&gt;&lt;li&gt;Weighted decision matrices, for choosing between the four architectures&lt;/li&gt;&lt;li&gt;Optimization tables and a morph chart, for sweeping slot/pole, arc ratio, air gap and pole segmentation&lt;/li&gt;&lt;li&gt;ANSYS RMxprt and Maxwell 2D, for the team's analytical model and FEA validation&lt;/li&gt;"
+                    data-features="&lt;li&gt;Four architectures evaluated, with induction and switched reluctance dropped for poor low-RPM efficiency and high torque ripple&lt;/li&gt;&lt;li&gt;Axial-flux dropped for manufacturing complexity and poor cogging mitigation&lt;/li&gt;&lt;li&gt;24/20 slot-pole, 3-phase fractional-slot concentrated winding with segmented surface-mounted NdFe35 magnets&lt;/li&gt;&lt;li&gt;210 mm rotor OD, 100 mm axial length and a 1.0 mm baseline air gap&lt;/li&gt;&lt;li&gt;842.8 W net output and 0.09 Nm peak starting torque in simulation, both inside target&lt;/li&gt;&lt;li&gt;Handover specs written for NdFe35 magnets and ASTM A677 (M19) lamination steel&lt;/li&gt;"
+                    data-reflection="We hit two of our three targets and missed the third. Net output came in at 842.8 W against a 600 to 1200 W goal and peak starting torque at 0.09 Nm against a 0.1 Nm limit, but efficiency landed at 67.06% when we were aiming for over 90%, and the design only clears 85% inside a fairly narrow band of the operating map. Torque behaviour is what drove the architecture choice, since induction and switched reluctance were both dropped for high torque ripple and axial-flux went for poor cogging mitigation on top of being hard to manufacture. The efficiency gap is the thing I would go back to first if there was another term."
                     data-download="Capstone Poster.pdf"
                     data-download-label="Download Poster"
                   >
@@ -436,7 +439,7 @@
             <article class="hover-outer-box project-card project-card--feature">
               <img
                 src="img/Windrunner.png"
-                alt="WindRunner propeller-driven sprint car"
+                alt="WindRunner propeller-driven sprint car prototype"
                 loading="lazy"
               />
               <div class="hover-inner-box">
@@ -444,18 +447,18 @@
                   <p class="project-chip">MIE540 | Product Design</p>
                   <h3>The WindRunner</h3>
                   <p>
-                    A compact propeller-driven car we tuned around speed, safety, and a
-                    realistic toy-market price point.
+                    Our MIE540 project. A small propeller-driven car that had to cover a set distance
+                    as fast as possible while still being safe and cheap enough to sell.
                   </p>
                   <button
                     class="light view-details-button"
                     type="button"
                     data-title="The WindRunner"
                     data-img="img/Windrunner.png"
-                    data-description="The WindRunner was a small propeller-driven sprint car our team designed to cover a short fixed distance as quickly as possible while still staying safe, self-contained, and affordable. We started with concept generation and customer requirements, then used DOE testing, surface checks on carpet and tile, and final validation runs to lock in the design."
-                    data-tools="&lt;li&gt;Full factorial DOE and factor analysis&lt;/li&gt;&lt;li&gt;Voice-of-customer requirements and concept selection&lt;/li&gt;&lt;li&gt;Tolerance analysis using worst-case and RSS methods&lt;/li&gt;&lt;li&gt;Prototype testing across carpet and tile surfaces&lt;/li&gt;"
-                    data-features="&lt;li&gt;Compact self-contained propeller car designed for a short sprint&lt;/li&gt;&lt;li&gt;Final design tuned through blade direction, battery type, and wheel diameter&lt;/li&gt;&lt;li&gt;Built around speed, safety, durability, and a $15 retail target with roughly a $6 BOM&lt;/li&gt;&lt;li&gt;Validated on the built prototype after optimization&lt;/li&gt;"
-                    data-reflection="Our DOE showed that the big wheel (85 mm) was the dominant factor, saving nearly 10 seconds and being the most robust across carpet and tile. But we also had to keep the BOM under $6 and add a mesh guard for child safety. Balancing speed, cost, and safety in one design was the core challenge, and it is the reason I now treat VOC requirements as real constraints, not suggestions."
+                    data-description="The brief for MIE540 was a toy car that covers a short fixed distance as quickly as possible, while staying safe, self-contained and cheap enough to actually sell. We ran it as a full product development cycle, more specifically voice-of-customer requirements, concept selection, a full factorial DOE to work out what was really driving our times, tolerance analysis, and then validation runs on the built prototype across two floor surfaces. The presentation can be downloaded from the button below."
+                    data-tools="&lt;li&gt;Full factorial DOE and factor analysis&lt;/li&gt;&lt;li&gt;Voice-of-customer requirements and concept selection&lt;/li&gt;&lt;li&gt;Tolerance analysis, using worst-case and RSS methods&lt;/li&gt;&lt;li&gt;Prototype testing on carpet and on tile&lt;/li&gt;"
+                    data-features="&lt;li&gt;Self-contained propeller drive, so no track or external launcher is needed&lt;/li&gt;&lt;li&gt;85 mm drive wheel, blade direction and battery chemistry all chosen from the DOE&lt;/li&gt;&lt;li&gt;Mesh propeller guard, sized around a child-safe finger clearance&lt;/li&gt;&lt;li&gt;Roughly a $6 bill of materials against a $15 retail target&lt;/li&gt;"
+                    data-reflection="The DOE result was pretty blunt. Wheel diameter mattered more than everything else put together, and moving to the 85 mm wheel cut close to 10 seconds off our time while also being the most consistent factor across carpet and tile. Blade direction and battery type barely moved our times by comparison. I had assumed going in that the propeller and the battery would be the important ones, and they were not, so the testing is the only reason we spent the rest of our budget in the right place."
                     data-download="MIE540 Presentation.pdf"
                     data-download-label="Download Presentation"
                   >
@@ -470,25 +473,29 @@
         <div class="row margin-bottom-small project-row">
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/1.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/1.png"
+                alt="Folding four-bar linkage sampling arm designed for a drone platform"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
-                  <p class="project-chip">MIE301 | Robotics</p>
-                  <h3>Robotic Arm for Rover</h3>
+                  <p class="project-chip">MIE301 | Mechanism Design</p>
+                  <h3>Drone-Mounted Sampling Arm</h3>
                   <p>
-                    Redesigned a sample-collecting robotic arm for Io by moving from a rover-mounted
-                    concept to a drone-mounted one.
+                    For MIE301 we were given a sampling arm built for a Europa rover and had to adapt
+                    it for Io. We ended up mounting it on a drone instead.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Robotic Arm for Rover"
+                    data-title="Drone-Mounted Sampling Arm"
                     data-img="Portfolio Website Image Template/1.png"
-                    data-description="Our team redesigned a robotic arm that was originally meant for a Europa rover and adapted it for Io's volcanic terrain. To improve mobility, we dropped the rover base and mounted the arm on a compact drone instead. That shift changed a lot of the design decisions, especially around size, weight, and deployment."
-                    data-tools="<li>MATLAB - link optimization within a compact drone body</li><li>SolidWorks - 3D modeling and simulation</li>"
-                    data-features="<li>Drone-mounted concept for rough terrain</li><li>Folding four-bar linkage arm for compact storage and deployment</li><li>Aluminum Alloy 1060 frame for low weight and strength</li><li>Optimized link lengths within a 58.5 cm x 48.9 cm envelope</li>"
-                    data-reflection="Once we switched from a rover to a drone-mounted concept, the entire arm had to fold into a 58.5 cm by 48.9 cm envelope. That constraint drove the four-bar linkage design and the choice of Aluminum 1060. It showed me how one platform decision can reshape every dimension of a project."
+                    data-description="We were given a sampling arm designed for a Europa rover and asked to adapt it for Io, where the volcanic terrain makes a ground vehicle a bad idea. Our team dropped the rover base and mounted the arm on a compact drone instead. That one change reset every constraint on the mechanism, more specifically it now had to fold flat, carry a real weight penalty, and deploy without a stable ground reference. The CAD and MATLAB files can be downloaded from the button below."
+                    data-tools="&lt;li&gt;MATLAB, for optimizing link lengths against the reach and fold constraints&lt;/li&gt;&lt;li&gt;SolidWorks, for 3D modelling and motion simulation&lt;/li&gt;&lt;li&gt;Kinematic analysis, for the four-bar synthesis and workspace mapping&lt;/li&gt;"
+                    data-features="&lt;li&gt;Folding four-bar linkage that stows flat against the drone body&lt;/li&gt;&lt;li&gt;Link lengths optimized in MATLAB for the most reach inside a 58.5 x 48.9 cm envelope&lt;/li&gt;&lt;li&gt;Aluminum Alloy 1060 frame, chosen around the weight budget a drone gives you&lt;/li&gt;&lt;li&gt;Deployment sequence checked in simulation for self-collision&lt;/li&gt;"
+                    data-reflection="Reach and stowed size pull directly against each other in a four-bar, so this was not something we could solve by drawing carefully and hoping. Writing the optimization in MATLAB let us sweep link lengths and find the geometry that gave us the most reach the envelope would allow. It was the first time I used code to look for a design rather than to check one I had already picked."
                     data-download="Robotic Arm CAD + MATLAB.zip"
                     data-download-label="Download CAD + MATLAB Files"
                   >
@@ -501,24 +508,29 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/2.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/2.png"
+                alt="Custom analog signal conditioning PCB with op-amp gain stage and low-pass filter"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">MIE346 | PCB Design</p>
-                  <h3>Printed Circuit Board</h3>
+                  <h3>Analog Signal Conditioning PCB</h3>
                   <p>
-                    Designed and built a PCB that scaled and filtered a low-voltage analog signal.
+                    For MIE346 we had to design and build a board that scales a 0 to 0.35 V sensor
+                    signal up to 0.25 to 3.3 V and filters the noise out of it.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Printed Circuit Board"
+                    data-title="Analog Signal Conditioning PCB"
                     data-img="Portfolio Website Image Template/2.png"
-                    data-description="The goal of this project was to take an analog input from 0 to 0.35 V and scale it to 0.25 to 3.3 V while also filtering noise. We compared circuit options, chose a non-inverting op-amp design, refined it in simulation, and then laid out and tested the final PCB."
-                    data-tools="<li>SuperSpice - circuit simulation and sweeps</li><li>Analog Devices Filter Tool - low-pass filter design</li><li>Multisim, Ultiboard, and Eagle - schematic capture and PCB layout</li><li>Oscilloscope and multimeter - validation</li>"
-                    data-features="<li>Non-inverting op-amp configuration for gain and offset</li><li>Two-stage Butterworth low-pass filter with a 1 kHz cutoff</li><li>Custom PCB designed and fabricated in-house</li><li>Less than 4% error compared to theory</li>"
-                    data-reflection="Our original board failed because the first op-amp was flipped in the schematic during Design Assignment 2, swapping the + and - terminals. We only caught it after the PCB was printed. We had to use a reference board for the rest of the project. That single mistake is why I now double-check pin orientation before sending anything to fabrication."
+                    data-description="A raw sensor output of 0 to 0.35 V is too small and too noisy for a microcontroller to read properly. This project was the whole path from that problem to a working board, more specifically comparing circuit options, choosing a non-inverting op-amp configuration for the gain and the offset, designing the filter, simulating it, laying out the PCB, fabricating it, and then checking the result against theory on a scope. The full Design Assignment can be downloaded from the button below."
+                    data-tools="&lt;li&gt;SuperSpice, for circuit simulation and parameter sweeps&lt;/li&gt;&lt;li&gt;Analog Devices Filter Tool, for the low-pass filter design&lt;/li&gt;&lt;li&gt;Multisim, Ultiboard and Eagle, for schematic capture and PCB layout&lt;/li&gt;&lt;li&gt;Oscilloscope and multimeter, for checking it on the bench&lt;/li&gt;"
+                    data-features="&lt;li&gt;Non-inverting op-amp stage, which gives you the gain and the offset in one topology&lt;/li&gt;&lt;li&gt;Two-stage Butterworth low-pass filter with a 1 kHz cutoff&lt;/li&gt;&lt;li&gt;Board laid out and fabricated in-house rather than ordered from a service&lt;/li&gt;&lt;li&gt;Measured output came within 4% of theory across the input range&lt;/li&gt;"
+                    data-reflection="Our first board did not work. The lead op-amp had been placed with the + and - terminals swapped, back in Design Assignment 2, and nobody caught it until the PCB came back from fabrication. We had to finish the rest of the course on a reference board. It was a frustrating way to lose a board, and I check pin orientation against the datasheet now before a layout goes anywhere."
                     data-download="MIE346 PCB Design Assignment.pdf"
                     data-download-label="Download Full Design Assignment"
                   >
@@ -531,25 +543,29 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/3.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/3.png"
+                alt="Wood versus plastic smart speaker housing sustainability comparison"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
-                  <p class="project-chip">MIE315 | Sustainability</p>
-                  <h3>Google Home Housing</h3>
+                  <p class="project-chip">MIE315 | Design for the Environment</p>
+                  <h3>Google Home Housing: Wood vs Plastic</h3>
                   <p>
-                    Compared wood and plastic housings for Google Home speakers through cost,
-                    environmental, and social analysis.
+                    For MIE315 we looked at whether Google should switch their smart speaker housings
+                    from plastic to wood, and had to back the answer up with real numbers.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Google Home Housing"
+                    data-title="Google Home Housing: Wood vs Plastic"
                     data-img="Portfolio Website Image Template/3.png"
-                    data-description="This consulting project looked at whether Google should replace plastic smart speaker housings with wood. Our team compared the options using financial analysis, life cycle assessment, and stakeholder considerations, then made a recommendation based on cost, environmental impact, and broader design tradeoffs."
-                    data-tools="<li>Hybrid Life Cycle Assessment (LCA)</li><li>Net Present Value (NPV) modeling</li><li>Stakeholder impact framework</li><li>Weighted decision matrix</li>"
-                    data-features="<li>Wood housing NPV: -$82.10 vs plastic: -$178.34 over 5 years at a 5% rate</li><li>Lower cumulative emissions and better disposal outcomes for wood</li><li>Considered employment, health, and public perception impacts</li><li>Also weighed acoustics, appearance, and sustainability</li>"
-                    data-reflection="Wood came out ahead on NPV, climate impact, and societal factors, but it also had real drawbacks: brittle pine, higher machining energy, and varnish ecotoxicity at disposal. The recommendation was not a clean win for either material. That taught me that a good engineering recommendation has to own its tradeoffs, not hide them."
+                    data-description="This was a consulting style project for MIE315. Material substitution usually gets argued on one axis, normally carbon or cost, and then falls apart on the others. We took the wood versus plastic question for Google Home housings and ran it through three separate lenses, more specifically a hybrid Life Cycle Assessment, a five year Net Present Value model, and a stakeholder impact review, and then reconciled all three into one recommendation. The overview poster can be downloaded from the button below."
+                    data-tools="&lt;li&gt;Hybrid Life Cycle Assessment (LCA)&lt;/li&gt;&lt;li&gt;Net Present Value (NPV) modelling over a five year horizon&lt;/li&gt;&lt;li&gt;Stakeholder impact framework&lt;/li&gt;&lt;li&gt;Weighted decision matrix, for reconciling criteria that disagreed&lt;/li&gt;"
+                    data-features="&lt;li&gt;Wood housing NPV of -$82.10 against plastic at -$178.34 over five years at 5%&lt;/li&gt;&lt;li&gt;Lower cumulative emissions for wood, and better outcomes at disposal&lt;/li&gt;&lt;li&gt;Employment, worker health and public perception scored alongside the financials&lt;/li&gt;&lt;li&gt;Acoustics and appearance carried through as real criteria rather than afterthoughts&lt;/li&gt;"
+                    data-reflection="The part I found most useful was writing up the case against our own conclusion. Wood came out ahead on cost, emissions and stakeholder impact, but pine is brittle, machining it draws more energy than moulding plastic does, and the varnish is ecotoxic at disposal. We put all of that into the recommendation instead of burying it at the end. I would rather hand a client something with its weak points already listed than have them find those out later on."
                     data-download="Google Home Speaker Wood vs Plastic.pdf"
                     data-download-label="Download Overview Poster"
                   >
@@ -564,24 +580,30 @@
         <div class="row margin-bottom-small project-row">
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/4.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/4.png"
+                alt="Reverse-engineered device dissections and a 12 to 1 gearbox CAD assembly"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">MIE243 | Reverse Engineering</p>
-                  <h3>Dissections</h3>
+                  <h3>Product Dissections and 12:1 Gearbox</h3>
                   <p>
-                    Reverse-engineered several devices and rebuilt them in SolidWorks.
+                    Throughout MIE243 we did a series of Dissections, which meant taking apart a real
+                    device and then modelling it in SolidWorks. The 3D model higher up this page came
+                    out of this project.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Dissections"
+                    data-title="Product Dissections and 12:1 Gearbox"
                     data-img="Portfolio Website Image Template/4.png"
-                    data-description="In MIE243, we took apart real devices, studied how they worked, and rebuilt them digitally in SolidWorks. The dissections got more involved over time and ended with a complete 12:1 gearbox model built from scratch."
-                    data-tools="<li>SolidWorks - reverse engineering and parametric modeling</li><li>Hand drafting - mechanical detailing for the ball bearing</li><li>Measurement tools - calipers and rulers</li>"
-                    data-features="<li>Ball bearing hand drafted and dimensioned</li><li>Jigsaw, can opener, and screwdriver rebuilt in CAD</li><li>12:1 parallel gearbox modeled from scratch with working mates and motion</li>"
-                    data-reflection="Taking apart a jigsaw, a can opener, and a screwdriver taught me to look at how parts actually fit and move before trying to model them. But building the 12:1 gearbox from scratch was the real challenge. Every gear, shaft, and housing had to be dimensioned and mated so the assembly would actually rotate. That combination of reverse engineering and ground-up modeling is what made my CAD skills click."
+                    data-description="Throughout MIE243, various Dissections were conducted. These involved being given a mechanical device, taking it apart, measuring every part, working out why it was built that way, and then modelling it in SolidWorks. The first one was a hand-draft of a Ball Bearing. After that came a Jigsaw, a Can Opener and a Screwdriver, and the last one was modelling a 12:1 Parallel Gearbox from scratch instead of from an existing part. All of the CAD and drawings can be downloaded from the button below."
+                    data-tools="&lt;li&gt;SolidWorks, for parametric modelling, assembly mates and motion studies&lt;/li&gt;&lt;li&gt;Hand drafting, for the full dimensioned drawing of the Ball Bearing&lt;/li&gt;&lt;li&gt;Calipers and layout tools, for measuring the physical parts&lt;/li&gt;"
+                    data-features="&lt;li&gt;Ball Bearing hand drafted into a fully dimensioned engineering drawing&lt;/li&gt;&lt;li&gt;Jigsaw, Can Opener and Screwdriver rebuilt as constrained CAD assemblies&lt;/li&gt;&lt;li&gt;12:1 Parallel Gearbox modelled from scratch, with mates that let it actually rotate&lt;/li&gt;&lt;li&gt;Full CAD package and drawings included in the download&lt;/li&gt;"
+                    data-reflection="Reverse engineering is mostly about noticing why a part is shaped the way it is, more specifically the draft angles, snap fits and split lines that only exist because of how the thing gets moulded or assembled. The gearbox was the opposite of that. There was nothing to measure, so every gear, shaft and housing dimension had to be worked out and then mated tightly enough that the assembly would actually turn. Modelling something so that it moves properly is a different skill from modelling something so that it looks right, and this is where I picked that up."
                     data-download="All Dissections  (1).zip"
                     data-download-label="Download All CAD + Drawings"
                   >
@@ -594,27 +616,31 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/5.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/5.png"
+                alt="Desktop three-axis pick and place machine concept for PCB assembly"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">MIE243 | Machine Design</p>
-                  <h3>Pick and Place CNC Machine</h3>
+                  <h3>Desktop Pick and Place Machine</h3>
                   <p>
-                    Designed a desktop pick-and-place concept for PCB assembly with a focus on
-                    accuracy, modularity, and cost.
+                    The Term Project for MIE243. A three-axis SMD placement machine specified to
+                    ±0.01 in and costed all the way down to a real bill of materials.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Pick and Place CNC Machine"
+                    data-title="Desktop Pick and Place Machine"
                     data-img="Portfolio Website Image Template/5.png"
-                    data-description="For our term project in Mechanical Engineering Design, we developed a conceptual desktop CNC pick-and-place machine for educational PCB assembly. The goal was to create a lower-cost system that could place surface-mounted components accurately while still being modular and realistic to build."
-                    data-tools="<li>SolidWorks - system CAD modeling and assembly</li><li>McMaster-Carr - component sourcing and BOM generation</li><li>Mechanical design methods - lead screws, rails, bearings, and T-slot analysis</li><li>Project management - check-ins, multivoting, and delegation</li>"
-                    data-features="<li>3-axis motion system with +/-0.01 in accuracy</li><li>Lead screw z-axis with sleeve bearings for vertical stability</li><li>Interchangeable vacuum heads with rotational adjustment</li><li>Custom reel system with ratchet feed and clamping</li><li>Camera positioning system for alignment checks</li>"
-                    data-reflection="This was the first project where I sourced every component from McMaster-Carr and built a real BOM. Designing the vacuum head with rotational adjustment and the ratchet feed system within a ±0.01 in accuracy target made me think about each part in terms of what it would actually cost and whether it could be assembled."
+                    data-description="The Term Project for MIE243 (Mechanical Engineering Design) was to design a desktop CNC pick and place machine and document the process. Commercial machines are far outside a teaching lab's budget, which is why students end up hand-placing surface-mount parts, so we were aiming for something accurate enough to place SMD components reliably, modular enough to maintain, and specified against real catalogue parts. We had 2 Check-Ins with the Project TA, and conducted various meetings to discuss things like Candidate Designs and Project Requirements. Everything can be downloaded from the button below."
+                    data-tools="&lt;li&gt;SolidWorks, for the full system CAD and assembly&lt;/li&gt;&lt;li&gt;McMaster-Carr, for component sourcing and the bill of materials&lt;/li&gt;&lt;li&gt;Machine design analysis of the lead screws, linear rails, bearings and T-slot framing&lt;/li&gt;&lt;li&gt;Project management, more specifically the Check-Ins, multivoting and delegation&lt;/li&gt;"
+                    data-features="&lt;li&gt;Three-axis motion system specified to ±0.01 in placement accuracy&lt;/li&gt;&lt;li&gt;Lead screw Z-axis on sleeve bearings, for stiffness under the nozzle load&lt;/li&gt;&lt;li&gt;Interchangeable vacuum heads with rotational adjustment for part orientation&lt;/li&gt;&lt;li&gt;Custom component reel system with a ratchet feed and clamping&lt;/li&gt;&lt;li&gt;Camera positioning system for checking fiducial alignment&lt;/li&gt;"
+                    data-reflection="This was the first design I actually had to cost. Every component came out of a McMaster-Carr catalogue with a part number and a price attached to it, and that changes how you design. A bearing you pick because it is convenient stops being convenient once you see what it does to the BOM, and an accuracy target you set early on ends up deciding what you can afford everywhere else. I think I learned more from building the BOM on this one than from the CAD."
                     data-download="https://drive.google.com/file/d/19PLoXmKYPK6Ki7WEaNCdnVmQYXicGKaO/view?usp=sharing"
-                    data-download-label="Download CAD Package"
+                    data-download-label="View CAD Package on Drive"
                   >
                     View Details
                   </button>
@@ -625,25 +651,29 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/6.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/6.png"
+                alt="Two-variable ramp and ball teaching device built for DMAIC instruction"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
-                  <p class="project-chip">APS112 | Experimental Design</p>
-                  <h3>Experimental Design Device</h3>
+                  <p class="project-chip">APS112 | Design for a Client</p>
+                  <h3>DMAIC Teaching Device</h3>
                   <p>
-                    Built a two-variable teaching device for APS112 so students could learn DMAIC
-                    through physical experiments.
+                    Designed for a Master's Professor teaching Six Sigma. A two-variable device to
+                    replace the three-variable catapult his students kept getting lost in.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Experimental Design Device"
+                    data-title="DMAIC Teaching Device"
                     data-img="Portfolio Website Image Template/6.png"
-                    data-description="Working with a Six Sigma professor, our team designed a physical device for beginner students learning DMAIC. The idea was to replace a more complicated 3-variable catapult with a simpler 2-variable system that was easier to run, easier to analyze, and better suited for a classroom."
-                    data-tools="<li>Functional decomposition and morphological charts</li><li>Weighted decision matrices and multivoting</li><li>Prototyping and DMAIC modeling in Six Sigma software</li><li>CAD sketches and design analysis</li>"
-                    data-features="<li>Adjustable ramp angle and continuous ball drop height</li><li>Output modeled as Y(x) = K + aX1 + bX2 + cX1*X2</li><li>Classroom-safe size and weight limits</li><li>Designed for group use and quick iteration</li>"
-                    data-reflection="Our client, Dr. Sacripante, confirmed over email that he wanted to manufacture more devices and use them in his future Six Sigma classes. We ran 25 tests across 5 variable combinations, plugged the data into Minitab, and proved the transfer function worked. Knowing the device will actually be used in future courses made this one of the most rewarding projects I have worked on."
+                    data-description="This Project was designed for a Master's Professor teaching Six Sigma for Engineers. We were tasked with creating a multivariate device to be used in the classroom for a portion of the course he teaches. He was already using a three-variable catapult, and beginner students were spending most of their effort fighting the apparatus instead of learning the method, so we designed a two-variable replacement with a cleaner interaction term and a reset quick enough to run a full experiment inside one tutorial slot. You can find our full description of the project through downloading the slides."
+                    data-tools="&lt;li&gt;Functional decomposition and morphological charts&lt;/li&gt;&lt;li&gt;Weighted decision matrices and multivoting, for concept selection&lt;/li&gt;&lt;li&gt;Minitab, for the DOE analysis and fitting the transfer function&lt;/li&gt;&lt;li&gt;CAD sketches, prototyping and design analysis&lt;/li&gt;"
+                    data-features="&lt;li&gt;Adjustable ramp angle and continuous ball drop height as the two factors&lt;/li&gt;&lt;li&gt;Output modelled as Y(x) = K + aX1 + bX2 + cX1*X2, so the interaction term is teachable&lt;/li&gt;&lt;li&gt;Validated over 25 tests across 5 variable combinations&lt;/li&gt;&lt;li&gt;Built within classroom size, weight and safety limits for unsupervised group use&lt;/li&gt;"
+                    data-reflection="The best part of this was not really the analysis. Our client, Dr. Sacripante, confirmed over email that he wanted to manufacture more devices and use them in his future Six Sigma classes. Most of the design work I did in school ended at the grade, and this is the only project where somebody actually chose to keep using the thing we made."
                     data-download="Project Final Presentation.pdf"
                     data-download-label="Download Final Presentation Slides"
                   >
@@ -658,32 +688,37 @@
         <div class="section-heading center-xs section-heading--personal">
           <h2 class="section-title">Personal Projects</h2>
           <p class="section-copy">
-            Earlier builds and side projects that still say a lot about how I like to make things.
+            Mostly shop work and early builds from high school. A lot of my hands-on habits came from
+            these, so I have kept them here.
           </p>
         </div>
 
         <div class="row margin-bottom-small project-row">
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/7.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/Box and Table.png"
+                alt="Hardwood coffee table and small storage box built in high school woodshop"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">High School | Woodworking</p>
-                  <h3>Coffee Table</h3>
+                  <h3>Coffee Table and Storage Box</h3>
                   <p>
-                    One of my earlier woodworking projects from high school. It taught me how to
-                    take raw material and turn it into something finished and usable.
+                    Created during my sophomore year of high school. Two builds out of the same
+                    woodshop, one that had to hold weight and one that had to fit perfectly.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Coffee Table"
-                    data-img="Portfolio Website Image Template/7.png"
-                    data-description="I built this coffee table in high school as one of my first real fabrication projects. Starting from raw wood, I measured, cut, shaped, and finished each piece. It gave me an early feel for precision, patience, and the satisfaction of making something functional."
-                    data-tools="<li>Woodshop tools - mitre saw, bandsaw, belt sander</li><li>Hand sanding and finishing techniques</li><li>Basic joinery and construction methods</li>"
-                    data-features="<li>Custom-cut hardwood frame</li><li>Smoothed edges and hand-applied finish</li><li>Symmetrical layout with central support</li>"
-                    data-reflection="It is a simple build, but it is still in my family's living room. Starting from raw lumber and finishing every edge by hand gave me an early sense of what it takes to turn a material into something usable. That is what got me interested in making things."
+                    data-title="Coffee Table and Storage Box"
+                    data-img="Portfolio Website Image Template/Box and Table.png"
+                    data-description="Created during my sophomore year of high school. Both of these came out of the same woodshop class, and they taught me opposite things. The coffee table was my first real fabrication project, built from raw lumber, and the frame had to stay square and hold weight without any joinery I could hide behind. The box was the smaller problem but the fussier one, since all of the nails and screws are hidden and the lid has to seat flush from every side. I learned a lot about drafting, machining and construction over the duration of these, and more specifically about how you go from a plank of wood into a full creation."
+                    data-tools="&lt;li&gt;Mitre saw, bandsaw, scroll saw and belt sander&lt;/li&gt;&lt;li&gt;Hand files, glue clamps and progressive sanding&lt;/li&gt;&lt;li&gt;Calipers and rulers, for measuring everything by hand&lt;/li&gt;"
+                    data-features="&lt;li&gt;Custom-cut hardwood table frame with a central support&lt;/li&gt;&lt;li&gt;Symmetrical table layout, with the leg dimensions matched&lt;/li&gt;&lt;li&gt;Box lid fitted by hand so that it seats flush on every side&lt;/li&gt;&lt;li&gt;All of the nails and screws on the box hidden inside the joints&lt;/li&gt;"
+                    data-reflection="Wood does not forgive a cut you got wrong, and there is no undo on it. The box made that most obvious, because a lid is really a stack-up problem and four sides that are each only a fraction off still add up to a gap you can see from across the room. This is where I started dry-fitting everything before committing any glue, and I do the same thing now when I check an assembly for interference before releasing drawings. The table is a simple build, but it is still in my family's living room."
                     data-download=""
                     data-download-label=""
                   >
@@ -696,27 +731,31 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/8.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/Python Project.png"
+                alt="Terminal running the Fruit Basket Inventory program, showing the ASCII basket and menu"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
-                  <p class="project-chip">High School | Woodworking</p>
-                  <h3>Storage/Jewelry Box</h3>
+                  <p class="project-chip">High School | Python</p>
+                  <h3>Fruit Basket Inventory Tracker</h3>
                   <p>
-                    A high school woodworking project that taught me how much small measurement
-                    errors matter.
+                    Written in December 2019 for a high school computer science course. A command
+                    line inventory system, and the first real program I wrote.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Storage/Jewelry Box"
-                    data-img="Portfolio Website Image Template/8.png"
-                    data-description="This small wooden box was built from scratch in high school. It is a single open compartment with a fitted lid. It was a good lesson in fit, alignment, and patience because even small errors showed up right away once the parts had to come together cleanly."
-                    data-tools="<li>Woodshop tools - scroll saw, hand file, glue clamps</li><li>Manual measurement with calipers and rulers</li><li>Wood glue and sanding techniques</li>"
-                    data-features="<li>Precision-fit lid</li><li>Clean wooden appearance with hidden nails and screws</li><li>Smooth finish intended for gifting</li>"
-                    data-reflection="The lid had to close flush with the body, so even a small measurement error showed up immediately. I started dry-fitting everything after this build, and that habit carried over into how I approach CAD assemblies and prototyping today."
-                    data-download=""
-                    data-download-label=""
+                    data-title="Fruit Basket Inventory Tracker"
+                    data-img="Portfolio Website Image Template/Python Project.png"
+                    data-description="Created in December 2019 for a high school computer science course. It is a command line inventory system for a fruit shop, more specifically it lists stock, adds and removes products, edits one field at a time, records stock received and sales made, and searches the whole inventory for any piece of text. Everything runs off a single nested list, and I commented the index logic at the bottom of the file because keeping the main list and the sublists straight was the hardest part of it at the time. The Python file can be downloaded from the button below."
+                    data-tools="&lt;li&gt;Python 3, with no external libraries&lt;/li&gt;&lt;li&gt;Nested lists for the inventory, and formatted string output for the tables&lt;/li&gt;&lt;li&gt;Linear search, for looking up a product by its code&lt;/li&gt;"
+                    data-features="&lt;li&gt;Nine menu options, covering listing, detail, add, remove, edit, restock, sale and search&lt;/li&gt;&lt;li&gt;Validation that blocks duplicate product codes and names, and enforces a 4 character code&lt;/li&gt;&lt;li&gt;Search matches any substring across every field rather than only whole entries&lt;/li&gt;&lt;li&gt;Every input wrapped so that a bad entry re-prompts instead of crashing the program&lt;/li&gt;&lt;li&gt;ASCII fruit basket on the menu screen, which I was very pleased with at the time&lt;/li&gt;"
+                    data-reflection="The part I got most stuck on was formatting. Printing a clean table meant the quantity and sales columns had to be integers for the number formatting but strings for the search, so I wrote a pair of converter functions and called them at the top of anything that needed one or the other. It is not how I would do it now, but it worked, and it taught me that state you change inside one function will come back to you in another one. I still have three versions of this file saved and only one of them actually runs."
+                    data-download="Inventory_Tracking_Best.py"
+                    data-download-label="Download Python File"
                   >
                     View Details
                   </button>
@@ -727,25 +766,29 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/9.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/9.png"
+                alt="Cover of the short story Snow Falling Soundlessly at Night"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">Creative Project | Writing</p>
-                  <h3>Short Story</h3>
+                  <h3>Snow Falling Soundlessly at Night</h3>
                   <p>
-                    An original short story I wrote and formatted as an EPUB for a scholarship
-                    submission.
+                    A short story I wrote for a creative writing scholarship, which I also made into
+                    an ebook.
                   </p>
 
                   <button
                     class="light view-details-button"
                     type="button"
-                    data-title="Short Story"
+                    data-title="Snow Falling Soundlessly at Night"
                     data-img="Portfolio Website Image Template/9.png"
-                    data-description="This story, titled Snow Falling Soundlessly at Night, was written for a creative writing scholarship submission. I also formatted it as an EPUB, which made it feel more complete and gave it a finished digital form."
-                    data-tools="<li>Google Docs and Grammarly - drafting and revision</li><li>Calibre - EPUB conversion</li><li>Layout editing for digital readability</li>"
-                    data-features="<li>Original fiction with a literary tone</li><li>Structured and formatted as an ebook</li><li>Exported and validated in EPUB format</li>"
-                    data-reflection="Writing and revising a full story sharpened the same skills I use in engineering reports: structuring an argument, cutting what does not serve the point, and caring about how the reader experiences the work. I keep creative projects here because the discipline transfers directly."
+                    data-description="Created an ebook of a short story I wrote for a creative writing scholarship. I took it past the manuscript stage and formatted it properly as an EPUB rather than leaving it as a document, which made it feel finished. Click download for the epub file."
+                    data-tools="&lt;li&gt;Google Docs and Grammarly, for drafting and revision&lt;/li&gt;&lt;li&gt;Calibre, for the EPUB conversion and validation&lt;/li&gt;&lt;li&gt;Layout editing, so it reads properly on a screen&lt;/li&gt;"
+                    data-features="&lt;li&gt;Original short fiction, written from scratch&lt;/li&gt;&lt;li&gt;Structured and typeset as a reflowable ebook&lt;/li&gt;&lt;li&gt;Exported and validated in EPUB format&lt;/li&gt;"
+                    data-reflection="The part of this that carries over is the revision. Deciding what to cut from a story because it is not earning its place is the same judgement a technical report needs and usually does not get. I think my engineering writing is better for having had the practice of cutting things I was attached to."
                     data-download="Snow Falling Soundlessly at Night - Mohid Tahir.epub"
                     data-download-label="Download EPUB"
                   >
@@ -760,14 +803,18 @@
         <div class="row margin-bottom-small project-row">
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/10.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/10.png"
+                alt="Single-piston pneumatic engine machined from aluminum stock"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">George Brown | Machining</p>
                   <h3>Pneumatic Engine</h3>
                   <p>
-                    My first metal machining project, completed through a short George Brown course
-                    that ran across two Saturdays.
+                    Created during a machining course at George Brown College. This felt like my very
+                    first mechanical project.
                   </p>
 
                   <button
@@ -775,10 +822,10 @@
                     type="button"
                     data-title="Pneumatic Engine"
                     data-img="Portfolio Website Image Template/10.png"
-                    data-description="This was my introduction to metalworking and machine tools. Through a short George Brown machining course that ran across two Saturdays, I built a small pneumatic engine from raw stock and learned how to cut, bore, and finish parts to spec."
-                    data-tools="<li>Manual lathe - turning cylinders and shafts</li><li>Drill press and bandsaw - rough cutting and shaping</li><li>Machinist's vise, layout tools, and calipers</li>"
-                    data-features="<li>Air-powered single-piston engine</li><li>Machined from aluminum stock</li><li>Hand-fit components with working motion</li>"
-                    data-reflection="Boring the cylinder, turning the crankshaft, and hand-fitting the piston across two Saturdays gave me an intuition for what is easy or hard to manufacture. That feel for machinability now shows up in every part I design. I think about tool access and setup before I finalize geometry."
+                    data-description="Created during a machining course at George Brown College that ran across two Saturdays. This felt like my very first mechanical project. I took raw aluminum stock through to a running single-piston pneumatic engine, more specifically turning the shaft, boring the cylinder, and hand-fitting the piston to a clearance that seals but still slides. I learned more about machining metals, as all of my prior experience was with wood, and this is also where the Basic Machining certification listed above came from."
+                    data-tools="&lt;li&gt;Manual lathe, for turning the cylinder and the shafts&lt;/li&gt;&lt;li&gt;Drill press and bandsaw, for rough cutting and preparing stock&lt;/li&gt;&lt;li&gt;Machinist's vise, layout tools and calipers&lt;/li&gt;"
+                    data-features="&lt;li&gt;Air-powered single-piston engine that actually runs&lt;/li&gt;&lt;li&gt;Every component machined from aluminum stock&lt;/li&gt;&lt;li&gt;Piston and cylinder hand-fit to a working sliding clearance&lt;/li&gt;"
+                    data-reflection="I did not expect this to change how I draw parts, but it did. A feature that takes one line in CAD can mean a second setup, a special tool, or an operation nobody can physically reach, and you do not really feel that until you have had to do it yourself. I check tool access and setup count now before I finalize geometry. Overall I think this project also shows my commitment to learning outside of the University of Toronto environment."
                     data-download=""
                     data-download-label=""
                   >
@@ -791,14 +838,18 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/11.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/11.png"
+                alt="Painted A-frame birdhouse built in Grade 9, shown before and after finishing"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">High School | Woodworking</p>
                   <h3>Birdhouse</h3>
                   <p>
-                    My first construction project from high school. It is still hanging in my
-                    backyard today.
+                    Created in my freshman year of high school. My first real entry into construction,
+                    and I even have it hung in my backyard.
                   </p>
 
                   <button
@@ -806,10 +857,10 @@
                     type="button"
                     data-title="Birdhouse"
                     data-img="Portfolio Website Image Template/11.png"
-                    data-description="I built this birdhouse in Grade 9 as one of my earliest hands-on projects. It was simple, but it taught me the basics of measuring, cutting, assembling, and finishing something that had to actually work."
-                    data-tools="<li>Hand saw, hammer, and nails</li><li>Ruler and pencil for layout</li><li>Acrylic paint for finishing</li>"
-                    data-features="<li>Classic A-frame structure with circular entrance</li><li>Shown before and after paint</li><li>Still installed and functional in my backyard</li>"
-                    data-reflection="I built this in Grade 9 and it is still hanging in my backyard. It is not a complicated build, but seeing it survive years of weather taught me early on that good execution outlasts complexity."
+                    data-description="Created in my freshman year of high school. This project was my first real entry into the world of construction. It is a simple A-frame built with hand tools, but it was the first thing I made that had to survive outdoors rather than just look finished on a workbench. I even have it hung in my backyard. This photo shows what it would look like prior to and after the paint job."
+                    data-tools="&lt;li&gt;Hand saw, hammer and nails&lt;/li&gt;&lt;li&gt;Ruler and pencil, for the layout&lt;/li&gt;&lt;li&gt;Acrylic paint, which doubles as the weather finish&lt;/li&gt;"
+                    data-features="&lt;li&gt;A-frame structure with a circular entrance&lt;/li&gt;&lt;li&gt;Painted finish, which is also what keeps the weather out&lt;/li&gt;&lt;li&gt;Shown prior to and after the paint job&lt;/li&gt;"
+                    data-reflection="There is nothing clever about this build, and it has outlasted things I put much more thought into. The joints held because they were cut square and the paint held because it went on properly. It has been outside through every winter since then and it is still up."
                     data-download=""
                     data-download-label=""
                   >
@@ -822,14 +873,18 @@
 
           <div class="col-xs-12 col-md-4">
             <div class="hover-outer-box project-card">
-              <img src="Portfolio Website Image Template/12.png" alt="Project preview" loading="lazy" />
+              <img
+                src="Portfolio Website Image Template/12.png"
+                alt="Hand-carved wooden CO2 cartridge racing car"
+                loading="lazy"
+              />
               <div class="hover-inner-box">
                 <div class="hover-content">
                   <p class="project-chip">High School | Aerodynamics</p>
                   <h3>CO2 Gas Car</h3>
                   <p>
-                    My first project ever, a small racing car powered by a CO2 canister that got me
-                    interested in aerodynamics and performance.
+                    Created in my freshman year of high school. This was my first project ever, and
+                    it is a large part of why I ended up here.
                   </p>
 
                   <button
@@ -837,10 +892,10 @@
                     type="button"
                     data-title="CO2 Gas Car"
                     data-img="Portfolio Website Image Template/12.png"
-                    data-description="This was the first project I ever built. In a freshman technology class, we designed small wooden cars powered by CO2 canisters and raced them down a track. It was an early introduction to aerodynamics, weight distribution, drag, and how small design choices affect performance."
-                    data-tools="<li>Band saw, sanding blocks, and drill press</li><li>Wood shaping and finishing techniques</li><li>CO2 cartridge launcher and timed test runs</li>"
-                    data-features="<li>Aerodynamic body carved from wood</li><li>Rear axle mounting for CO2 propulsion</li><li>Tested for speed and straight-line stability</li>"
-                    data-reflection="Racing a car I shaped by hand down a track was the first time I connected design choices to real performance. It is the project that made me want to study engineering."
+                    data-description="Created in my freshman year of high school. This was my first project ever. In a technology class we carved small wooden cars, mounted a CO2 cartridge at the back, and raced them down a timed track against everybody else's. It taught me a lot about aerodynamics, more specifically how the shape, size and weight of the car affect speed, and also how much the axle alignment and the wheel friction end up mattering."
+                    data-tools="&lt;li&gt;Band saw, drill press and sanding blocks&lt;/li&gt;&lt;li&gt;Wood shaping and surface finishing&lt;/li&gt;&lt;li&gt;CO2 cartridge launcher, and timed test runs&lt;/li&gt;"
+                    data-features="&lt;li&gt;Body profile carved and sanded down to reduce drag&lt;/li&gt;&lt;li&gt;Rear axle mounting for the CO2 cartridge propulsion&lt;/li&gt;&lt;li&gt;Tested for outright speed and for straight-line stability&lt;/li&gt;"
+                    data-reflection="A timed track is honest feedback. The cars that looked fastest often were not, and there was no arguing with the clock about it. Watching a design choice turn into a measured result was the first time engineering felt like something I actually wanted to do."
                     data-download=""
                     data-download-label=""
                   >
